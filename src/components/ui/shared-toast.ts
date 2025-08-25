@@ -1,14 +1,15 @@
-import { toast } from "sonner"
-
+// Simple error handler without toast dependency
 export function handleErrorWithToast(error: Error) {
   console.error('Error:', error)
-  toast.error(error.message || 'An error occurred')
+  // Simple console logging for landing page - no toast needed
 }
 
 export function showSuccessToast(message: string) {
-  toast.success(message)
+  console.log('Success:', message)
+  // Simple console logging for landing page - no toast needed
 }
 
 export function showInfoToast(message: string) {
-  toast.info(message)
+  console.log('Info:', message)
+  // Simple console logging for landing page - no toast needed
 }
