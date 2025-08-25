@@ -1,0 +1,560 @@
+{
+  "Common": {
+    "cancel": "Batal",
+    "update": "Perbarui",
+    "continue": "Lanjutkan",
+    "success": "Sukses",
+    "delete": "Hapus",
+    "save": "Simpan",
+    "back": "Kembali",
+    "next": "Berikutnya",
+    "create": "Buat",
+    "showLess": "Tampilkan lebih sedikit",
+    "showMore": "Tampilkan lebih banyak",
+    "generate": "Hasilkan",
+    "edit": "Edit",
+    "search": "Cari...",
+    "approve": "Setujui",
+    "reject": "Tolak"
+  },
+  "LandingPage": {
+    "navHome": "Beranda",
+    "navAbout": "Tentang",
+    "navIntro": "SyinAI 1.5",
+    "navCapabilities": "Kemampuan",
+    "navModels": "Model",
+    "navGetApi": "Dapatkan API",
+    "navJoinBeta": "Ikut Beta",
+    "aboutHeadline": "Ekosistem SyinAI mewakili <highlight>AI kami yang paling mumpuni.</highlight>",
+    "aboutDescription": "Model SyinAI kami dibuat dari awal untuk <highlight>multimodalitas</highlight> — mampu menalar dengan mulus di seluruh teks, gambar, audio, video, dan kode.",
+    "latestUpdates": "Pembaruan terbaru",
+    "updateDate": "20 Agustus 2025",
+    "introTitle": "Memperkenalkan SyinAI 1.5",
+    "introSubtitle": "Model generasi berikutnya dari kami.",
+    "introText": "Dibuat untuk menjadi multimodal secara native dan dilengkapi dengan jendela konteks terobosan, SyinAI 1.5 dirancang untuk berbagai aplikasi.",
+    "tryButton": "Coba SyinAI 1.5",
+    "capabilitiesTitle": "Kemampuan AI Terdepan",
+    "capabilitiesSubtitle": "Tiga model AI canggih yang dirancang untuk berbagai kebutuhan komputasi dan analisis data modern",
+    "youAreAnExpertIn": "Anda adalah seorang ahli dalam {role}",
+    "joinBeta": "Ikut Beta",
+    "reasoningTitle": "Penalaran & Pemecahan Masalah",
+    "reasoningDescription": "Model AI canggih dengan kemampuan penalaran mendalam untuk menyelesaikan masalah kompleks, analisis logis, dan pengambilan keputusan yang akurat.",
+    "multimodalTitle": "Kecerdasan Multimodal",
+    "multimodalDescription": "Kemampuan AI terdepan untuk memahami dan menganalisis berbagai jenis data secara bersamaan - teks, gambar, audio, video, dan kode dengan konteks yang terintegrasi.",
+    "codingTitle": "Pembuatan & Debugging Kode",
+    "codingDescription": "Mengembangkan, menjelaskan, dan men-debug algoritma serta basis kode yang kompleks dengan akurasi tinggi.",
+    "modelsTitle": "SyinAI hadir dalam tiga model yang berbeda",
+    "ultraDescription": "Model penalaran terdepan dengan analisis mendalam dan kemampuan pemecahan masalah yang kompleks.",
+    "proDescription": "Model multimodal canggih yang memahami teks, gambar, audio, video, dan kode secara terintegrasi.",
+    "nanoDescription": "Model pemrograman khusus dengan kemampuan pengkodean, debugging, dan pengembangan perangkat lunak terbaik.",
+    "mmluPerformance": "Performa MMLU",
+    "mmluDescription": "Syin o1 mencapai skor tertinggi dalam benchmark MMLU",
+    "responseSpeed": "Kecepatan Respons",
+    "responseSpeedDescription": "Waktu respons rata-rata untuk kueri kompleks",
+    "codeAccuracy": "Akurasi Kode",
+    "codeAccuracyDescription": "Tingkat akurasi dalam pembuatan dan debugging kode",
+    "benchmarkComparison": "Perbandingan Performa dengan Model Lain",
+    "startTitle": "Mulai dengan SyinAI",
+    "startSubtitle": "Bangun dengan model kami yang paling mumpuni.",
+    "getApiKey": "Dapatkan kunci API",
+    "readDocs": "Baca dokumentasi",
+    "sponsorsTitle": "Berkolaborasi dengan",
+    "footerSlogan": "Solusi AI modern untuk generasi pengembangan baru.",
+    "footerProducts": "Produk",
+    "footerResources": "Sumber Daya",
+    "footerContact": "Hubungi Kami",
+    "footerRights": "Hak Cipta Dilindungi.",
+    "footerPrivacy": "Kebijakan Privasi",
+    "footerTerms": "Ketentuan Layanan"
+  },
+  "BlogPage": {
+    "title": "Blog AlcaHEX",
+    "subtitle": "Wawasan terbaru, tutorial, dan pembaruan dari tim pengembangan AI kami",
+    "readMore": "Baca Selengkapnya",
+    "newsletter": {
+      "title": "Tetap Terupdate",
+      "description": "Berlangganan newsletter kami untuk mendapatkan pembaruan terbaru tentang pengembangan AI dan peluncuran produk.",
+      "placeholder": "Masukkan alamat email Anda",
+      "subscribe": "Berlangganan"
+    },
+    "categories": {
+      "all": "Semua",
+      "productUpdate": "Update Produk",
+      "tutorial": "Tutorial", 
+      "research": "Riset",
+      "caseStudy": "Studi Kasus"
+    },
+    "posts": {
+      "1": {
+        "title": "Memperkenalkan SyinAI 1.5: Revolusi AI Generasi Baru",
+        "excerpt": "Pelajari tentang fitur-fitur terbaru dan peningkatan performa dalam SyinAI 1.5 yang mengubah cara kita berinteraksi dengan AI.",
+        "date": "24 Agustus 2025",
+        "author": "Tim AlcaHEX",
+        "readTime": "5 menit baca"
+      },
+      "2": {
+        "title": "Panduan Lengkap: Mengoptimalkan Performa AI untuk Coding",
+        "excerpt": "Tips dan trik untuk memaksimalkan produktivitas coding menggunakan SyinAI Coder dengan berbagai bahasa pemrograman.",
+        "date": "20 Agustus 2025", 
+        "author": "Tim Developer",
+        "readTime": "8 menit baca"
+      },
+      "3": {
+        "title": "Masa Depan Multimodal AI: Vision dan Language dalam Satu Model",
+        "excerpt": "Eksplorasi kemampuan multimodal SyinAI 1.5 Pro dalam memproses teks, gambar, dan data kompleks lainnya.",
+        "date": "15 Agustus 2025",
+        "author": "Tim Riset", 
+        "readTime": "6 menit baca"
+      },
+      "4": {
+        "title": "Studi Kasus: Implementasi SyinAI di Startup Teknologi",
+        "excerpt": "Bagaimana startup teknologi meningkatkan efisiensi hingga 300% dengan mengintegrasikan SyinAI dalam workflow mereka.",
+        "date": "10 Agustus 2025",
+        "author": "Tim Bisnis",
+        "readTime": "7 menit baca"
+      }
+    },
+    "navigation": {
+      "home": "Beranda",
+      "about": "Tentang", 
+      "documentation": "Dokumentasi",
+      "blog": "Blog",
+      "api": "API",
+      "joinBeta": "Gabung Beta"
+    },
+    "footer": {
+      "description": "Solusi AI modern untuk generasi pengembangan baru.",
+      "products": "Produk",
+      "resources": "Sumber Daya", 
+      "contact": "Hubungi Kami",
+      "copyright": "Hak cipta dilindungi."
+    },
+    "articles": {
+      "1": {
+        "title": "Memperkenalkan SyinAI 1.5: Revolusi AI Generasi Baru",
+        "description": "Kami dengan bangga memperkenalkan SyinAI 1.5, model AI terbaru yang menghadirkan revolusi dalam cara kita berinteraksi dengan kecerdasan buatan. Dengan peningkatan signifikan dalam performa, akurasi, dan kemampuan pemahaman konteks.",
+        "featuresTitle": "🚀 Fitur-Fitur Terbaru",
+        "features": [
+          "Peningkatan Performa 40% - Respons yang lebih cepat dan akurat",
+          "Konteks Window 8K Token - Mampu memproses dokumen yang lebih panjang",
+          "Multimodal Capabilities - Memproses teks, gambar, dan kode secara bersamaan",
+          "Indonesian Language Optimization - Pemahaman bahasa Indonesia yang lebih baik"
+        ],
+        "improvementsTitle": "💡 Peningkatan Utama",
+        "improvementsDesc": "SyinAI 1.5 hadir dengan arsitektur yang dioptimalkan khusus untuk:",
+        "improvements": [
+          "Pemrograman dan debugging kode",
+          "Analisis data dan visualisasi",
+          "Penulisan kreatif dan teknis",
+          "Terjemahan dan lokalisasi"
+        ],
+        "codeExampleTitle": "Contoh Penggunaan API:",
+        "availabilityTitle": "🎯 Ketersediaan",
+        "availabilityDesc": "SyinAI 1.5 sudah tersedia untuk semua pengguna beta AlcaHEX-Studio. Upgrade otomatis akan dilakukan untuk semua akun yang sudah terdaftar."
+      },
+      "2": {
+        "title": "Panduan Lengkap: Mengoptimalkan Performa AI untuk Coding",
+        "description": "Dalam era digital ini, AI telah menjadi partner tak terpisahkan bagi developer. Panduan ini akan membantu Anda memaksimalkan produktivitas coding menggunakan SyinAI.",
+        "setupTitle": "🛠️ Setup Optimal",
+        "setupDesc": "Untuk mendapatkan hasil terbaik, pastikan konfigurasi berikut:",
+        "bestPracticesTitle": "💻 Best Practices",
+        "bestPractices": [
+          "Prompt Engineering - Berikan konteks yang jelas dan spesifik",
+          "Code Review - Selalu review kode yang dihasilkan AI",
+          "Iterative Development - Gunakan AI untuk refactoring bertahap",
+          "Documentation - Minta AI untuk menambahkan komentar dan dokumentasi"
+        ],
+        "examplesTitle": "🎯 Contoh Penggunaan",
+        "example1Title": "1. Generate Function",
+        "example2Title": "2. Code Optimization",
+        "productivityTitle": "📊 Tips Produktivitas",
+        "productivityTips": [
+          "Gunakan AI untuk generate unit tests",
+          "Minta AI menjelaskan kode kompleks",
+          "Otomatisasi dokumentasi API",
+          "Debug dengan bantuan AI untuk error analysis"
+        ]
+      },
+      "3": {
+        "title": "Masa Depan Multimodal AI: Vision dan Language dalam Satu Model",
+        "description": "Kemampuan multimodal AI telah membuka era baru dalam pemrosesan informasi. SyinAI 1.5 Pro mengintegrasikan pemahaman visual dan tekstual dalam satu model yang powerful.",
+        "technologyTitle": "🔬 Teknologi Multimodal",
+        "technologyDesc": "Model multimodal menggabungkan beberapa modalitas input:",
+        "modalities": [
+          "Text Processing - Pemahaman bahasa natural",
+          "Image Recognition - Analisis visual dan object detection",
+          "Code Understanding - Interpretasi dan generation kode",
+          "Document Analysis - Ekstraksi informasi dari dokumen"
+        ],
+        "useCasesTitle": "🎯 Use Cases",
+        "useCase1Title": "1. Image-to-Code Generation",
+        "useCase1Desc": "Upload mockup atau wireframe, dapatkan kode HTML/CSS:",
+        "useCase2Title": "2. Document Analysis",
+        "useCase2Desc": "Analisis dokumen kompleks dengan ekstraksi data otomatis:",
+        "implementationTitle": "🚀 Implementasi",
+        "futureTitle": "🔮 Masa Depan",
+        "futureDesc": "Perkembangan multimodal AI akan membawa:",
+        "futureItems": [
+          "Real-time video analysis",
+          "3D model understanding",
+          "Audio-visual synchronization",
+          "Cross-modal reasoning"
+        ]
+      },
+      "4": {
+        "title": "Case Study: Implementasi SyinAI di Startup Teknologi",
+        "description": "Studi kasus nyata bagaimana startup teknologi TechFlow meningkatkan efisiensi development hingga 300% dengan mengintegrasikan SyinAI dalam workflow mereka.",
+        "profileTitle": "🏢 Profil Perusahaan",
+        "profile": [
+          "Nama: TechFlow Indonesia",
+          "Industri: E-commerce Platform",
+          "Team Size: 15 developers",
+          "Tech Stack: React, Node.js, PostgreSQL"
+        ],
+        "challengesTitle": "⚡ Tantangan Sebelum SyinAI",
+        "challenges": [
+          "Development cycle yang lambat (6-8 minggu per feature)",
+          "Code review yang memakan waktu lama",
+          "Dokumentasi yang tidak konsisten",
+          "Bug fixing yang repetitif"
+        ],
+        "implementationTitle": "🛠️ Implementasi SyinAI",
+        "codeGenTitle": "1. Code Generation",
+        "codeGenDesc": "// Before: Manual CRUD operations\n// Time: 2-3 hours per endpoint\n\n// After: AI-generated with SyinAI\n// Time: 15 minutes per endpoint",
+        "testingTitle": "2. Automated Testing",
+        "resultsTitle": "📊 Hasil Implementasi",
+        "results": [
+          "Development Speed: ⬆️ 300% faster feature development",
+          "Code Quality: ⬆️ 85% reduction in bugs",
+          "Documentation: ⬆️ 100% coverage otomatis",
+          "Team Productivity: ⬆️ 250% increase in output"
+        ],
+        "roiTitle": "💰 ROI Analysis",
+        "roi": [
+          "Cost Savings: $50,000/year in development costs",
+          "Time to Market: 60% faster product launches",
+          "Team Satisfaction: 90% developer happiness increase",
+          "Customer Impact: 40% fewer reported bugs"
+        ],
+        "takeawaysTitle": "🎯 Key Takeaways",
+        "takeaways": [
+          "Start with simple automation tasks",
+          "Train team on AI-assisted development",
+          "Maintain code review standards",
+          "Measure and iterate on AI integration"
+        ],
+        "testimonial": "\"SyinAI telah mengubah cara kami bekerja. Yang tadinya butuh berminggu-minggu, sekarang bisa selesai dalam hitungan hari. Tim lebih fokus pada problem-solving daripada coding repetitif.\" - Budi Santoso, CTO TechFlow"
+      }
+    }
+  },
+  "Layout": {
+    "workflow": "Workflow",
+    "toggleSidebar": "Toggle Sidebar",
+    "newChat": "Chat Baru",
+    "mcpConfiguration": "Konfigurasi MCP",
+    "agents": "Agents",
+    "newAgent": "Agent Baru",
+    "createAgent": "Buat agent",
+    "createYourOwnAgent": "Buat agent AI khusus Anda dengan fitur dan kepribadian unik",
+    "whatIsAgent": "Apa itu Agent?"
+  },
+  "DocsPage": {
+    "title": "Dokumentasi",
+    "subtitle": "Panduan lengkap untuk menggunakan AlcaHEX-Studio dan SyinAI",
+    "quickStart": "Quick Start",
+    "quickStartDesc": "Mulai menggunakan SyinAI dalam hitungan menit",
+    "apiReference": "API Reference",
+    "apiReferenceDesc": "Dokumentasi lengkap API SyinAI untuk developer",
+    "examples": "Examples",
+    "examplesDesc": "Contoh implementasi dan use case SyinAI",
+    "sdkTools": "SDK & Tools",
+    "sdkToolsDesc": "Library dan tools untuk integrasi SyinAI",
+    "models": "Models",
+    "modelsDesc": "Informasi detail tentang model SyinAI yang tersedia",
+    "faq": "FAQ",
+    "faqDesc": "Pertanyaan yang sering diajukan tentang SyinAI",
+    "mainGuides": "Panduan Utama",
+    "installation": "Instalasi dan Setup",
+    "installationDesc": "Cara menginstall dan mengkonfigurasi SyinAI di project Anda",
+    "authentication": "Authentication",
+    "authenticationDesc": "Panduan autentikasi dan manajemen API key",
+    "rateLimits": "Rate Limits",
+    "rateLimitsDesc": "Informasi tentang batasan penggunaan API",
+    "errorHandling": "Error Handling",
+    "errorHandlingDesc": "Cara menangani error dan troubleshooting",
+    "learnMore": "Pelajari →",
+    "content": {
+      "quickstart": {
+        "title": "Panduan Quick Start",
+        "gettingStarted": "Memulai dengan AlcaHEX-Studio",
+        "welcome": "Selamat datang di AlcaHEX-Studio! Panduan ini akan membantu Anda memulai dengan cepat.",
+        "installationTitle": "1. Instalasi",
+        "basicSetupTitle": "2. Setup Dasar",
+        "basicSetupDesc": "Inisialisasi proyek Anda dengan AlcaHEX-Studio:",
+        "firstRequestTitle": "3. Request Pertama",
+        "firstRequestDesc": "Buat request AI pertama Anda:"
+      },
+      "api": {
+        "title": "Referensi API",
+        "description": "Dokumentasi lengkap untuk endpoint API AI kami.",
+        "authenticationTitle": "Autentikasi",
+        "authenticationDesc": "Semua request API memerlukan autentikasi menggunakan API key Anda:",
+        "generateTextTitle": "Generate Text",
+        "responseFormatTitle": "Format Response"
+      },
+      "examples": {
+        "title": "Contoh Implementasi",
+        "description": "Contoh dunia nyata dan use case untuk AlcaHEX-Studio.",
+        "chatbotTitle": "Implementasi Chatbot",
+        "contentGenerationTitle": "Generasi Konten"
+      },
+      "sdk": {
+        "title": "SDK & Tools Pengembangan",
+        "description": "Library dan tools untuk integrasi SyinAI.",
+        "officialSDKsTitle": "SDK Resmi",
+        "developmentToolsTitle": "Tools Pengembangan",
+        "cliUsageTitle": "Penggunaan CLI"
+      },
+      "models": {
+        "title": "Model AI yang Tersedia",
+        "description": "Informasi tentang model AI yang tersedia dan kemampuannya.",
+        "syinaiTitle": "SyinAI 1.5",
+        "modelComparisonTitle": "Perbandingan Model",
+        "tableHeaders": {
+          "model": "Model",
+          "context": "Konteks",
+          "speed": "Kecepatan",
+          "quality": "Kualitas",
+          "useCase": "Use Case"
+        },
+        "modelInfo": {
+          "type": "Tipe:",
+          "contextLength": "Panjang Konteks:",
+          "bestFor": "Terbaik untuk:",
+          "languages": "Bahasa:",
+          "llm": "Large Language Model",
+          "tokens": "token",
+          "generalText": "Generasi teks umum, percakapan, coding",
+          "multiLanguage": "Indonesia, Inggris, dan 50+ bahasa lainnya"
+        },
+        "tableData": {
+          "fast": "Cepat",
+          "medium": "Sedang",
+          "high": "Tinggi",
+          "veryHigh": "Sangat Tinggi",
+          "generalPurpose": "Tujuan umum",
+          "codeGeneration": "Generasi kode"
+        }
+      },
+      "faq": {
+        "title": "Pertanyaan yang Sering Diajukan",
+        "items": {
+          "apiKey": {
+            "question": "Bagaimana cara mendapatkan API key?",
+            "answer": "Anda bisa mendapatkan API key dengan mendaftar program beta kami. Kunjungi homepage kami dan klik \"Mulai Beta\" untuk bergabung dengan waitlist."
+          },
+          "rateLimits": {
+            "question": "Apa saja batasan rate limit?",
+            "answer": "Selama beta, kami menawarkan rate limit yang murah hati. Tier gratis termasuk 1000 request per bulan, dengan paket berbayar menawarkan limit yang lebih tinggi."
+          },
+          "security": {
+            "question": "Apakah data saya aman?",
+            "answer": "Ya, kami sangat serius dengan keamanan. Semua data dienkripsi saat transit dan saat disimpan. Kami tidak menyimpan prompt atau response Anda kecuali dikonfigurasi secara eksplisit."
+          },
+          "languages": {
+            "question": "Bahasa pemrograman apa saja yang didukung?",
+            "answer": "Kami menyediakan SDK resmi untuk JavaScript/TypeScript, Python, Go, dan Java. Anda juga bisa menggunakan REST API kami dengan bahasa apapun."
+          },
+          "commercial": {
+            "question": "Bisakah saya menggunakan ini untuk proyek komersial?",
+            "answer": "Ya, API kami dirancang untuk penggunaan personal dan komersial. Cek halaman pricing kami untuk detail lisensi komersial."
+          }
+        }
+      },
+      "installation": {
+        "title": "Panduan Instalasi dan Setup",
+        "description": "Cara menginstall dan mengkonfigurasi SyinAI di proyek Anda.",
+        "prerequisitesTitle": "Prasyarat",
+        "prerequisites": [
+          "Node.js 16+ atau Python 3.8+",
+          "API key yang valid dari AlcaHEX-Studio",
+          "Koneksi internet untuk API calls"
+        ],
+        "nodejsTitle": "Instalasi Node.js",
+        "pythonTitle": "Instalasi Python",
+        "envSetupTitle": "Setup Environment",
+        "envSetupDesc": "Buat file `.env` di root proyek Anda:"
+      },
+      "authentication": {
+        "title": "Panduan Autentikasi",
+        "description": "Pelajari cara autentikasi dengan API AlcaHEX-Studio.",
+        "apiKeyTitle": "Autentikasi API Key",
+        "apiKeyDesc": "Semua request harus menyertakan API key Anda di header Authorization:",
+        "sdkAuthTitle": "Autentikasi SDK",
+        "bestPracticesTitle": "Best Practice Keamanan",
+        "bestPractices": [
+          "Jangan pernah expose API key Anda di kode client-side",
+          "Gunakan environment variables untuk API key",
+          "Rotasi API key Anda secara berkala",
+          "Monitor penggunaan API Anda untuk aktivitas yang tidak biasa"
+        ]
+      },
+      "ratelimits": {
+        "title": "Rate Limits dan Penggunaan",
+        "description": "Memahami rate limits API dan best practices.",
+        "currentLimitsTitle": "Limit Saat Ini",
+        "tableHeaders": {
+          "plan": "Paket",
+          "requestsPerMinute": "Request/menit",
+          "requestsPerMonth": "Request/bulan",
+          "tokensPerRequest": "Token/request"
+        },
+        "plans": {
+          "free": "Gratis",
+          "pro": "Pro",
+          "enterprise": "Enterprise",
+          "custom": "Custom"
+        },
+        "handlingTitle": "Menangani Rate Limits"
+      },
+      "errorhandling": {
+        "title": "Penanganan Error",
+        "description": "Cara menangani error dan troubleshooting masalah umum.",
+        "commonErrorsTitle": "Kode Error Umum",
+        "errors": {
+          "400": "Bad Request: Parameter tidak valid",
+          "401": "Unauthorized: API key tidak valid",
+          "429": "Rate Limited: Terlalu banyak request",
+          "500": "Server Error: Masalah server internal"
+        },
+        "exampleTitle": "Contoh Penanganan Error",
+        "troubleshootingTitle": "Tips Troubleshooting",
+        "troubleshooting": [
+          "Periksa API key Anda valid dan belum expired",
+          "Verifikasi parameter request Anda sesuai spesifikasi API",
+          "Monitor penggunaan rate limit Anda",
+          "Cek halaman status kami untuk masalah layanan"
+        ]
+      }
+    }
+  },
+  "StatusPage": {
+    "title": "System Status",
+    "subtitle": "Monitor real-time status semua layanan AlcaHEX-Studio",
+    "lastUpdated": "Last updated:",
+    "allSystemsOperational": "All Systems Operational",
+    "services": "Services",
+    "recentIncidents": "Recent Incidents",
+    "uptime": "Uptime",
+    "responseTime": "Response Time",
+    "operational": "Operational",
+    "degraded": "Degraded Performance",
+    "outage": "Major Outage",
+    "resolved": "Resolved",
+    "subscribe": {
+      "title": "Subscribe to Updates",
+      "description": "Dapatkan notifikasi real-time tentang status sistem dan maintenance.",
+      "placeholder": "Masukkan email Anda",
+      "button": "Subscribe"
+    }
+  },
+  "ApiPage": {
+    "title": "SyinAI API",
+    "subtitle": "Akses kekuatan AI generasi terbaru melalui API yang mudah digunakan",
+    "developmentStatus": {
+      "title": "Dalam Tahap Pengembangan",
+      "description": "SyinAI API saat ini masih dalam tahap pengembangan aktif. Kami sedang mempersiapkan infrastruktur yang robust dan fitur-fitur canggih untuk memberikan pengalaman terbaik."
+    },
+    "features": {
+      "title": "Fitur yang Akan Tersedia",
+      "syinaiO1": {
+        "title": "SyinAI o1",
+        "description": "Model reasoning canggih untuk pemecahan masalah kompleks"
+      },
+      "syinaiFlash": {
+        "title": "SyinAI 1.5 Flash",
+        "description": "Response cepat untuk aplikasi real-time"
+      },
+      "syinaiPro": {
+        "title": "SyinAI 1.5 Pro",
+        "description": "Multimodal AI untuk teks, gambar, dan data kompleks"
+      },
+      "codeGeneration": {
+        "title": "Code Generation",
+        "description": "AI khusus untuk coding dan pengembangan software"
+      },
+      "comingSoon": "Segera Hadir"
+    },
+    "pricing": {
+      "title": "Rencana Harga",
+      "freeTier": {
+        "title": "Free Tier",
+        "price": "$0",
+        "period": "/bulan",
+        "features": [
+          "1,000 requests/bulan",
+          "Akses basic models",
+          "Community support",
+          "Rate limit: 10 RPM"
+        ]
+      },
+      "pro": {
+        "title": "Pro",
+        "price": "$29",
+        "period": "/bulan",
+        "popular": "Popular",
+        "features": [
+          "100,000 requests/bulan",
+          "Akses semua models",
+          "Priority support",
+          "Rate limit: 100 RPM",
+          "Advanced analytics"
+        ]
+      },
+      "enterprise": {
+        "title": "Enterprise",
+        "price": "Custom",
+        "features": [
+          "Unlimited requests",
+          "Custom models",
+          "24/7 dedicated support",
+          "Custom rate limits",
+          "On-premise deployment"
+        ]
+      }
+    },
+    "waitlist": {
+      "title": "Bergabung dengan Waiting List",
+      "description": "Jadilah yang pertama mendapatkan akses ke SyinAI API ketika sudah tersedia. Kami akan mengirimkan undangan eksklusif dan credit gratis untuk early adopters.",
+      "placeholder": "Masukkan email Anda",
+      "button": "Join Waiting List",
+      "success": {
+        "title": "Terima kasih!",
+        "message": "Anda telah berhasil bergabung dengan waiting list. Kami akan menghubungi Anda segera setelah API tersedia."
+      }
+    },
+    "roadmap": {
+      "title": "Roadmap Pengembangan",
+      "q3_2025": "Q3 2025 - Research & Development fase awal",
+      "q4_2025": "Q4 2025 - Alpha testing dengan partner terpilih",
+      "q1_2026": "Q1 2026 - Beta release untuk waiting list",
+      "q2_2026": "Q2 2026 - Public API launch"
+    },
+    "navigation": {
+      "home": "Beranda",
+      "about": "Tentang",
+      "documentation": "Dokumentasi",
+      "blog": "Blog",
+      "api": "API",
+      "joinBeta": "Mulai Beta",
+      "joinBetaMobile": "Ikut Beta"
+    },
+    "footer": {
+      "tagline": "Solusi AI modern untuk generasi pengembangan baru.",
+      "products": "Produk",
+      "resources": "Sumber Daya",
+      "contact": "Hubungi Kami",
+      "copyright": "Hak cipta dilindungi."
+    }
+  }
+}

@@ -1,0 +1,227 @@
+/* Modern Typography & UI/UX Enhancements - Monochrome Theme */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@700;800&display=swap');
+
+:root {
+  --font-primary: 'Inter', sans-serif;
+  --font-display: 'Syne', sans-serif;
+
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #A0A0A0;
+  --color-text-accent: #FFFFFF;
+  --color-brand-glow: rgba(255, 255, 255, 0.25);
+  --color-border: rgba(255, 255, 255, 0.1);
+}
+
+.modern-page {
+  font-family: var(--font-primary);
+  color: var(--color-text-primary);
+}
+
+/* --- Heading Styles (Monochrome & High-Contrast) --- */
+.hero-heading {
+  font-family: var(--font-display);
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-sub-line {
+    font-size: 2rem; /* 32px */
+    font-weight: 700;
+    color: var(--color-text-secondary);
+    margin-bottom: -0.5rem;
+}
+
+.hero-main-line {
+    font-size: 7.5rem; /* 120px */
+    font-weight: 800;
+    color: var(--color-text-accent);
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+.features-title, .cta-heading {
+  font-family: var(--font-display);
+  font-size: 3.5rem; /* 56px */
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-text-accent);
+}
+
+.feature-name, .nav-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--color-text-accent);
+}
+
+/* --- Text Styles --- */
+.hero-desc {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  max-width: 550px;
+}
+
+.features-subtitle, .cta-text {
+  font-size: 1.125rem; /* 18px */
+  color: var(--color-text-secondary);
+}
+
+/* --- Button & Link Enhancements (Monochrome) --- */
+.primary-btn, .primary-cta, .nav-pill.primary-pill {
+  font-weight: 600;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  background-color: var(--color-text-accent);
+  color: #000;
+  border: 1px solid var(--color-text-accent);
+}
+
+.primary-btn:hover, .primary-cta:hover, .nav-pill.primary-pill:hover {
+  transform: scale(1.05) translateY(-2px);
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 25px var(--color-brand-glow);
+  color: #000;
+}
+
+.secondary-btn, .secondary-cta {
+    border-color: var(--color-border);
+}
+
+.nav-pill {
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-pill:hover:not(.logo-pill):not(.primary-pill) {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-text-accent);
+}
+
+/* --- Background Simplification --- */
+.gradient-orbs, .floating-icons, .bg-icons {
+    display: none; /* Hide distracting background elements */
+}
+
+/* --- General UI Polish (Monochrome) --- */
+.unified-header {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.badge-dot {
+    background-color: #00ff00; /* Keep green for status or change to white */
+    background-color: var(--color-text-accent); /* Override to white */
+}
+
+.text-gradient {
+   color: inherit; /* Remove gradient */
+}
+
+/* Minimalist CTA Section */
+.modern-cta {
+  padding: 8rem 0;
+  text-align: center;
+  border-top: 1px solid var(--color-border);
+}
+
+.cta-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-heading {
+  font-size: 4rem; /* 64px */
+  margin-bottom: 1.5rem;
+}
+
+.cta-text {
+  color: var(--color-text-secondary);
+  margin-bottom: 2.5rem;
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Minimalist Footer */
+.modern-footer {
+  padding: 3rem 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.footer-brand .brand-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-brand .brand-text .brand-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.footer-brand .brand-desc, .footer-brand .brand-sub {
+  display: none; /* Hide for minimalist look */
+}
+
+.footer-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-group {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-group .nav-title {
+  display: none; /* Hide for minimalist look */
+}
+
+.nav-group .nav-link {
+  color: var(--color-text-secondary);
+  transition: color 0.2s ease;
+  font-size: 1rem;
+}
+
+.nav-group .nav-link:hover {
+  color: var(--color-text-accent);
+}
+
+.footer-base {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}
+
+.legal-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.legal-link {
+  color: var(--color-text-secondary);
+  transition: color 0.2s ease;
+}
+
+.legal-link:hover {
+  color: var(--color-text-accent);
+}

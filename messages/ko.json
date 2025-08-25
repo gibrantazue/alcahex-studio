@@ -1,0 +1,910 @@
+{
+  "Common": {
+    "cancel": "취소",
+    "update": "업데이트",
+    "continue": "계속",
+    "success": "성공",
+    "delete": "삭제",
+    "save": "저장",
+    "back": "뒤로",
+    "next": "다음",
+    "create": "생성",
+    "showLess": "적게 보기",
+    "showMore": "더 보기",
+    "generate": "생성",
+    "edit": "수정",
+    "editAgent": "에이전트 편집",
+    "search": "검색...",
+    "approve": "승인",
+    "reject": "거절",
+    "saving": "저장 중...",
+    "optional": "선택사항",
+    "deleting": "삭제 중...",
+    "run": "실행",
+    "description": "설명",
+    "defaultValue": "기본값",
+    "empty": "비어있음",
+    "required": "필수",
+    "options": "옵션",
+    "status": "상태",
+    "result": "결과",
+    "startedAt": "시작 시간",
+    "duration": "소요 시간",
+    "addOption": "옵션 추가",
+    "tool": "도구",
+    "selectTool": "도구 선택...",
+    "noResults": "결과가 없습니다.",
+    "generateInputWithAI": "AI로 입력 생성",
+    "generatingInputWithAI": "AI로 입력 생성 중...",
+    "inputGeneratedSuccessfully": "입력이 성공적으로 생성되었습니다",
+    "failedToGenerateInput": "입력 생성에 실패했습니다",
+    "createWithExample": "예제로 생성",
+    "generateWithAI": "AI로 생성",
+    "resultsFound": "{count}개의 결과 찾음",
+    "youAreAnExpertIn": "당신은 {role}의 전문가입니다",
+    "joinBeta": "베타 참여"
+  },
+  "Auth": {
+    "SignIn": {
+      "title": "환영합니다",
+      "description": "계정에 로그인하여 계속합니다",
+      "oauthClientIdNotSet": "{provider} client ID가 설정되지 않았습니다",
+      "noAccount": "계정이 없습니까?",
+      "signUp": "회원가입",
+      "signIn": "로그인",
+      "orContinueWith": "다른 계정으로 계속하기"
+    },
+    "SignUp": {
+      "title": "회원가입",
+      "signIn": "로그인",
+      "description": "계정에 회원가입하여 계속합니다",
+      "step1": "우리와 함께 여정을 시작하기 위해 이메일 주소를 입력하세요",
+      "step2": "우리와 대화할 때 이 이름을 사용할 거예요",
+      "step3": "강력한 비밀번호를 만들어 계정을 보호하세요",
+      "signUp": "회원가입",
+      "invalidEmail": "이메일 주소가 유효하지 않습니다",
+      "emailAlreadyExists": "이메일이 이미 존재합니다",
+      "nameRequired": "이름이 필요합니다",
+      "passwordRequired": "비밀번호가 필요합니다",
+      "createAccount": "계정 생성"
+    },
+    "Intro": {
+      "description": "AlcaHEX-Studio에 오신 것을 환영합니다. 우리의 AI 기반 대화 도구를 경험하세요."
+    }
+  },
+  "Chat": {
+    "Error": "채팅 오류",
+    "thisMessageWasNotSavedPleaseTryTheChatAgain": "이 메시지는 저장되지 않았습니다. 다시 시도해주세요.",
+    "Greeting": {
+      "goodMorning": "{name}님 좋은 아침입니다",
+      "goodAfternoon": "{name}님 좋은 오후입니다",
+      "goodEvening": "{name}님 좋은 저녁입니다",
+      "niceToSeeYouAgain": "{name}님, 또 보니 반가워요.",
+      "whatAreYouWorkingOnToday": "{name}! 오늘 무엇을 하고 있어요?",
+      "letMeKnowWhenYoureReadyToBegin": "준비가 되면 알려주세요.",
+      "whatAreYourThoughtsToday": "오늘 좋은 아이디어가 있나요?",
+      "whereWouldYouLikeToStart": "어디서부터 시작할까요?",
+      "whatAreYouThinking": "{name}님, 무엇을 생각하고 있어요?"
+    },
+    "TemporaryChat": {
+      "toggleTemporaryChat": "임시 채팅 토글",
+      "temporaryChat": "임시 채팅",
+      "resetChat": "채팅 초기화",
+      "thisChatWontBeSaved": "이 채팅은 저장되지 않습니다.",
+      "feelFreeToAskAnythingTemporarily": "임시로 무엇이든 물어보세요",
+      "temporaryChatInstructions": "임시 채팅 지침",
+      "temporaryChatInstructionsPlaceholder": "지침을 입력하세요",
+      "temporaryChatInstructionsDescription": "임시 채팅에 대한 지침을 설정할 수 있습니다. 이것은 임시 채팅에 대한 시스템 프롬프트로 사용됩니다."
+    },
+    "placeholder": "아무거나 물어보거나 @mention 하세요",
+    "Tool": {
+      "webSearching": "웹에서 찾아보는 중...",
+      "searchedTheWeb": "참고한 웹 사이트",
+      "toolModeDescription": "도구 사용 방식을 선택하세요:\n• 자동: AI가 도구 사용 여부를 자동으로 결정\n• 수동: 도구 사용 전 권한 요청\n• 사용 안함: 모든 도구 비활성화",
+      "toolsSetupDescription": "chatbot이 사용할 수 있는 도구를 선택하세요.\n선택된 도구를 스스로 판단하여 사용하게 됩니다.\n\n@mention을 하여 직접 특정 도구 사용을 강제 할 수 도 있습니다.",
+      "selectToolMode": "도구 사용 모드",
+      "autoToolModeDescription": "도구 사용 여부를 자동으로 결정합니다",
+      "manualToolModeDescription": "도구 사용 여부를 물어봅니다",
+      "noneToolModeDescription": "도구를 사용하지 않습니다. @mention은 여전히 가능합니다.",
+      "toolsSetup": "도구 설정",
+      "preset": "프리셋",
+      "toolPresets": "도구 프리셋",
+      "saveAsPreset": "프리셋으로 저장",
+      "saveAsPresetDescription": "현재 도구 설정을 프리셋으로 저장합니다.",
+      "noPresetsAvailableYet": "프리셋이 없습니다",
+      "presetNameCannotBeEmpty": "프리셋 이름을 입력해주세요",
+      "presetNameAlreadyExists": "이미 존재하는 프리셋 이름입니다",
+      "presetSaved": "프리셋이 저장되었습니다",
+      "clickSaveAsPresetToGetStarted": "프리셋으로 저장하여 시작합니다.",
+      "searchOptions": "검색 옵션",
+      "searchOptionsDescription": "검색 결과의 최대 개수, 검색 날짜 등의 검색 옵션을 챗봇에 전달할 수 있습니다.",
+      "defaultToolKit": {
+        "visualization": "데이터 시각화",
+        "webSearch": "웹 검색"
+      }
+    },
+    "VoiceChat": {
+      "title": "음성 채팅 모드",
+      "compactDisplayMode": "간략한 모드",
+      "conversationDisplayMode": "대화 모드",
+      "pleaseCloseTheVoiceChatAndTryAgain": "음성 채팅을 닫고 다시 시도해주세요.",
+      "endConversation": "대화 종료",
+      "toggleVoiceChat": "음성 채팅 토글",
+      "startConversation": "대화 시작",
+      "closeMic": "마이크 닫기",
+      "openMic": "마이크 열기",
+      "readyWhenYouAreJustStartTalking": "준비됐어요. 언제든 이야기해 주세요",
+      "yourMicIsOff": "마이크를 꺼두셨어요.",
+      "preparing": "준비중이에요...",
+      "startVoiceChat": "대화를 시작해볼까요?"
+    },
+    "Thread": {
+      "chat": "채팅",
+
+      "renameChat": "채팅 이름 변경",
+      "deleteChat": "채팅 삭제",
+      "deleteUnarchivedChats": "아카이브되지 않은 채팅 모두 삭제",
+      "confirmDeleteUnarchivedChats": "아카이브되지 않은 모든 채팅을 삭제하시겠습니까?",
+      "thisActionCannotBeUndone": "이 작업은 되돌릴 수 없습니다.",
+      "unarchivedChatsDeleted": "아카이브되지 않은 채팅들이 삭제되었습니다",
+      "failedToDeleteUnarchivedChats": "아카이브되지 않은 채팅 삭제 실패",
+      "failedToDeleteThread": "채팅 삭제 실패",
+      "threadDeleted": "채팅이 삭제되었습니다",
+      "failedToUpdateThread": "채팅 업데이트 실패",
+      "titleRequired": "제목이 필요합니다",
+      "threadUpdated": "채팅이 업데이트되었습니다",
+      "areYouSureYouWantToDeleteThisChatThread": "이 채팅을 삭제하시겠습니까?"
+    },
+
+    "ChatPreferences": {
+      "title": "채팅 환경설정",
+      "whatShouldWeCallYou": "뭐라고 불러드릴까요?",
+      "botName": "어시스턴트 이름",
+      "whatBestDescribesYourWork": "어떤 직업을 갖고 계신가요?",
+      "whatPersonalPreferencesShouldBeTakenIntoAccountInResponses": "원하시는 응답 스타일을 말씀해주세요",
+      "responseStyleExample1": "예) 설명을 간결하게 유지하고 중요한 점만 강조하세요",
+      "responseStyleExample2": "예) 새로운 개념을 배울 때, 비유가 특히 도움이 됩니다",
+      "responseStyleExample3": "예) 자세한 답변을 제시하기 전에 질문을 통해 명확하게 하세요",
+      "responseStyleExample4": "예) 나는 주로 Python으로 코딩하며 (코딩 초보가 아님을) 기억하세요",
+      "professionExample1": "예) 소프트웨어 엔지니어",
+      "professionExample2": "예) 제품 매니저",
+      "professionExample3": "예) 마케팅 매니저",
+      "professionExample4": "예) 판매 매니저",
+      "professionExample5": "예) 비즈니스 분석가",
+      "preferencesSaved": "환경설정이 저장되었습니다",
+      "failedToSavePreferences": "환경설정 저장 실패",
+      "userInstructions": "사용자 지침",
+      "userInstructionsDescription": "자기소개를 하고 보다 내게 맞춰진 응답을 받으세요.",
+      "mcpInstructions": "MCP 지침사항",
+      "mcpInstructionsDescription": "MCP 서버 지침을 설정하세요."
+    }
+  },
+  "Layout": {
+    "workflow": "워크플로우",
+    "toggleSidebar": "사이드바 토글",
+    "newChat": "새 채팅",
+    "mcpConfiguration": "MCP 설정",
+    "agents": "에이전트",
+    "newAgent": "새 에이전트",
+    "createAgent": "에이전트 생성",
+    "createYourOwnAgent": "특별한 기능과 성격을 가진 당신만의 전문 AI 에이전트를 만들어보세요",
+    "whatIsAgent": "에이전트란 무엇인가요?",
+    "agentDescription": "에이전트는 특정 역할, 지시사항, 도구로 맞춤 설정할 수 있는 전문 AI 어시스턴트로, 다양한 작업을 도와줍니다.",
+    "specializedAIAssistant": "전문 AI 어시스턴트",
+    "specializedAIAssistantDescription": "각 에이전트는 특정 역할, 성격, 전문 분야로 맞춤 설정하여 고유한 요구사항에 맞는 집중적인 지원을 제공할 수 있습니다.",
+    "customInstructions": "맞춤 지시사항",
+    "customInstructionsDescription": "상세한 시스템 프롬프트와 행동 지침을 정의하여 에이전트가 응답하고 상호작용하는 방식을 조정할 수 있습니다.",
+    "toolIntegration": "도구 통합",
+    "toolIntegrationDescription": "에이전트를 MCP 서버, 워크플로우 및 기타 도구에 연결하여 대화를 넘어선 기능을 확장할 수 있습니다.",
+    "agentExamples": "에이전트 예시",
+    "businessAssistant": "비즈니스 어시스턴트",
+    "businessAssistantDescription": "비즈니스 분석, 보고서 생성, 전문적인 커뮤니케이션에 특화되어 있습니다.",
+    "creativeWriter": "창작 작가",
+    "creativeWriterDescription": "스토리텔링, 콘텐츠 제작, 창의적 브레인스토밍에 집중합니다.",
+    "technicalExpert": "기술 전문가",
+    "technicalExpertDescription": "개발 도구와 코딩 전문성을 갖춘 기술적 작업을 위한 에이전트입니다.",
+    "createFirstAgentToStart": "첫 번째 에이전트를 만들어 시작해보세요!",
+    "today": "오늘",
+    "yesterday": "어제",
+    "lastWeek": "지난 7일",
+    "older": "이전",
+    "recentChats": "최근 채팅",
+    "deleteAllChats": "모든 채팅 삭제",
+    "deleteUnarchivedChats": "아카이브되지 않은 채팅 삭제",
+    "noConversationsYet": "아직 대화가 없습니다",
+    "deletingAllChats": "모든 채팅을 삭제하는 중...",
+    "deletingUnarchivedChats": "아카이브되지 않은 채팅을 삭제하는 중...",
+    "allChatsDeleted": "모든 채팅이 삭제되었습니다",
+    "unarchivedChatsDeleted": "아카이브되지 않은 채팅들이 삭제되었습니다",
+    "failedToDeleteAllChats": "채팅 삭제 실패",
+    "failedToDeleteUnarchivedChats": "아카이브되지 않은 채팅 삭제 실패",
+    "chatPreferences": "채팅 환경설정",
+    "keyboardShortcuts": "키보드 단축키",
+    "theme": "테마",
+    "signOut": "로그아웃",
+    "language": "언어",
+    "showAllChats": "모든 채팅",
+    "showLessChats": "간략히 보기",
+    "reportAnIssue": "도움 받기",
+    "joinCommunity": "커뮤니티 가입"
+  },
+  "Archive": {
+    "title": "아카이브",
+    "addArchive": "아카이브 추가",
+    "archiveName": "아카이브 이름",
+    "archiveDescription": "아카이브 설명",
+    "archiveDescriptionPlaceholder": "아카이브는 채팅 내역을 저장하는 공간입니다.",
+    "noArchives": "아카이브가 없습니다",
+    "createFirstArchive": "첫 번째 아카이브를 만들어보세요",
+    "archiveCreated": "아카이브가 생성되었습니다",
+    "archiveUpdated": "아카이브가 업데이트되었습니다",
+    "archiveDeleted": "아카이브가 삭제되었습니다",
+    "failedToCreateArchive": "아카이브 생성 실패",
+    "failedToUpdateArchive": "아카이브 업데이트 실패",
+    "failedToDeleteArchive": "아카이브 삭제 실패",
+    "editArchive": "아카이브 수정",
+    "editArchiveDescription": "아카이브 정보를 수정합니다",
+    "deleteArchive": "아카이브 삭제",
+    "confirmDeleteArchive": "정말로 이 아카이브를 삭제하시겠습니까?",
+    "deleteArchiveDescription": "아카이브와 모든 아이템이 영구적으로 삭제됩니다. 이 작업은 되돌릴 수 없습니다.",
+    "addToArchive": "아카이브에 추가",
+    "removeFromArchive": "아카이브에서 제거",
+    "itemAddedToArchive": "아이템이 아카이브에 추가되었습니다",
+    "itemRemovedFromArchive": "아이템이 아카이브에서 제거되었습니다"
+  },
+  "Agent": {
+    "title": "에이전트",
+    "generatingAgent": "에이전트 생성 중...",
+    "agentNameAndIconLabel": "에이전트에게 이름과 아이콘을 붙여주세요.",
+    "agentDescriptionLabel": "이 에이전트의 용도에 대한 짧은 설명을 추가해주세요.",
+    "agentDescriptionPlaceholder": "이 내용은 에이전트에 대한 설명일 뿐, 중요하지 않아요.",
+    "agentSettingsDescription": "여기부터는 에이전트에게 영향을 줄 수 있는 설정입니다.",
+    "thisAgentIs": "이 에이전트는",
+    "expertIn": "에 대한 전문가 입니다.",
+    "agentRolePlaceholder": "주식 분석",
+    "agentInstructionsLabel": "이 에이전트의 역할, 성격, 지침, 지식등 편하게 작성해주세요.",
+    "agentInstructionsPlaceholder": "이 에이전트는 주식 분석을 도와줍니다. 웹검색 도구를 활용하여 주식 정보를 얻어옵니다...",
+    "agentToolsLabel": "이 에이전트가 사용할 수 있는 도구를 추가해주세요.",
+    "loadingTools": "도구를 불러오는 중입니다...",
+    "addTools": "도구를 추가해주세요.",
+    "generateAgentGreeting": "안녕하세요! 당신만의 에이전트를 만드는 걸 도와드릴게요. 무엇을 만들고 싶으신가요?",
+    "generateAgentDetailedGreeting": "안녕하세요! 당신만의 에이전트를 만드는 걸 도와드릴게요. 무엇을 만들고 싶으신가요? 간단하게 작성하셔도 좋고, 자세하게 작성하셔도 좋아요.",
+    "inputPromptHere": "여기에 프롬프트를 입력하세요...",
+    "agentNamePlaceholder": "better-agent"
+  },
+  "KeyboardShortcuts": {
+    "title": "키보드 단축키",
+    "newChat": "새 채팅",
+    "toggleTemporaryChat": "임시 채팅 토글",
+    "toggleSidebar": "사이드바 토글",
+    "toolMode": "도구 사용 모드",
+    "lastMessageCopy": "마지막 메시지 복사",
+    "openChatPreferences": "채팅 환경설정 열기",
+    "deleteThread": "채팅 삭제",
+    "openShortcutsPopup": "단축키 팝업 열기",
+    "toggleVoiceChat": "음성 채팅 토글"
+  },
+  "MCP": {
+    "marketplace": "마켓플레이스",
+    "addMcpServer": "서버 추가",
+    "configureYourMcpServerConnectionSettings": "MCP 서버 연결 설정을 구성하세요",
+    "mcpConfiguration": "MCP 설정",
+    "nameMustContainOnlyAlphanumericCharactersAndHyphens": "서버 이름은 영문자와 숫자, 하이픈(-)만 포함할 수 있습니다",
+    "nameIsRequired": "이름이 필요합니다",
+    "configurationSavedSuccessfully": "설정이 저장되었습니다",
+    "enterMcpServerName": "MCP 서버 이름을 입력하세요",
+    "saveConfiguration": "설정 저장",
+    "toolsTest": "도구 테스트",
+    "refresh": "새로고침",
+    "delete": "삭제",
+    "edit": "수정",
+    "configuration": "설정",
+    "availableTools": "사용 가능한 도구",
+    "noToolsAvailable": "사용 가능한 도구가 없습니다",
+    "overviewTitle": "첫 번째 서버 연결",
+    "overviewDescription": "강력한 AI 통합을 위해 MCP 서버를 추가하세요.",
+    "searchTools": "도구 검색",
+    "detail": "상세 보기",
+    "noSchemaPropertiesAvailable": "속성이 없습니다",
+    "createInputWithAI": "AI로 입력 생성",
+    "generateExampleInputJSON": "예제 입력 JSON 생성",
+    "enterPromptToGenerateExampleInputJSON": "선택한 도구에 대한 예제 입력 JSON을 생성하기 위한 프롬프트를 입력하세요.",
+    "callTool": "도구 호출",
+    "customInstructions": "사용자 정의 지침",
+    "serverCustomInstructionsPlaceholder": "이 서버의 도구를 사용할 수 있을 때마다 이 내용이 시스템 프롬프트에 추가됩니다.",
+    "nameAlreadyExists": "이미 존재하는 이름입니다",
+    "additionalInstructions": "도구 사용자 지정 지침",
+    "inputSchema": "입력 스키마",
+    "toolCustomizationInstructions": "도구 사용자 지정 지침은 도구를 사용할 때 시스템 프롬프트에 추가됩니다.\n예) 항상 이메일은 example@example.com 형식으로 입력해주세요.",
+    "mcpServerCustomization": "MCP 서버 지침 설정",
+    "mcpServerCustomizationDescription": "MCP 서버 사용자 지정 지침은 MCP서버를 사용할 때 시스템 프롬프트에 추가됩니다.",
+    "toolCustomizationInstructionsPlaceholder": "도구 사용자 지정 지침이 없습니다.",
+    "mcpServerCustomizationPlaceholder": "예) 이 MCP 서버의 툴중에 입력값이 email인 경우 항상 example@example.com 형식으로 입력해주세요."
+  },
+  "Error": {},
+  "Info": {
+    "mcpAddingDisabled": "관리자에 의해 MCP 서버 추가가 비활성화되었습니다.",
+    "vercelSyncDelay": "Vercel에서 실행 중\n\nMCP 변경사항은 동기화에 10-15초 정도 소요될 수 있습니다. 서버 추가, 편집 또는 삭제 후 변경사항이 즉시 보이지 않으면 잠시 기다려주세요."
+  },
+  "Workflow": {
+    "title": "워크플로우",
+    "createWorkflow": "워크플로우 생성",
+    "draft": "초안",
+    "publish": "게시",
+    "createWorkflowDescription": "챗봇을 위한 강력한 도구로 워크플로우를 생성하세요.",
+    "workflowDescription": "대화 중에 복잡한 작업을 자동화하기 위해 트리거할 수 있습니다.",
+    "nameAndIcon": "이름과 아이콘",
+    "workflowNamePlaceholder": "챗봇이 이를 도구 이름으로 인식합니다",
+    "description": "설명",
+    "descriptionPlaceholder": "챗봇이 이를 도구 설명으로 봅니다",
+    "inputNodeCannotBeDeleted": "입력 노드는 삭제할 수 없습니다",
+    "autoSaveDescription": "10초마다 자동 저장됩니다",
+    "draftDescription": "현재 초안 상태입니다.\n\n게시를 클릭하여 챗봇에서 사용 가능하게 하세요\n(하지만 더 이상 편집할 수 없습니다).",
+    "publishedDescription": "현재 게시됨 상태이며 챗봇에서 사용 가능합니다.\n\n초안을 클릭하여 편집 가능하게 하세요\n(하지만 챗봇에서 사용할 수 없습니다).",
+    "private": "비공개",
+    "readonly": "읽기 전용",
+    "public": "공개",
+    "privateDescription": "본인만 이 워크플로우를 보고, 편집하고, 도구로 사용할 수 있습니다.",
+    "readonlyDescription": "다른 사람들이 보고 도구로 사용할 수 있지만, 편집은 본인만 가능합니다.",
+    "publicDescription": "누구나 이 워크플로우를 보고, 편집하고, 도구로 사용할 수 있습니다.",
+    "visibilityDescription": "이 워크플로우에 액세스하고 수정할 수 있는 사람을 제어합니다",
+    "nodeDescriptionPlaceholder": "노드 설명...",
+    "nextNode": "다음 노드",
+    "nextNodeDescription": "이 워크플로우에 다음 노드를 추가합니다.",
+    "addNextNode": "다음 노드 추가",
+    "inputFields": "입력 필드",
+    "addInputField": "입력 필드 추가",
+    "inputFieldsDescription": "이 워크플로우의 매개변수 스키마를 정의합니다.\n\n챗봇이 이를 도구로 사용할 때,\n이 스키마에 따라 값을 제공합니다.",
+    "fieldEditor": "필드 편집기",
+    "variableName": "변수명",
+    "variableNamePlaceholder": "변수명을 입력하세요...",
+    "fieldDescriptionPlaceholder": "필드 설명을 입력하세요...",
+    "defaultValuePlaceholder": "기본 {type} 값을 입력하세요...",
+    "selectOptionPlaceholder": "옵션 선택...",
+    "unlink": "노드 연결 해제",
+    "elseIfDescription": "조건이 충족되지 않을 때 실행할 로직을 정의합니다.",
+    "elseDescription": "조건이 충족되지 않을 때 실행할 로직을 정의합니다.",
+    "addCondition": "조건 추가",
+    "noVariablesFound": "변수를 찾을 수 없습니다",
+    "outputVariables": "출력 변수",
+    "outputVariablesDescription": "워크플로우에서 출력되는 변수들입니다.",
+    "addOutputVariable": "출력 변수 추가",
+    "outputSchema": "출력 스키마",
+    "addMessage": "메시지 추가",
+    "messagesDescription": "LLM 처리를 통해 데이터를 생성합니다.\n\n'/'를 사용하여 이전 노드의 데이터를 입력으로 언급하고 참조하세요.\n\n구조화된 출력을 활성화하면 데이터 변환, 포맷팅, 검증에 완벽합니다.",
+    "descriptionAndSchema": "설명 및 스키마",
+    "noDescriptionAndSchema": "설명 및 스키마가 없습니다",
+    "toolDescription": "LLM이 도구 매개변수를 생성하는 데 필요한 정보를 제공합니다.\n\n'/'를 사용하여 이전 노드의 데이터를 언급하세요.",
+    "generateInputWithAIDescription": "워크플로우에 대한 입력을 생성하는 프롬프트를 작성하세요",
+    "example": {
+      "babyResearch": "베이비 리서치",
+      "getWeather": "날씨 조회"
+    },
+    "selectVariable": "변수 선택",
+    "structuredOutput": "구조화된 출력",
+    "structuredOutputDescription": "정의된 스키마를 가진 JSON 객체로 응답 생성",
+    "outputSchemaEditor": "출력 스키마 에디터",
+    "addField": "필드 추가",
+    "saveSchema": "스키마 저장",
+    "generateSchemaWithAI": "AI로 스키마 생성",
+    "describeOutputDataRequest": "이 노드가 출력해야 하는 것을 나타내는 예제 JSON 데이터를 제공하세요\n\n예제: {eg}",
+    "generatingJsonSchemaWithAI": "AI로 JSON 스키마 생성 중...",
+    "jsonSchemaGeneratedSuccessfully": "JSON 스키마가 성공적으로 생성되었습니다!",
+    "failedToGenerateSchema": "스키마 생성에 실패했습니다",
+    "jsonSchemaEditorDescription": "AI 지원으로 직접 JSON 스키마 편집. 복잡한 중첩 구조와 배열을 지원합니다.",
+    "template": "템플릿",
+    "templateDescription": "템플릿 문서를 생성합니다.\n\n'/'를 사용하여 다른 노드의 출력 값을 참조하고 사용하세요.",
+    "kindsDescription": {
+      "input": "챗봇이 이 워크플로우를 도구로 사용할 때 제공할 입력 매개변수를 정의합니다.\n\n도구 실행을 위한 데이터 구조와 검증 규칙을 지정합니다.",
+      "output": "워크플로우 실행의 최종 결과를 수집하고 반환합니다.\n\n여러 노드의 데이터를 최종 도구 응답으로 결합합니다.",
+      "llm": "AI 모델을 사용하여 텍스트나 구조화된 데이터를 생성합니다.\n\n'/' 멘션으로 이전 노드 출력을 참조하여 컨텍스트 인식 응답을 생성합니다.\n\n구조화된 출력을 사용하여 데이터 변환, 포맷팅, 검증 - 단순한 텍스트 생성이 아닙니다.",
+      "tool": "MCP 도구나 외부 서비스를 실행합니다.\n\n메시지에 지시사항을 작성하면 LLM이 컨텍스트에서 필요한 도구 매개변수를 생성합니다.",
+      "note": "워크플로우 로직을 정리하기 위한 문서와 주석을 추가합니다.\n\n팀원들이 복잡한 워크플로우 프로세스를 이해하는 데 도움을 줍니다.",
+      "code": "이전 노드 데이터에 접근할 수 있는 커스텀 코드 스크립트를 실행합니다.\n\n워크플로우 내에서 JavaScript, Python 또는 기타 언어를 실행합니다 (곧 출시).",
+      "http": "HTTP 요청을 통해 외부 API 및 웹 서비스에서 데이터를 가져옵니다.\n\nREST API, 웹훅 및 타사 서비스와 통합합니다.",
+      "template": "이전 노드의 데이터와 텍스트를 결합하여 동적 문서를 생성합니다.\n\n변수 치환을 사용하여 이메일, 보고서 또는 형식화된 콘텐츠를 생성합니다.",
+      "condition": "데이터 평가를 기반으로 워크플로우를 분기하는 조건부 로직을 추가합니다.\n\n다양한 시나리오와 데이터 조건을 처리하기 위한 if-else 로직을 생성합니다."
+    },
+    "greeting": {
+      "buildAutomationTitle": "노드 연결로 자동화 구축",
+      "buildAutomationDescription": "다양한 노드들을 연결하여 복잡한 작업을 자동화하세요. 각 노드는 특정 기능을 담당하며, 데이터가 순차적으로 흘러가며 처리됩니다.",
+      "chatbotToolTitle": "챗봇 도구로 활용",
+      "chatbotToolDescription": "워크플로우의 주요 목적은 챗봇에서 도구로 사용하는 것입니다. 반복적인 작업을 워크플로우로 만들어 대화 중 간단히 실행할 수 있습니다.",
+      "parameterBasedTitle": "️ 매개변수 기반 시작",
+      "parameterBasedDescription": "Input 노드는 트리거가 아닌 매개변수 구조를 정의합니다. 챗봇이 이 워크플로우를 도구로 호출할 때 필요한 데이터 형식을 지정합니다.",
+      "exampleTitle": "사용 예시",
+      "exampleDescription": "\"이메일 작성 → 번역 → 전송\" 워크플로우를 만들어두면, 챗봇 대화에서 \"@이메일_워크플로우\"로 간편하게 실행할 수 있습니다.",
+      "availableNodesTitle": "사용 가능한 노드들",
+      "upcomingNodesTitle": "곧 출시될 노드",
+      "ctaMessage": "지금 바로 워크플로우를 만들어 챗봇의 능력을 확장해보세요!",
+      "soonMessage": "곧 제공될 예정입니다."
+    },
+    "arrangeNodes": "자동 레이아웃",
+    "nodesArranged": "레이아웃이 성공적으로 적용되었습니다"
+  },
+  "LandingPage": {
+    "navHome": "홈",
+    "navAbout": "소개",
+    "navIntro": "SyinAI 1.5",
+    "navCapabilities": "기능",
+    "navModels": "모델",
+    "navGetApi": "API 받기",
+    "navJoinBeta": "베타 참여",
+    "aboutHeadline": "SyinAI 생태계는 우리의 <highlight>가장 유능한 AI</highlight>를 대표합니다.",
+    "aboutDescription": "우리의 SyinAI 모델은 텍스트, 이미지, 오디오, 비디오, 코드를 원활하게 추론하는 <highlight>멀티모달리티</highlight>를 위해 처음부터 구축되었습니다.",
+    "latestUpdates": "최신 업데이트",
+    "updateDate": "2025년 8월 20일",
+    "introTitle": "SyinAI 1.5 소개",
+    "introSubtitle": "차세대 모델입니다.",
+    "introText": "기본적으로 멀티모달로 구축되었으며 획기적인 컨텍스트 창을 갖춘 SyinAI 1.5는 다양한 애플리케이션을 위해 설계되었습니다.",
+    "tryButton": "SyinAI 1.5 사용해보기",
+    "capabilitiesTitle": "선도적인 AI 기능",
+    "capabilitiesSubtitle": "다양한 최신 컴퓨팅 및 데이터 분석 요구에 맞게 설계된 세 가지 고급 AI 모델",
+    "reasoningTitle": "추론 및 문제 해결",
+    "reasoningDescription": "복잡한 문제, 논리적 분석 및 정확한 의사 결정을 해결하기 위한 깊은 추론 능력을 갖춘 고급 AI 모델입니다.",
+    "multimodalTitle": "멀티모달 인텔리전스",
+    "multimodalDescription": "통합된 컨텍스트로 텍스트, 이미지, 오디오, 비디오, 코드 등 다양한 데이터 유형을 동시에 이해하고 분석하는 최고의 AI 기능입니다.",
+    "codingTitle": "코드 생성 및 디버깅",
+    "codingDescription": "높은 정확도로 복잡한 알고리즘과 코드베이스를 개발, 설명 및 디버깅합니다.",
+    "modelsTitle": "SyinAI는 세 가지 다른 모델로 제공됩니다",
+    "ultraDescription": "깊은 분석과 복잡한 문제 해결 능력을 갖춘 최고의 추론 모델입니다.",
+    "proDescription": "텍스트, 이미지, 오디오, 비디오, 코드를 통합적으로 이해하는 고급 멀티모달 모델입니다.",
+    "nanoDescription": "최고의 코딩, 디버깅 및 소프트웨어 개발 능력을 갖춘 전문 프로그래밍 모델입니다.",
+    "mmluPerformance": "MMLU 성능",
+    "mmluDescription": "Syin o1은 MMLU 벤치마크에서 최고 점수를 달성했습니다",
+    "responseSpeed": "응답 속도",
+    "responseSpeedDescription": "복잡한 쿼리에 대한 평균 응답 시간",
+    "codeAccuracy": "코드 정확도",
+    "codeAccuracyDescription": "코드 생성 및 디버깅의 정확도 비율",
+    "benchmarkComparison": "다른 모델과의 성능 비교",
+    "startTitle": "SyinAI 시작하기",
+    "startSubtitle": "가장 유능한 모델로 구축하세요.",
+    "getApiKey": "API 키 받기",
+    "readDocs": "문서 읽기",
+    "sponsorsTitle": "협력사",
+    "footerSlogan": "차세대 개발을 위한 최신 AI 솔루션.",
+    "footerProducts": "제품",
+    "footerResources": "리소스",
+    "footerContact": "문의하기",
+    "footerRights": "모든 권리 보유.",
+    "footerPrivacy": "개인정보 처리방침",
+    "footerTerms": "서비스 약관"
+  },
+  "ApiPage": {
+    "title": "SyinAI API",
+    "subtitle": "사용하기 쉬운 API를 통해 차세대 AI의 힘에 접근하세요",
+    "developmentStatus": {
+      "title": "개발 중",
+      "description": "SyinAI API는 현재 활발히 개발 중입니다. 최고의 경험을 제공하기 위해 견고한 인프라와 고급 기능을 준비하고 있습니다."
+    },
+    "features": {
+      "title": "곧 출시될 기능",
+      "syinaiO1": {
+        "title": "SyinAI o1",
+        "description": "복잡한 문제 해결을 위한 고급 추론 모델"
+      },
+      "syinaiFlash": {
+        "title": "SyinAI 1.5 Flash",
+        "description": "실시간 애플리케이션을 위한 빠른 응답"
+      },
+      "syinaiPro": {
+        "title": "SyinAI 1.5 Pro",
+        "description": "텍스트, 이미지, 복잡한 데이터를 위한 멀티모달 AI"
+      },
+      "codeGeneration": {
+        "title": "코드 생성",
+        "description": "프로그래밍 및 소프트웨어 개발에 특화된 AI"
+      },
+      "comingSoon": "곧 출시"
+    },
+    "pricing": {
+      "title": "요금제",
+      "freeTier": {
+        "title": "무료 플랜",
+        "price": "₩0/월"
+      },
+      "proTier": {
+        "title": "프로",
+        "price": "₩35,000/월"
+      },
+      "enterpriseTier": {
+        "title": "엔터프라이즈",
+        "price": "맞춤형"
+      },
+      "popular": "인기"
+    },
+    "waitlist": {
+      "title": "대기자 명단에 참여하기",
+      "description": "SyinAI API가 출시되면 가장 먼저 액세스할 수 있습니다. 얼리 어답터에게는 독점 초대장과 무료 크레딧을 보내드립니다.",
+      "emailPlaceholder": "이메일을 입력하세요",
+      "joinButton": "대기자 명단 참여",
+      "success": {
+        "title": "감사합니다!",
+        "message": "대기자 명단에 성공적으로 참여하셨습니다. API가 출시되는 즉시 연락드리겠습니다."
+      }
+    },
+    "roadmap": {
+      "title": "개발 로드맵",
+      "q3_2025": "2025년 Q3 - 초기 연구개발 단계",
+      "q4_2025": "2025년 Q4 - 선정된 파트너와의 알파 테스트",
+      "q1_2026": "2026년 Q1 - 대기자 명단을 위한 베타 출시",
+      "q2_2026": "2026년 Q2 - 공개 API 출시"
+    },
+    "navigation": {
+      "home": "홈",
+      "about": "소개",
+      "documentation": "문서",
+      "blog": "블로그",
+      "api": "API",
+      "joinBeta": "베타 참여",
+      "joinBetaMobile": "베타 참여"
+    },
+    "footer": {
+      "tagline": "새로운 세대의 개발을 위한 현대적인 AI 솔루션.",
+      "products": "제품",
+      "resources": "리소스",
+      "contact": "문의하기",
+      "copyright": "모든 권리 보유."
+    }
+  },
+  "BlogPage": {
+    "title": "AlcaHEX 블로그",
+    "subtitle": "AI 개발팀의 최신 인사이트, 튜토리얼 및 업데이트",
+    "readMore": "더 읽기",
+    "newsletter": {
+      "title": "최신 소식 받기",
+      "description": "AI 개발 및 제품 출시에 대한 최신 업데이트를 받으려면 뉴스레터를 구독하세요.",
+      "placeholder": "이메일 주소를 입력하세요",
+      "subscribe": "구독하기"
+    },
+    "categories": {
+      "all": "전체",
+      "productUpdate": "제품 업데이트",
+      "tutorial": "튜토리얼", 
+      "research": "연구",
+      "caseStudy": "사례 연구"
+    },
+    "posts": {
+      "1": {
+        "title": "SyinAI 1.5 소개: 차세대 AI 혁명",
+        "excerpt": "AI와의 상호작용을 변화시키는 SyinAI 1.5의 최신 기능과 성능 향상에 대해 알아보세요.",
+        "date": "2025년 8월 24일",
+        "author": "AlcaHEX 팀",
+        "readTime": "5분 읽기"
+      },
+      "2": {
+        "title": "완전 가이드: 코딩을 위한 AI 성능 최적화",
+        "excerpt": "다양한 프로그래밍 언어로 SyinAI Coder를 사용하여 코딩 생산성을 극대화하는 팁과 요령.",
+        "date": "2025년 8월 20일", 
+        "author": "개발자 팀",
+        "readTime": "8분 읽기"
+      },
+      "3": {
+        "title": "멀티모달 AI의 미래: 하나의 모델에서 비전과 언어",
+        "excerpt": "텍스트, 이미지 및 복잡한 데이터 처리에서 SyinAI 1.5 Pro의 멀티모달 기능 탐구.",
+        "date": "2025년 8월 15일",
+        "author": "연구팀", 
+        "readTime": "6분 읽기"
+      },
+      "4": {
+        "title": "사례 연구: 기술 스타트업에서의 SyinAI 구현",
+        "excerpt": "기술 스타트업이 워크플로우에 SyinAI를 통합하여 효율성을 300% 향상시킨 방법.",
+        "date": "2025년 8월 10일",
+        "author": "비즈니스 팀",
+        "readTime": "7분 읽기"
+      }
+    },
+    "navigation": {
+      "home": "홈",
+      "about": "소개", 
+      "documentation": "문서",
+      "blog": "블로그",
+      "api": "API",
+      "joinBeta": "베타 참여"
+    },
+    "footer": {
+      "description": "새로운 세대 개발을 위한 현대적인 AI 솔루션.",
+      "products": "제품",
+      "resources": "리소스", 
+      "contact": "문의하기",
+      "copyright": "모든 권리 보유."
+    },
+    "articles": {
+      "1": {
+        "title": "SyinAI 1.5 소개: 차세대 AI 혁명",
+        "description": "인공지능과의 상호작용에 혁명을 가져오는 최신 AI 모델 SyinAI 1.5를 자랑스럽게 소개합니다. 성능, 정확도, 맥락 이해 능력에서 상당한 개선을 이루었습니다.",
+        "featuresTitle": "🚀 최신 기능",
+        "features": [
+          "<strong>40% 성능 향상</strong> - 더 빠르고 정확한 응답",
+          "<strong>8K 토큰 컨텍스트 창</strong> - 더 긴 문서 처리 가능",
+          "<strong>멀티모달 기능</strong> - 텍스트, 이미지, 코드 동시 처리",
+          "<strong>한국어 최적화</strong> - 한국어 이해 향상"
+        ],
+        "improvementsTitle": "💡 주요 개선사항",
+        "improvementsDesc": "SyinAI 1.5는 다음을 위해 특별히 최적화된 아키텍처를 제공합니다:",
+        "improvements": [
+          "코드 프로그래밍 및 디버깅",
+          "데이터 분석 및 시각화",
+          "창작 및 기술 문서 작성",
+          "번역 및 현지화"
+        ],
+        "codeExampleTitle": "API 사용 예시:",
+        "availabilityTitle": "🎯 가용성",
+        "availabilityDesc": "SyinAI 1.5는 모든 AlcaHEX-Studio 베타 사용자에게 이미 제공되고 있습니다. 등록된 모든 계정에 자동 업데이트가 수행됩니다."
+      },
+      "2": {
+        "title": "완전 가이드: 프로그래밍을 위한 AI 성능 최적화",
+        "description": "이 디지털 시대에 AI는 개발자들에게 없어서는 안 될 동반자가 되었습니다. 이 가이드는 SyinAI를 사용하여 프로그래밍 생산성을 극대화하는 방법을 도와줍니다.",
+        "setupTitle": "🛠️ 최적 설정",
+        "setupDesc": "최상의 결과를 얻기 위해 다음 설정을 확인하세요:",
+        "bestPracticesTitle": "💻 모범 사례",
+        "bestPractices": [
+          "<strong>프롬프트 엔지니어링</strong> - 명확하고 구체적인 컨텍스트 제공",
+          "<strong>코드 리뷰</strong> - AI 생성 코드는 항상 검토",
+          "<strong>반복적 개발</strong> - 점진적 리팩토링에 AI 사용",
+          "<strong>문서화</strong> - AI에게 주석과 문서 추가 요청"
+        ],
+        "examplesTitle": "🎯 사용 예시",
+        "example1Title": "1. 함수 생성",
+        "example2Title": "2. 코드 최적화",
+        "productivityTitle": "📊 생산성 팁",
+        "productivityTips": [
+          "단위 테스트 생성에 AI 사용",
+          "복잡한 코드 설명을 AI에게 요청",
+          "API 문서화 자동화",
+          "오류 분석을 위한 AI 지원 디버깅"
+        ]
+      },
+      "3": {
+        "title": "멀티모달 AI의 미래: 하나의 모델에서 비전과 언어",
+        "description": "멀티모달 AI 기능은 정보 처리의 새로운 시대를 열었습니다. SyinAI 1.5 Pro는 시각적 및 텍스트 이해를 하나의 강력한 모델에 통합합니다.",
+        "technologyTitle": "🔬 멀티모달 기술",
+        "technologyDesc": "멀티모달 모델은 여러 입력 모달리티를 결합합니다:",
+        "modalities": [
+          "<strong>텍스트 처리</strong> - 자연어 이해",
+          "<strong>이미지 인식</strong> - 시각적 분석 및 객체 감지",
+          "<strong>코드 이해</strong> - 코드 해석 및 생성",
+          "<strong>문서 분석</strong> - 문서에서 정보 추출"
+        ],
+        "useCasesTitle": "🎯 사용 사례",
+        "useCase1Title": "1. 이미지에서 코드 생성",
+        "useCase1Desc": "목업이나 와이어프레임을 업로드하여 HTML/CSS 코드 획득:",
+        "useCase2Title": "2. 문서 분석",
+        "useCase2Desc": "자동 데이터 추출로 복잡한 문서 분석:",
+        "implementationTitle": "🚀 구현",
+        "futureTitle": "🔮 미래",
+        "futureDesc": "멀티모달 AI 개발이 가져올 기능들:",
+        "futureItems": [
+          "실시간 비디오 분석",
+          "3D 모델 이해",
+          "오디오-비주얼 동기화",
+          "크로스 모달 추론"
+        ]
+      },
+      "4": {
+        "title": "사례 연구: 기술 스타트업에서의 SyinAI 구현",
+        "description": "기술 스타트업 TechFlow가 워크플로우에 SyinAI를 통합하여 개발 효율성을 300% 향상시킨 실제 사례 연구입니다.",
+        "profileTitle": "🏢 회사 프로필",
+        "profile": [
+          "이름: TechFlow Indonesia",
+          "산업: 전자상거래 플랫폼",
+          "팀 규모: 15명의 개발자",
+          "기술 스택: React, Node.js, PostgreSQL"
+        ],
+        "challengesTitle": "⚡ SyinAI 도입 전 과제",
+        "challenges": [
+          "느린 개발 사이클 (기능당 6-8주)",
+          "시간이 많이 걸리는 코드 리뷰",
+          "일관성 없는 문서화",
+          "반복적인 버그 수정"
+        ],
+        "implementationTitle": "🛠️ SyinAI 구현",
+        "codeGenTitle": "1. 코드 생성",
+        "codeGenDesc": "// 이전: 수동 CRUD 작업\n// 시간: 엔드포인트당 2-3시간\n\n// 이후: SyinAI로 AI 생성\n// 시간: 엔드포인트당 15분",
+        "testingTitle": "2. 자동화된 테스팅",
+        "resultsTitle": "📊 구현 결과",
+        "results": [
+          "<strong>개발 속도:</strong> ⬆️ 300% 빠른 기능 개발",
+          "<strong>코드 품질:</strong> ⬆️ 85% 버그 감소",
+          "<strong>문서화:</strong> ⬆️ 100% 자동 커버리지",
+          "<strong>팀 생산성:</strong> ⬆️ 250% 산출량 증가"
+        ],
+        "roiTitle": "💰 ROI 분석",
+        "roi": [
+          "<strong>비용 절감:</strong> 연간 $50,000 개발 비용 절약",
+          "<strong>출시 시간:</strong> 60% 빠른 제품 출시",
+          "<strong>팀 만족도:</strong> 90% 개발자 행복도 증가",
+          "<strong>고객 영향:</strong> 40% 버그 신고 감소"
+        ],
+        "takeawaysTitle": "🎯 핵심 요점",
+        "takeaways": [
+          "간단한 자동화 작업부터 시작",
+          "AI 지원 개발로 팀 교육",
+          "코드 리뷰 표준 유지",
+          "AI 통합 측정 및 반복"
+        ],
+        "testimonial": "\"SyinAI는 우리의 작업 방식을 변화시켰습니다. 몇 주가 걸리던 일이 이제는 며칠 만에 완료됩니다. 팀은 반복적인 코딩보다는 문제 해결에 더 집중할 수 있게 되었습니다.\" - Budi Santoso, TechFlow CTO"
+      }
+    }
+  },
+  "DocsPage": {
+    "title": "문서",
+    "subtitle": "AlcaHEX-Studio와 SyinAI 사용을 위한 완전한 가이드",
+    "quickStart": "빠른 시작",
+    "quickStartDesc": "몇 분 안에 SyinAI 사용 시작하기",
+    "apiReference": "API 참조",
+    "apiReferenceDesc": "개발자를 위한 완전한 SyinAI API 문서",
+    "examples": "예제",
+    "examplesDesc": "SyinAI 구현 예제 및 사용 사례",
+    "sdkTools": "SDK & 도구",
+    "sdkToolsDesc": "SyinAI 통합을 위한 라이브러리 및 도구",
+    "models": "모델",
+    "modelsDesc": "사용 가능한 SyinAI 모델에 대한 자세한 정보",
+    "faq": "자주 묻는 질문",
+    "faqDesc": "SyinAI에 대해 자주 묻는 질문",
+    "mainGuides": "주요 가이드",
+    "installation": "설치 및 설정",
+    "installationDesc": "프로젝트에서 SyinAI를 설치하고 구성하는 방법",
+    "authentication": "인증",
+    "authenticationDesc": "인증 가이드 및 API 키 관리",
+    "rateLimits": "속도 제한",
+    "rateLimitsDesc": "API 사용 제한에 대한 정보",
+    "errorHandling": "오류 처리",
+    "errorHandlingDesc": "오류 처리 및 문제 해결 방법",
+    "learnMore": "자세히 보기 →",
+    "content": {
+      "quickstart": {
+        "title": "빠른 시작 가이드",
+        "gettingStarted": "AlcaHEX-Studio 시작하기",
+        "welcome": "AlcaHEX-Studio에 오신 것을 환영합니다! 이 가이드로 빠르게 시작할 수 있습니다.",
+        "installationTitle": "1. 설치",
+        "basicSetupTitle": "2. 기본 설정",
+        "basicSetupDesc": "AlcaHEX-Studio로 프로젝트 초기화:",
+        "firstRequestTitle": "3. 첫 번째 요청",
+        "firstRequestDesc": "첫 번째 AI 요청 만들기:"
+      },
+      "api": {
+        "title": "API 참조",
+        "description": "AI API 엔드포인트에 대한 완전한 문서.",
+        "authenticationTitle": "인증",
+        "authenticationDesc": "모든 API 요청에는 API 키를 사용한 인증이 필요합니다:",
+        "generateTextTitle": "텍스트 생성",
+        "responseFormatTitle": "응답 형식"
+      },
+      "examples": {
+        "title": "구현 예제",
+        "description": "AlcaHEX-Studio의 실제 예제 및 사용 사례.",
+        "chatbotTitle": "챗봇 구현",
+        "contentGenerationTitle": "콘텐츠 생성"
+      },
+      "sdk": {
+        "title": "SDK & 개발 도구",
+        "description": "SyinAI 통합을 위한 라이브러리 및 도구.",
+        "officialSDKsTitle": "공식 SDK",
+        "developmentToolsTitle": "개발 도구",
+        "cliUsageTitle": "CLI 사용법"
+      },
+      "models": {
+        "title": "사용 가능한 AI 모델",
+        "description": "사용 가능한 AI 모델과 그 기능에 대한 정보.",
+        "syinaiTitle": "SyinAI 1.5",
+        "modelComparisonTitle": "모델 비교",
+        "tableHeaders": {
+          "model": "모델",
+          "context": "컨텍스트",
+          "speed": "속도",
+          "quality": "품질",
+          "useCase": "사용 사례"
+        },
+        "modelInfo": {
+          "type": "유형:",
+          "contextLength": "컨텍스트 길이:",
+          "bestFor": "최적 용도:",
+          "languages": "언어:",
+          "llm": "대형 언어 모델",
+          "tokens": "토큰",
+          "generalText": "일반 텍스트 생성, 대화, 코딩",
+          "multiLanguage": "인도네시아어, 영어 및 50개 이상의 언어"
+        },
+        "tableData": {
+          "fast": "빠름",
+          "medium": "보통",
+          "high": "높음",
+          "veryHigh": "매우 높음",
+          "generalPurpose": "범용",
+          "codeGeneration": "코드 생성"
+        }
+      },
+      "faq": {
+        "title": "자주 묻는 질문",
+        "items": {
+          "apiKey": {
+            "question": "API 키를 어떻게 얻나요?",
+            "answer": "베타 프로그램에 가입하여 API 키를 얻을 수 있습니다. 홈페이지를 방문하여 \"Mulai Beta\"를 클릭하여 대기자 명단에 참여하세요."
+          },
+          "rateLimits": {
+            "question": "속도 제한은 무엇인가요?",
+            "answer": "베타 기간 동안 관대한 제한을 제공합니다. 무료 티어에는 월 1000회 요청이 포함되며, 유료 플랜은 더 높은 제한을 제공합니다."
+          },
+          "security": {
+            "question": "내 데이터가 안전한가요?",
+            "answer": "네, 보안을 진지하게 생각합니다. 모든 데이터는 전송 중과 저장 시 암호화됩니다. 명시적으로 구성하지 않는 한 프롬프트나 응답을 저장하지 않습니다."
+          },
+          "languages": {
+            "question": "지원되는 프로그래밍 언어는 무엇인가요?",
+            "answer": "JavaScript/TypeScript, Python, Go, Java용 공식 SDK를 제공합니다. 모든 언어에서 REST API를 사용할 수도 있습니다."
+          },
+          "commercial": {
+            "question": "상업적 프로젝트에 사용할 수 있나요?",
+            "answer": "네, API는 개인 및 상업적 사용을 위해 설계되었습니다. 상업적 라이선스 세부 사항은 가격 페이지를 확인하세요."
+          }
+        }
+      },
+      "installation": {
+        "title": "설치 및 설정",
+        "description": "프로젝트에서 SyinAI를 설치하고 구성하는 방법.",
+        "prerequisitesTitle": "전제 조건",
+        "prerequisites": [
+          "Node.js 16+ 또는 Python 3.8+",
+          "AlcaHEX-Studio의 유효한 API 키",
+          "API 호출을 위한 인터넷 연결"
+        ],
+        "nodejsTitle": "Node.js 설치",
+        "pythonTitle": "Python 설치",
+        "envSetupTitle": "환경 설정",
+        "envSetupDesc": "프로젝트 루트에 `.env` 파일 생성:"
+      },
+      "authentication": {
+        "title": "인증 가이드",
+        "description": "AlcaHEX-Studio API로 인증하는 방법을 배우세요.",
+        "apiKeyTitle": "API 키 인증",
+        "apiKeyDesc": "모든 요청에는 Authorization 헤더에 API 키가 포함되어야 합니다:",
+        "sdkAuthTitle": "SDK 인증",
+        "bestPracticesTitle": "보안 모범 사례",
+        "bestPractices": [
+          "클라이언트 측 코드에서 API 키를 노출하지 마세요",
+          "API 키에는 환경 변수를 사용하세요",
+          "API 키를 정기적으로 교체하세요",
+          "비정상적인 활동이 있는지 API 사용량을 모니터링하세요"
+        ]
+      },
+      "ratelimits": {
+        "title": "속도 제한 및 사용량",
+        "description": "API 속도 제한 및 모범 사례 이해.",
+        "currentLimitsTitle": "현재 제한",
+        "tableHeaders": {
+          "plan": "플랜",
+          "requestsPerMinute": "요청/분",
+          "requestsPerMonth": "요청/월",
+          "tokensPerRequest": "토큰/요청"
+        },
+        "plans": {
+          "free": "무료",
+          "pro": "프로",
+          "enterprise": "엔터프라이즈",
+          "custom": "맞춤형"
+        },
+        "handlingTitle": "속도 제한 처리"
+      },
+      "errorhandling": {
+        "title": "오류 처리",
+        "description": "오류 처리 및 일반적인 문제 해결 방법.",
+        "commonErrorsTitle": "일반적인 오류 코드",
+        "errors": {
+          "400": "잘못된 요청: 유효하지 않은 매개변수",
+          "401": "권한 없음: 유효하지 않은 API 키",
+          "429": "속도 제한: 너무 많은 요청",
+          "500": "서버 오류: 내부 서버 문제"
+        },
+        "exampleTitle": "오류 처리 예제",
+        "troubleshootingTitle": "문제 해결 팁",
+        "troubleshooting": [
+          "API 키가 유효하고 만료되지 않았는지 확인하세요",
+          "요청 매개변수가 API 사양과 일치하는지 확인하세요",
+          "속도 제한 사용량을 모니터링하세요",
+          "서비스 문제에 대해서는 상태 페이지를 확인하세요"
+        ]
+      }
+    }
+  }
+}

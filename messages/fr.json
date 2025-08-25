@@ -1,0 +1,932 @@
+{
+  "Common": {
+    "cancel": "Annuler",
+    "update": "Mettre à jour",
+    "continue": "Continuer",
+    "success": "Succès",
+    "delete": "Supprimer",
+    "save": "Enregistrer",
+    "back": "Retour",
+    "next": "Suivant",
+    "create": "Créer",
+    "showLess": "Afficher moins",
+    "showMore": "Afficher plus",
+    "generate": "Générer",
+    "edit": "Modifier",
+    "editAgent": "Modifier l'Agent",
+    "search": "Rechercher...",
+    "approve": "Approuver",
+    "reject": "Rejeter",
+    "saving": "Enregistrement...",
+    "optional": "Facultatif",
+    "deleting": "Suppression...",
+    "run": "Exécuter",
+    "description": "Description",
+    "defaultValue": "Valeur par Défaut",
+    "empty": "Vide",
+    "required": "Requis",
+    "options": "Options",
+    "status": "Statut",
+    "result": "Résultat",
+    "startedAt": "Commencé À",
+    "duration": "Durée",
+    "addOption": "Ajouter Option",
+    "tool": "Outil",
+    "selectTool": "Sélectionner Outil...",
+    "noResults": "Aucun résultat.",
+    "generateInputWithAI": "Générer Entrée avec IA",
+    "generatingInputWithAI": "Génération d'entrée avec IA...",
+    "inputGeneratedSuccessfully": "Entrée générée avec succès",
+    "failedToGenerateInput": "Échec de génération d'entrée",
+    "createWithExample": "Créer avec Exemple",
+    "resultsFound": "{count} résultats trouvés",
+    "youAreAnExpertIn": "Vous êtes un expert en {role}",
+    "joinBeta": "Rejoindre Beta"
+  },
+  "Auth": {
+    "SignIn": {
+      "title": "Bon retour",
+      "description": "Connectez-vous pour continuer vers votre compte",
+      "oauthClientIdNotSet": "L'ID client {provider} n'est pas configuré",
+      "noAccount": "Vous n'avez pas de compte ?",
+      "signUp": "S'inscrire",
+      "signIn": "Se connecter",
+      "orContinueWith": "OU CONTINUER AVEC"
+    },
+    "SignUp": {
+      "title": "Créer un compte",
+      "signIn": "Se connecter",
+      "description": "Inscrivez-vous à votre compte",
+      "step1": "Commencez votre parcours avec nous en saisissant votre adresse e-mail",
+      "step2": "J'utiliserai ce nom quand nous discuterons",
+      "step3": "Créez un mot de passe fort pour sécuriser votre compte",
+      "signUp": "S'inscrire",
+      "invalidEmail": "Adresse e-mail invalide",
+      "emailAlreadyExists": "L'e-mail existe déjà",
+      "nameRequired": "Le nom est requis",
+      "passwordRequired": "Le mot de passe est requis",
+      "createAccount": "Créer un compte"
+    },
+    "Intro": {
+      "description": "Bienvenue sur AlcaHEX-Studio. Connectez-vous pour découvrir nos outils de conversation alimentés par l'IA."
+    }
+  },
+  "Chat": {
+    "Error": "Erreur de Chat",
+    "thisMessageWasNotSavedPleaseTryTheChatAgain": "Ce message n'a pas été enregistré. Veuillez réessayer le chat.",
+    "Greeting": {
+      "goodMorning": "Bonjour, {name}",
+      "goodAfternoon": "Bon après-midi, {name}",
+      "goodEvening": "Bonsoir, {name}",
+      "niceToSeeYouAgain": "Ravi de vous revoir, {name}",
+      "whatAreYouWorkingOnToday": "Sur quoi travaillez-vous aujourd'hui, {name} ?",
+      "letMeKnowWhenYoureReadyToBegin": "Faites-moi savoir quand vous êtes prêt à commencer.",
+      "whatAreYourThoughtsToday": "Quelles sont vos pensées aujourd'hui ?",
+      "whereWouldYouLikeToStart": "Par où aimeriez-vous commencer ?",
+      "whatAreYouThinking": "À quoi pensez-vous, {name} ?"
+    },
+    "TemporaryChat": {
+      "toggleTemporaryChat": "Basculer le Chat Temporaire",
+      "temporaryChat": "Chat Temporaire",
+      "resetChat": "Réinitialiser le Chat",
+      "thisChatWontBeSaved": "Ce chat ne sera pas enregistré.",
+      "feelFreeToAskAnythingTemporarily": "N'hésitez pas à demander quoi que ce soit temporairement",
+      "temporaryChatInstructions": "Instructions du Chat Temporaire",
+      "temporaryChatInstructionsPlaceholder": "Entrez vos instructions ici",
+      "temporaryChatInstructionsDescription": "Vous pouvez définir des instructions pour le chat temporaire. Cela sera utilisé comme prompt système pour le chat temporaire."
+    },
+    "placeholder": "Demandez n'importe quoi ou @mentionnez",
+    "Tool": {
+      "webSearching": "Recherche sur le web...",
+      "searchedTheWeb": "Recherché sur le web",
+      "toolModeDescription": "Choisissez comment les outils sont utilisés:\n• Auto: L'IA décide quand utiliser les outils\n• Manuel: Demande permission avant d'utiliser les outils\n• Aucun: Désactive tous les outils",
+      "toolsSetupDescription": "Sélectionnez les outils que le chatbot peut utiliser.\nLe chatbot utilisera les outils sélectionnés selon son propre jugement.\n\nVous pouvez aussi forcer l'utilisation d'outils spécifiques via @mention.",
+      "selectToolMode": "Sélectionner le mode d'outils",
+      "autoToolModeDescription": "Décide quand utiliser les outils sans vous demander",
+      "manualToolModeDescription": "Demande votre permission avant d'utiliser des outils",
+      "noneToolModeDescription": "Ne pas utiliser d'outils. @mention est toujours disponible.",
+      "toolsSetup": "Configuration des Outils",
+      "preset": "Préréglage",
+      "toolPresets": "Préréglages d'Outils",
+      "saveAsPreset": "Enregistrer comme Préréglage",
+      "saveAsPresetDescription": "Enregistrer la configuration actuelle des outils comme préréglage.",
+      "noPresetsAvailableYet": "Aucun préréglage disponible pour le moment",
+      "presetNameCannotBeEmpty": "Le nom du préréglage ne peut pas être vide",
+      "presetNameAlreadyExists": "Le nom du préréglage existe déjà",
+      "presetSaved": "Préréglage enregistré",
+      "clickSaveAsPresetToGetStarted": "Cliquez sur Enregistrer comme Préréglage pour commencer.",
+      "searchOptions": "Options de Recherche",
+      "searchOptionsDescription": "Vous pouvez passer des options de recherche au chatbot, comme le nombre maximum de résultats de recherche, la date de recherche, etc.",
+      "defaultToolKit": {
+        "visualization": "Visualisation de données",
+        "webSearch": "Rechercher sur le le Web"
+      }
+    },
+    "VoiceChat": {
+      "title": "Mode Chat Vocal",
+      "compactDisplayMode": "Mode d'affichage compact",
+      "conversationDisplayMode": "Mode d'affichage de conversation",
+      "pleaseCloseTheVoiceChatAndTryAgain": "Veuillez fermer le chat vocal et réessayer.",
+      "startConversation": "Démarrer la conversation",
+      "closeMic": "Fermer le micro",
+      "openMic": "Ouvrir le micro",
+      "endConversation": "Terminer la conversation",
+      "toggleVoiceChat": "Basculer le Chat Vocal",
+      "readyWhenYouAreJustStartTalking": "Prêt quand vous l'êtes—commencez simplement à parler.",
+      "yourMicIsOff": "Votre micro est éteint.",
+      "preparing": "Préparation...",
+      "startVoiceChat": "Démarrer le chat vocal ?"
+    },
+    "Thread": {
+      "chat": "Chat",
+
+      "renameChat": "Renommer",
+      "deleteChat": "Supprimer le Chat",
+      "deleteUnarchivedChats": "Supprimer Tous les Chats Non Archivés",
+      "confirmDeleteUnarchivedChats": "Êtes-vous sûr de vouloir supprimer tous les chats non archivés ?",
+      "thisActionCannotBeUndone": "Cette action ne peut pas être annulée.",
+      "unarchivedChatsDeleted": "Les chats non archivés ont été supprimés",
+      "failedToDeleteUnarchivedChats": "Échec de la suppression des chats non archivés",
+      "failedToDeleteThread": "Échec de suppression du fil",
+      "threadDeleted": "Fil supprimé",
+      "failedToUpdateThread": "Échec de mise à jour du fil",
+      "titleRequired": "Le titre est requis",
+      "threadUpdated": "Fil mis à jour",
+      "areYouSureYouWantToDeleteThisChatThread": "Êtes-vous sûr de vouloir supprimer ce fil de chat ?"
+    },
+
+    "ChatPreferences": {
+      "title": "Préférences de Chat",
+      "whatShouldWeCallYou": "Comment devrions-nous vous appeler ?",
+      "botName": "Nom de l'Assistant",
+      "whatBestDescribesYourWork": "Qu'est-ce qui décrit le mieux votre travail ?",
+      "whatPersonalPreferencesShouldBeTakenIntoAccountInResponses": "Quelles préférences personnelles devraient être prises en compte dans les réponses ?",
+      "responseStyleExample1": "ex. gardez les explications brèves et directes",
+      "responseStyleExample2": "ex. quand j'apprends de nouveaux concepts, je trouve les analogies particulièrement utiles",
+      "responseStyleExample3": "ex. posez des questions de clarification avant de donner des réponses détaillées",
+      "responseStyleExample4": "ex. rappelez-vous que je programme principalement en Python (je ne suis pas débutant en programmation)",
+      "professionExample1": "ex. ingénieur logiciel",
+      "professionExample2": "ex. chef de produit",
+      "professionExample3": "ex. responsable marketing",
+      "professionExample4": "ex. directeur des ventes",
+      "professionExample5": "ex. analyste commercial",
+      "preferencesSaved": "Préférences enregistrées",
+      "failedToSavePreferences": "Échec de l'enregistrement des préférences",
+      "userInstructions": "Instructions Utilisateur",
+      "userInstructionsDescription": "Présentez-vous et obtenez une réponse plus personnalisée.",
+      "mcpInstructions": "Instructions MCP",
+      "mcpInstructionsDescription": "Personnalisez les instructions du serveur MCP."
+    }
+  },
+  "Layout": {
+    "toggleSidebar": "Basculer la Barre Latérale",
+    "newChat": "Nouveau Chat",
+    "mcpConfiguration": "Configuration MCP",
+    "agents": "Agents",
+    "newAgent": "Nouvel Agent",
+    "createAgent": "Créer un agent",
+    "createYourOwnAgent": "Créez votre propre agent IA spécialisé avec des fonctionnalités et une personnalité uniques",
+    "whatIsAgent": "Qu'est-ce qu'un Agent ?",
+    "agentDescription": "Les agents sont des assistants IA spécialisés qui peuvent être personnalisés avec des rôles, des instructions et des outils spécifiques pour vous aider dans diverses tâches.",
+    "specializedAIAssistant": "Assistant IA Spécialisé",
+    "specializedAIAssistantDescription": "Chaque agent peut être personnalisé avec des rôles spécifiques, des personnalités et des domaines d'expertise pour fournir une assistance ciblée selon vos besoins uniques.",
+    "customInstructions": "Instructions Personnalisées",
+    "customInstructionsDescription": "Définissez des prompts système détaillés et des directives comportementales pour façonner la façon dont votre agent répond et interagit avec vous.",
+    "toolIntegration": "Intégration d'Outils",
+    "toolIntegrationDescription": "Connectez vos agents aux serveurs MCP, aux flux de travail et à d'autres outils pour étendre leurs capacités au-delà de la conversation.",
+    "agentExamples": "Exemples d'Agents",
+    "businessAssistant": "Assistant Business",
+    "businessAssistantDescription": "Spécialisé dans l'analyse commerciale, la génération de rapports et la communication professionnelle.",
+    "creativeWriter": "Écrivain Créatif",
+    "creativeWriterDescription": "Axé sur la narration, la création de contenu et le brainstorming créatif.",
+    "technicalExpert": "Expert Technique",
+    "technicalExpertDescription": "Équipé d'outils de développement et d'expertise en codage pour les tâches techniques.",
+    "createFirstAgentToStart": "Créez votre premier agent pour commencer !",
+    "today": "Aujourd'hui",
+    "yesterday": "Hier",
+    "lastWeek": "7 derniers jours",
+    "older": "Plus ancien",
+    "recentChats": "Chats Récents",
+    "deleteAllChats": "Supprimer Tous les Chats",
+    "deleteUnarchivedChats": "Supprimer les Chats Non Archivés",
+    "noConversationsYet": "Aucune conversation pour le moment",
+    "deletingAllChats": "Suppression de tous les fils...",
+    "deletingUnarchivedChats": "Suppression des fils non archivés...",
+    "allChatsDeleted": "Tous les fils supprimés",
+    "unarchivedChatsDeleted": "Fils non archivés supprimés",
+    "failedToDeleteAllChats": "Échec de suppression de tous les fils",
+    "failedToDeleteUnarchivedChats": "Échec de suppression des fils non archivés",
+    "chatPreferences": "Préférences de Chat",
+    "keyboardShortcuts": "Raccourcis Clavier",
+    "theme": "Thème",
+    "signOut": "Se déconnecter",
+    "language": "Langue",
+
+    "showAllChats": "Voir Tous les Chats",
+    "showLessChats": "Afficher moins",
+    "reportAnIssue": "Signaler un problème",
+    "joinCommunity": "Rejoindre la Communauté",
+    "workflow": "Flux de Travail"
+  },
+  "Archive": {
+    "title": "Archive",
+    "addArchive": "Ajouter une Archive",
+    "archiveName": "Nom de l'Archive",
+    "archiveDescription": "Description de l'Archive",
+    "archiveDescriptionPlaceholder": "Les archives sont des espaces pour stocker l'historique des chats.",
+    "noArchives": "Aucune archive",
+    "createFirstArchive": "Créez votre première archive",
+    "archiveCreated": "Archive créée",
+    "archiveUpdated": "Archive mise à jour",
+    "archiveDeleted": "Archive supprimée",
+    "failedToCreateArchive": "Échec de la création de l'archive",
+    "failedToUpdateArchive": "Échec de la mise à jour de l'archive",
+    "failedToDeleteArchive": "Échec de la suppression de l'archive",
+    "editArchive": "Modifier l'Archive",
+    "editArchiveDescription": "Modifier les informations de l'archive",
+    "deleteArchive": "Supprimer l'Archive",
+    "confirmDeleteArchive": "Êtes-vous sûr de vouloir supprimer cette archive ?",
+    "deleteArchiveDescription": "Cette archive et tous ses éléments seront définitivement supprimés. Cette action ne peut pas être annulée.",
+    "addToArchive": "Ajouter à l'Archive",
+    "removeFromArchive": "Supprimer de l'Archive",
+    "itemAddedToArchive": "Élément ajouté à l'archive",
+    "itemRemovedFromArchive": "Élément supprimé de l'archive"
+  },
+  "Agent": {
+    "title": "Agent",
+    "generatingAgent": "Génération de l'Agent...",
+    "agentNameAndIconLabel": "Donnez un nom et une icône à votre agent.",
+    "agentDescriptionLabel": "Ajoutez une brève description de ce que fait cet agent.",
+    "agentDescriptionPlaceholder": "Ceci n'est qu'une description de l'agent, ce n'est pas critique.",
+    "agentSettingsDescription": "À partir d'ici, ce sont des paramètres qui peuvent affecter l'agent.",
+    "thisAgentIs": "Cet agent est un expert en",
+    "expertIn": "",
+    "agentRolePlaceholder": "analyse boursière",
+    "agentInstructionsLabel": "N'hésitez pas à écrire le rôle, la personnalité, les directives, les connaissances, etc. de l'agent.",
+    "agentInstructionsPlaceholder": "Cet agent aide à l'analyse boursière. Il utilise des outils de recherche web pour obtenir des informations boursières...",
+    "agentToolsLabel": "Ajoutez des outils que cet agent peut utiliser.",
+    "loadingTools": "Chargement des outils...",
+    "addTools": "Veuillez ajouter des outils.",
+    "generateAgentGreeting": "Bonjour ! Je vais vous aider à créer votre propre agent. Que souhaitez-vous créer ?",
+    "generateAgentDetailedGreeting": "Bonjour ! Je vais vous aider à créer votre propre agent. Que souhaitez-vous créer ? Vous pouvez écrire brièvement ou en détail.",
+    "inputPromptHere": "saisissez le prompt ici...",
+    "agentNamePlaceholder": "better-agent"
+  },
+  "KeyboardShortcuts": {
+    "title": "Raccourcis Clavier",
+    "newChat": "Nouveau Chat",
+    "toggleTemporaryChat": "Basculer Chat Temporaire",
+    "toggleSidebar": "Basculer Barre Latérale",
+    "toolMode": "Mode Outils",
+    "lastMessageCopy": "Copier le Dernier Message",
+    "openChatPreferences": "Ouvrir Préférences Chat",
+    "deleteThread": "Supprimer Chat",
+    "openShortcutsPopup": "Ouvrir Popup Raccourcis",
+    "toggleVoiceChat": "Basculer Chat Vocal"
+  },
+  "MCP": {
+    "marketplace": "Marché",
+    "addMcpServer": "Ajouter Serveur",
+    "configureYourMcpServerConnectionSettings": "Configurez les paramètres de connexion de votre serveur MCP",
+    "mcpConfiguration": "Configuration MCP",
+    "nameMustContainOnlyAlphanumericCharactersAndHyphens": "Le nom ne doit contenir que des caractères alphanumériques (A-Z, a-z, 0-9) et des traits d'union (-)",
+    "nameIsRequired": "Le nom est requis",
+    "configurationSavedSuccessfully": "Configuration enregistrée avec succès",
+    "enterMcpServerName": "Entrez le nom du serveur MCP",
+    "saveConfiguration": "Enregistrer la Configuration",
+    "toolsTest": "Test des Outils",
+    "refresh": "Actualiser",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "configuration": "Configuration",
+    "availableTools": "Outils Disponibles",
+    "noToolsAvailable": "Aucun outil disponible",
+    "overviewTitle": "Connectez Votre Premier Serveur",
+    "overviewDescription": "Ajoutez des serveurs MCP pour débloquer de puissantes intégrations IA",
+    "searchTools": "Rechercher des outils",
+    "detail": "Détail",
+    "noSchemaPropertiesAvailable": "Aucune propriété de schéma disponible",
+    "createInputWithAI": "Créer Entrée avec IA",
+    "generateExampleInputJSON": "Générer JSON d'Entrée d'Exemple",
+    "enterPromptToGenerateExampleInputJSON": "Entrez un prompt pour générer un JSON d'entrée d'exemple pour l'outil sélectionné.",
+    "callTool": "Appeler l'outil",
+    "customInstructions": "Instructions personnalisées",
+    "serverCustomInstructionsPlaceholder": "Ces lignes seront ajoutées à l'invite système chaque fois qu'un outil de ce serveur sera disponible.",
+    "nameAlreadyExists": "Le nom existe déjà",
+    "additionalInstructions": "Instructions de Personnalisation d'Outils",
+    "inputSchema": "Schéma d'Entrée",
+    "toolCustomizationInstructions": "Les instructions de personnalisation d'outils seront ajoutées à l'invite système lorsque l'outil sera disponible.\nexemple) Toujours entrer l'email au format exemple@exemple.com.",
+    "mcpServerCustomization": "Personnalisation du Serveur MCP",
+    "mcpServerCustomizationDescription": "Les instructions de personnalisation du serveur MCP seront ajoutées à l'invite système lorsque le serveur MCP sera disponible.",
+    "toolCustomizationInstructionsPlaceholder": "Les instructions de personnalisation d'outils ne sont pas disponibles.",
+    "mcpServerCustomizationPlaceholder": "ex. Si la valeur d'entrée est un email, toujours entrer l'email au format exemple@exemple.com."
+  },
+  "Error": {},
+  "Info": {
+    "mcpAddingDisabled": "L'ajout de serveurs MCP a été désactivé par l'administrateur.",
+    "vercelSyncDelay": "Fonctionnement sur Vercel\n\nLes modifications MCP peuvent prendre 10-15 secondes à se synchroniser. Veuillez patienter un moment si les changements n'apparaissent pas immédiatement après avoir ajouté, modifié ou supprimé des serveurs."
+  },
+  "Workflow": {
+    "title": "Flux de Travail",
+    "createWorkflow": "Créer Flux de Travail",
+    "draft": "Brouillon",
+    "publish": "Publier",
+    "createWorkflowDescription": "Créez des flux de travail comme outils puissants pour votre chatbot.",
+    "workflowDescription": "Ceux-ci peuvent être déclenchés pendant les conversations pour automatiser des tâches complexes.",
+    "nameAndIcon": "Nom et Icône",
+    "workflowNamePlaceholder": "Le chatbot reconnaîtra ceci comme nom d'outil",
+    "description": "Description",
+    "descriptionPlaceholder": "Le chatbot verra ceci comme description d'outil",
+    "inputNodeCannotBeDeleted": "Le nœud d'entrée ne peut pas être supprimé",
+    "autoSaveDescription": "Sauvegarde automatique toutes les 10 secondes",
+    "draftDescription": "Actuellement en Brouillon.\n\nCliquez sur Publier pour le rendre disponible au chatbot\n(mais plus modifiable).",
+    "publishedDescription": "Actuellement Publié et disponible pour le chatbot.\n\nCliquez sur Brouillon pour le rendre modifiable\n(mais non disponible pour le chatbot).",
+    "private": "Privé",
+    "readonly": "Lecture Seule",
+    "public": "Public",
+    "privateDescription": "Seul vous pouvez voir, modifier et utiliser ce flux de travail comme outil.",
+    "readonlyDescription": "Les autres peuvent voir et utiliser comme outil, mais seul vous pouvez modifier.",
+    "publicDescription": "N'importe qui peut voir, modifier et utiliser ce flux de travail comme outil.",
+    "visibilityDescription": "Contrôle qui peut accéder et modifier ce flux de travail",
+    "nodeDescriptionPlaceholder": "description du nœud...",
+    "nextNode": "Nœud Suivant",
+    "nextNodeDescription": "Ajouter un nœud suivant à ce flux de travail.",
+    "addNextNode": "Ajouter Nœud Suivant",
+    "inputFields": "Champs d'Entrée",
+    "addInputField": "Ajouter Champ d'Entrée",
+    "inputFieldsDescription": "Définissez le schéma de paramètres pour ce flux de travail.\n\nQuand le chatbot utilisera ceci comme outil,\nil fournira des valeurs selon ce schéma.",
+    "fieldEditor": "Éditeur de Champ",
+    "variableName": "Nom de Variable",
+    "variableNamePlaceholder": "Entrez le nom de variable...",
+    "fieldDescriptionPlaceholder": "Entrez la description du champ...",
+    "defaultValuePlaceholder": "Entrez la valeur {type} par défaut...",
+    "selectOptionPlaceholder": "Sélectionner option...",
+    "unlink": "Délier Nœud",
+    "elseIfDescription": "Si la condition n'est pas remplie, la logique à exécuter est définie.",
+    "elseDescription": "Si la condition n'est pas remplie, la logique à exécuter est définie.",
+    "addCondition": "Ajouter Condition",
+    "noVariablesFound": "Aucune variable trouvée",
+    "outputVariables": "Variables de Sortie",
+    "outputVariablesDescription": "Les variables de sortie sont les variables qui sont générées depuis le flux de travail.",
+    "addOutputVariable": "Ajouter Variable de Sortie",
+    "outputSchema": "Schéma de Sortie",
+    "addMessage": "Ajouter Message",
+    "messagesDescription": "Générer des données par traitement LLM.\n\nUtilisez '/' pour mentionner et référencer des données de nœuds précédents comme entrée.\n\nAvec Sortie Structurée activée, parfait pour la transformation, le formatage et la validation de données.",
+    "descriptionAndSchema": "Description et Schéma",
+    "noDescriptionAndSchema": "Pas de description et schéma",
+    "toolDescription": "Fournissez les informations nécessaires pour que LLM génère les paramètres d'outil.\n\nUtilisez '/' pour mentionner des données de nœuds précédents.",
+    "generateInputWithAIDescription": "Écrivez un prompt pour générer une entrée pour le flux de travail",
+    "example": {
+      "babyResearch": "Recherche de Bébé",
+      "getWeather": "Obtenir Météo"
+    },
+    "selectVariable": "Sélectionner Variable",
+    "structuredOutput": "Sortie Structurée",
+    "structuredOutputDescription": "Générer une réponse comme objet JSON avec schéma défini",
+    "outputSchemaEditor": "Éditeur de Schéma de Sortie",
+    "addField": "Ajouter Champ",
+    "saveSchema": "Enregistrer Schéma",
+    "generateSchemaWithAI": "Générer Schéma avec IA",
+    "describeOutputDataRequest": "Fournissez des données JSON d'exemple qui représentent ce que ce nœud devrait produire\n\nExemple: {eg}",
+    "generatingJsonSchemaWithAI": "Génération du schéma JSON avec IA...",
+    "jsonSchemaGeneratedSuccessfully": "Schéma JSON généré avec succès !",
+    "failedToGenerateSchema": "Échec de génération du schéma",
+    "jsonSchemaEditorDescription": "Édition directe de schéma JSON avec assistance IA. Supporte les structures imbriquées complexes et les tableaux.",
+    "template": "Modèle",
+    "templateDescription": "Générer des documents de modèle.\n\nUtilisez '/' pour référencer et utiliser les valeurs de sortie d'autres nœuds.",
+    "kindsDescription": {
+      "input": "Définit les paramètres d'entrée que le chatbot fournira en utilisant ce flux de travail comme outil.\n\nSpécifie la structure des données et les règles de validation pour l'exécution de l'outil.",
+      "output": "Collecte et retourne les résultats finaux de l'exécution de votre flux de travail.\n\nCombine les données de plusieurs nœuds dans la réponse finale de l'outil.",
+      "llm": "Génère du texte ou des données structurées en utilisant des modèles IA.\n\nRéférence les sorties de nœuds précédents avec des mentions '/' pour créer des réponses conscientes du contexte.\n\nUtilisez Sortie Structurée pour transformer, formater et valider les données - pas seulement pour la génération de texte.",
+      "tool": "Exécute des outils MCP ou des services externes.\n\nÉcrivez des instructions dans les messages, et LLM générera les paramètres d'outil requis à partir de votre contexte.",
+      "note": "Ajoute de la documentation et des commentaires pour organiser la logique de votre flux de travail.\n\nAide les membres de l'équipe à comprendre les processus complexes de flux de travail.",
+      "code": "Exécute des scripts de code personnalisé avec accès aux données de nœuds précédents.\n\nExécute JavaScript, Python ou d'autres langages dans votre flux de travail (bientôt disponible).",
+      "http": "Récupère des données d'APIs externes et de services web via des requêtes HTTP.\n\nIntègre avec des APIs REST, webhooks et services tiers.",
+      "template": "Crée des documents dynamiques en combinant du texte avec des données de nœuds précédents.\n\nGénère des emails, rapports ou contenu formaté en utilisant la substitution de variables.",
+      "condition": "Ajoute une logique conditionnelle pour brancher votre flux de travail basé sur l'évaluation des données.\n\nCrée une logique if-else pour gérer différents scénarios et conditions de données."
+    },
+    "greeting": {
+      "buildAutomationTitle": "Construire l'Automatisation en Connectant les Nœuds",
+      "buildAutomationDescription": "Connectez divers nœuds pour automatiser des tâches complexes. Chaque nœud gère des fonctions spécifiques, et les données circulent séquentiellement pour le traitement.",
+      "chatbotToolTitle": "Utiliser comme Outils de Chatbot",
+      "chatbotToolDescription": "Le but principal des flux de travail est de les utiliser comme outils dans les conversations de chatbot. Transformez les tâches répétitives en flux de travail pour une exécution facile pendant les chats.",
+      "parameterBasedTitle": "️ Démarrage Basé sur les Paramètres",
+      "parameterBasedDescription": "Les nœuds d'entrée définissent des structures de paramètres, pas des déclencheurs. Ils spécifient le format de données nécessaire quand le chatbot appelle ce flux de travail comme outil.",
+      "exampleTitle": "Exemple d'Utilisation",
+      "exampleDescription": "Créez un flux de travail \"Écrire Email → Traduire → Envoyer\", puis exécutez-le facilement dans les conversations de chatbot avec \"@email_workflow\".",
+      "availableNodesTitle": "Nœuds Disponibles",
+      "upcomingNodesTitle": "Nœuds à Venir",
+      "ctaMessage": "Commencez à créer des flux de travail maintenant pour étendre les capacités de votre chatbot !",
+      "soonMessage": "Bientôt disponible."
+    },
+    "arrangeNodes": "Auto Layout",
+    "nodesArranged": "Mise en page appliquée avec succès"
+  },
+  "LandingPage": {
+    "navHome": "Accueil",
+    "navAbout": "À propos",
+    "navIntro": "SyinAI 1.5",
+    "navCapabilities": "Capacités",
+    "navModels": "Modèles",
+    "navGetApi": "Obtenir l'API",
+    "navJoinBeta": "Rejoindre la Bêta",
+    "aboutHeadline": "L'écosystème SyinAI représente notre <highlight>IA la plus performante à ce jour.</highlight>",
+    "aboutDescription": "Nos modèles SyinAI ont été conçus dès le départ pour être <highlight>multimodaux</highlight>—capables de raisonner de manière fluide sur le texte, les images, l'audio, la vidéo et le code.",
+    "latestUpdates": "Dernières mises à jour",
+    "updateDate": "20 août 2025",
+    "introTitle": "Présentation de SyinAI 1.5",
+    "introSubtitle": "Notre modèle de nouvelle génération.",
+    "introText": "Conçu pour être nativement multimodal et doté d'une fenêtre de contexte révolutionnaire, SyinAI 1.5 est conçu pour un large éventail d'applications.",
+    "tryButton": "Essayer SyinAI 1.5",
+    "capabilitiesTitle": "Capacités d'IA de Pointe",
+    "capabilitiesSubtitle": "Trois puissants modèles d'IA conçus pour divers besoins informatiques et d'analyse de données modernes.",
+    "reasoningTitle": "Raisonnement et Résolution de Problèmes",
+    "reasoningDescription": "Modèle d'IA avancé avec des capacités de raisonnement approfondies pour la résolution de problèmes complexes, l'analyse logique et la prise de décision précise.",
+    "multimodalTitle": "Intelligence Multimodale",
+    "multimodalDescription": "Capacité d'IA de pointe à comprendre et analyser plusieurs types de données simultanément : texte, images, audio, vidéo et code avec un contexte intégré.",
+    "codingTitle": "Génération et Débogage de Code",
+    "codingDescription": "Développer, expliquer et déboguer des algorithmes et des bases de code complexes avec une grande précision.",
+    "modelsTitle": "SyinAI se décline en trois modèles différents",
+    "ultraDescription": "Modèle de raisonnement de pointe avec une analyse approfondie et des capacités complexes de résolution de problèmes.",
+    "proDescription": "Modèle multimodal avancé qui comprend le texte, les images, l'audio, la vidéo et le code de manière intégrée.",
+    "nanoDescription": "Modèle de programmation spécialisé avec les meilleures capacités de codage, de débogage et de développement de logiciels.",
+    "mmluPerformance": "Performance MMLU",
+    "mmluDescription": "Syin o1 atteint le score le plus élevé sur le benchmark MMLU",
+    "responseSpeed": "Vitesse de Réponse",
+    "responseSpeedDescription": "Temps de réponse moyen pour les requêtes complexes",
+    "codeAccuracy": "Précision du Code",
+    "codeAccuracyDescription": "Taux de précision dans la génération et le débogage de code",
+    "benchmarkComparison": "Comparaison des Performances avec d'Autres Modèles",
+    "startTitle": "Démarrer avec SyinAI",
+    "startSubtitle": "Construisez avec nos modèles les plus performants.",
+    "getApiKey": "Obtenir une clé API",
+    "readDocs": "Lire la documentation",
+    "sponsorsTitle": "En collaboration avec",
+    "footerSlogan": "Solutions d'IA modernes pour une nouvelle génération de développement.",
+    "footerProducts": "Produits",
+    "footerResources": "Ressources",
+    "footerContact": "Contactez-nous",
+    "footerRights": "Tous Droits Réservés.",
+    "footerPrivacy": "Politique de Confidentialité",
+    "footerTerms": "Conditions d'Utilisation"
+  },
+  "ApiPage": {
+    "title": "SyinAI API",
+    "subtitle": "Accédez à la puissance de l'IA de nouvelle génération via une API facile à utiliser",
+    "developmentStatus": {
+      "title": "En Développement",
+      "description": "L'API SyinAI est actuellement en développement actif. Nous préparons une infrastructure robuste et des fonctionnalités avancées pour offrir la meilleure expérience."
+    },
+    "features": {
+      "title": "Fonctionnalités à Venir",
+      "syinaiO1": {
+        "title": "SyinAI o1",
+        "description": "Modèle de raisonnement avancé pour la résolution de problèmes complexes"
+      },
+      "syinaiFlash": {
+        "title": "SyinAI 1.5 Flash",
+        "description": "Réponse rapide pour les applications en temps réel"
+      },
+      "syinaiPro": {
+        "title": "SyinAI 1.5 Pro",
+        "description": "IA multimodale pour texte, images et données complexes"
+      },
+      "codeGeneration": {
+        "title": "Génération de Code",
+        "description": "IA spécialisée pour la programmation et le développement logiciel"
+      },
+      "comingSoon": "Bientôt Disponible"
+    },
+    "pricing": {
+      "title": "Plans Tarifaires",
+      "freeTier": {
+        "title": "Niveau Gratuit",
+        "price": "0€",
+        "period": "/mois",
+        "features": [
+          "1,000 requêtes/mois",
+          "Accès aux modèles de base",
+          "Support communautaire",
+          "Limite de débit: 10 RPM"
+        ]
+      },
+      "pro": {
+        "title": "Pro",
+        "price": "29€",
+        "period": "/mois",
+        "popular": "Populaire",
+        "features": [
+          "100,000 requêtes/mois",
+          "Accès à tous les modèles",
+          "Support prioritaire",
+          "Limite de débit: 100 RPM",
+          "Analyses avancées"
+        ]
+      },
+      "enterprise": {
+        "title": "Entreprise",
+        "price": "Personnalisé",
+        "features": [
+          "Requêtes illimitées",
+          "Modèles personnalisés",
+          "Support dédié 24/7",
+          "Limites de débit personnalisées",
+          "Déploiement sur site"
+        ]
+      }
+    },
+    "waitlist": {
+      "title": "Rejoindre la Liste d'Attente",
+      "description": "Soyez le premier à accéder à l'API SyinAI dès qu'elle sera disponible. Nous enverrons des invitations exclusives et des crédits gratuits aux premiers utilisateurs.",
+      "placeholder": "Entrez votre email",
+      "button": "Rejoindre la Liste d'Attente",
+      "success": {
+        "title": "Merci!",
+        "message": "Vous avez rejoint avec succès la liste d'attente. Nous vous contacterons dès que l'API sera disponible."
+      }
+    },
+    "roadmap": {
+      "title": "Feuille de Route de Développement",
+      "q3_2025": "Q3 2025 - Phase initiale de Recherche et Développement",
+      "q4_2025": "Q4 2025 - Tests alpha avec des partenaires sélectionnés",
+      "q1_2026": "Q1 2026 - Version bêta pour la liste d'attente",
+      "q2_2026": "Q2 2026 - Lancement public de l'API"
+    },
+    "navigation": {
+      "home": "Accueil",
+      "about": "À Propos",
+      "documentation": "Documentation",
+      "blog": "Blog",
+      "api": "API",
+      "joinBeta": "Rejoindre la Bêta",
+      "joinBetaMobile": "Rejoindre la Bêta"
+    },
+    "footer": {
+      "tagline": "Solutions IA modernes pour la nouvelle génération de développement.",
+      "products": "Produits",
+      "resources": "Ressources",
+      "contact": "Nous Contacter",
+      "copyright": "Tous droits réservés."
+    }
+  },
+  "BlogPage": {
+    "title": "Blog AlcaHEX",
+    "subtitle": "Dernières perspectives, tutoriels et mises à jour de notre équipe de développement IA",
+    "readMore": "Lire Plus",
+    "newsletter": {
+      "title": "Restez Informé",
+      "description": "Abonnez-vous à notre newsletter pour recevoir les dernières mises à jour sur le développement IA et les sorties de produits.",
+      "placeholder": "Entrez votre adresse email",
+      "subscribe": "S'abonner"
+    },
+    "categories": {
+      "all": "Tous",
+      "productUpdate": "Mise à Jour Produit",
+      "tutorial": "Tutoriel", 
+      "research": "Recherche",
+      "caseStudy": "Étude de Cas"
+    },
+    "posts": {
+      "1": {
+        "title": "Présentation de SyinAI 1.5 : Révolution IA Nouvelle Génération",
+        "excerpt": "Découvrez les dernières fonctionnalités et améliorations de performance dans SyinAI 1.5 qui changent notre interaction avec l'IA.",
+        "date": "24 Août 2025",
+        "author": "Équipe AlcaHEX",
+        "readTime": "5 min de lecture"
+      },
+      "2": {
+        "title": "Guide Complet : Optimiser les Performances IA pour le Codage",
+        "excerpt": "Conseils et astuces pour maximiser la productivité de codage avec SyinAI Coder et divers langages de programmation.",
+        "date": "20 Août 2025", 
+        "author": "Équipe Développeurs",
+        "readTime": "8 min de lecture"
+      },
+      "3": {
+        "title": "L'Avenir de l'IA Multimodale : Vision et Langage en Un Seul Modèle",
+        "excerpt": "Exploration des capacités multimodales de SyinAI 1.5 Pro dans le traitement de texte, images et données complexes.",
+        "date": "15 Août 2025",
+        "author": "Équipe Recherche", 
+        "readTime": "6 min de lecture"
+      },
+      "4": {
+        "title": "Étude de Cas : Implémentation SyinAI dans les Startups Tech",
+        "excerpt": "Comment les startups tech ont augmenté leur efficacité de 300% en intégrant SyinAI dans leur workflow.",
+        "date": "10 Août 2025",
+        "author": "Équipe Business",
+        "readTime": "7 min de lecture"
+      }
+    },
+    "navigation": {
+      "home": "Accueil",
+      "about": "À Propos", 
+      "documentation": "Documentation",
+      "blog": "Blog",
+      "api": "API",
+      "joinBeta": "Rejoindre Beta"
+    },
+    "footer": {
+      "description": "Solutions IA modernes pour la nouvelle génération de développement.",
+      "products": "Produits",
+      "resources": "Ressources", 
+      "contact": "Nous Contacter",
+      "copyright": "Tous droits réservés."
+    },
+    "articles": {
+      "1": {
+        "title": "Présentation de SyinAI 1.5 : Révolution IA de Nouvelle Génération",
+        "description": "Nous présentons fièrement SyinAI 1.5, notre modèle d'IA le plus récent qui apporte une révolution dans notre façon d'interagir avec l'intelligence artificielle. Avec des améliorations significatives en performance, précision et capacités de compréhension contextuelle.",
+        "featuresTitle": "🚀 Dernières Fonctionnalités",
+        "features": [
+          "<strong>Amélioration des Performances de 40%</strong> - Réponses plus rapides et précises",
+          "<strong>Fenêtre de Contexte de 8K Tokens</strong> - Capable de traiter des documents plus longs",
+          "<strong>Capacités Multimodales</strong> - Traite texte, images et code simultanément",
+          "<strong>Optimisation de la Langue Française</strong> - Meilleure compréhension du français"
+        ],
+        "improvementsTitle": "💡 Améliorations Clés",
+        "improvementsDesc": "SyinAI 1.5 vient avec une architecture optimisée spécifiquement pour :",
+        "improvements": [
+          "Programmation et débogage de code",
+          "Analyse de données et visualisation",
+          "Écriture créative et technique",
+          "Traduction et localisation"
+        ],
+        "codeExampleTitle": "Exemple d'Utilisation de l'API :",
+        "availabilityTitle": "🎯 Disponibilité",
+        "availabilityDesc": "SyinAI 1.5 est déjà disponible pour tous les utilisateurs bêta d'AlcaHEX-Studio. Des mises à jour automatiques seront effectuées pour tous les comptes enregistrés."
+      },
+      "2": {
+        "title": "Guide Complet : Optimisation des Performances IA pour la Programmation",
+        "description": "À cette ère numérique, l'IA est devenue un compagnon inséparable pour les développeurs. Ce guide vous aidera à maximiser la productivité de programmation en utilisant SyinAI.",
+        "setupTitle": "🛠️ Configuration Optimale",
+        "setupDesc": "Pour obtenir les meilleurs résultats, assurez-vous de la configuration suivante :",
+        "bestPracticesTitle": "💻 Meilleures Pratiques",
+        "bestPractices": [
+          "<strong>Ingénierie des Prompts</strong> - Fournir un contexte clair et spécifique",
+          "<strong>Révision de Code</strong> - Toujours réviser le code généré par l'IA",
+          "<strong>Développement Itératif</strong> - Utiliser l'IA pour la refactorisation graduelle",
+          "<strong>Documentation</strong> - Demander à l'IA d'ajouter des commentaires et documentation"
+        ],
+        "examplesTitle": "🎯 Exemples d'Utilisation",
+        "example1Title": "1. Générer une Fonction",
+        "example2Title": "2. Optimisation de Code",
+        "productivityTitle": "📊 Conseils de Productivité",
+        "productivityTips": [
+          "Utiliser l'IA pour générer des tests unitaires",
+          "Demander à l'IA d'expliquer du code complexe",
+          "Automatiser la documentation d'API",
+          "Déboguer avec assistance IA pour l'analyse d'erreurs"
+        ]
+      },
+      "3": {
+        "title": "L'Avenir de l'IA Multimodale : Vision et Langage dans un Seul Modèle",
+        "description": "Les capacités d'IA multimodale ont ouvert une nouvelle ère dans le traitement de l'information. SyinAI 1.5 Pro intègre la compréhension visuelle et textuelle dans un modèle puissant.",
+        "technologyTitle": "🔬 Technologie Multimodale",
+        "technologyDesc": "Les modèles multimodaux combinent plusieurs modalités d'entrée :",
+        "modalities": [
+          "<strong>Traitement de Texte</strong> - Compréhension du langage naturel",
+          "<strong>Reconnaissance d'Images</strong> - Analyse visuelle et détection d'objets",
+          "<strong>Compréhension de Code</strong> - Interprétation et génération de code",
+          "<strong>Analyse de Documents</strong> - Extraction d'informations de documents"
+        ],
+        "useCasesTitle": "🎯 Cas d'Usage",
+        "useCase1Title": "1. Génération Image vers Code",
+        "useCase1Desc": "Téléchargez une maquette ou wireframe, obtenez du code HTML/CSS :",
+        "useCase2Title": "2. Analyse de Documents",
+        "useCase2Desc": "Analysez des documents complexes avec extraction automatique de données :",
+        "implementationTitle": "🚀 Implémentation",
+        "futureTitle": "🔮 Futur",
+        "futureDesc": "Le développement de l'IA multimodale apportera :",
+        "futureItems": [
+          "Analyse vidéo en temps réel",
+          "Compréhension de modèles 3D",
+          "Synchronisation audio-visuelle",
+          "Raisonnement cross-modal"
+        ]
+      },
+      "4": {
+        "title": "Étude de Cas : Implémentation de SyinAI dans les Startups Tech",
+        "description": "Étude de cas réelle de comment la startup technologique TechFlow a augmenté l'efficacité de développement de 300% en intégrant SyinAI dans leur flux de travail.",
+        "profileTitle": "🏢 Profil de l'Entreprise",
+        "profile": [
+          "Nom : TechFlow Indonesia",
+          "Industrie : Plateforme E-commerce",
+          "Taille de l'Équipe : 15 développeurs",
+          "Stack Technologique : React, Node.js, PostgreSQL"
+        ],
+        "challengesTitle": "⚡ Défis Avant SyinAI",
+        "challenges": [
+          "Cycle de développement lent (6-8 semaines par fonctionnalité)",
+          "Révisions de code chronophages",
+          "Documentation incohérente",
+          "Correction de bugs répétitive"
+        ],
+        "implementationTitle": "🛠️ Implémentation de SyinAI",
+        "codeGenTitle": "1. Génération de Code",
+        "codeGenDesc": "// Avant : Opérations CRUD manuelles\n// Temps : 2-3 heures par endpoint\n\n// Après : Généré par IA avec SyinAI\n// Temps : 15 minutes par endpoint",
+        "testingTitle": "2. Tests Automatisés",
+        "resultsTitle": "📊 Résultats d'Implémentation",
+        "results": [
+          "<strong>Vitesse de Développement :</strong> ⬆️ 300% développement de fonctionnalités plus rapide",
+          "<strong>Qualité du Code :</strong> ⬆️ 85% réduction des bugs",
+          "<strong>Documentation :</strong> ⬆️ 100% couverture automatique",
+          "<strong>Productivité de l'Équipe :</strong> ⬆️ 250% augmentation de la production"
+        ],
+        "roiTitle": "💰 Analyse ROI",
+        "roi": [
+          "<strong>Économies de Coûts :</strong> 50 000$/an en coûts de développement",
+          "<strong>Temps de Mise sur le Marché :</strong> 60% lancements de produits plus rapides",
+          "<strong>Satisfaction de l'Équipe :</strong> 90% augmentation du bonheur des développeurs",
+          "<strong>Impact Client :</strong> 40% moins de bugs signalés"
+        ],
+        "takeawaysTitle": "🎯 Points Clés à Retenir",
+        "takeaways": [
+          "Commencer par des tâches d'automatisation simples",
+          "Former l'équipe au développement assisté par IA",
+          "Maintenir les standards de révision de code",
+          "Mesurer et itérer sur l'intégration IA"
+        ],
+        "testimonial": "\"SyinAI a transformé notre façon de travailler. Ce qui prenait des semaines peut maintenant être complété en quelques jours. L'équipe se concentre plus sur la résolution de problèmes que sur le codage répétitif.\" - Budi Santoso, CTO TechFlow"
+      }
+    }
+  },
+  "DocsPage": {
+    "title": "Documentation",
+    "subtitle": "Guide complet pour utiliser AlcaHEX-Studio et SyinAI",
+    "quickStart": "Démarrage Rapide",
+    "quickStartDesc": "Commencez avec SyinAI en quelques minutes",
+    "apiReference": "Référence API",
+    "apiReferenceDesc": "Documentation complète de l'API SyinAI pour les développeurs",
+    "examples": "Exemples",
+    "examplesDesc": "Exemples d'implémentation et cas d'usage SyinAI",
+    "sdkTools": "SDK et Outils",
+    "sdkToolsDesc": "Bibliothèques et outils pour l'intégration SyinAI",
+    "models": "Modèles",
+    "modelsDesc": "Informations détaillées sur les modèles SyinAI disponibles",
+    "faq": "FAQ",
+    "faqDesc": "Questions fréquemment posées sur SyinAI",
+    "mainGuides": "Guides Principaux",
+    "installation": "Installation et Configuration",
+    "installationDesc": "Comment installer et configurer SyinAI dans votre projet",
+    "authentication": "Authentification",
+    "authenticationDesc": "Guide d'authentification et gestion des clés API",
+    "rateLimits": "Limites de Débit",
+    "rateLimitsDesc": "Informations sur les limites d'utilisation de l'API",
+    "errorHandling": "Gestion des Erreurs",
+    "errorHandlingDesc": "Comment gérer les erreurs et résoudre les problèmes",
+    "learnMore": "En Savoir Plus →",
+    "content": {
+      "quickstart": {
+        "title": "Guide de Démarrage Rapide",
+        "gettingStarted": "Commencer avec AlcaHEX-Studio",
+        "welcome": "Bienvenue sur AlcaHEX-Studio ! Ce guide vous aidera à démarrer rapidement.",
+        "installationTitle": "1. Installation",
+        "basicSetupTitle": "2. Configuration de Base",
+        "basicSetupDesc": "Initialisez votre projet avec AlcaHEX-Studio :",
+        "firstRequestTitle": "3. Première Requête",
+        "firstRequestDesc": "Effectuez votre première requête IA :"
+      },
+      "api": {
+        "title": "Référence API",
+        "description": "Documentation complète pour nos endpoints API IA.",
+        "authenticationTitle": "Authentification",
+        "authenticationDesc": "Toutes les requêtes API nécessitent une authentification avec votre clé API :",
+        "generateTextTitle": "Générer du Texte",
+        "responseFormatTitle": "Format de Réponse"
+      },
+      "examples": {
+        "title": "Exemples d'Implémentation",
+        "description": "Exemples concrets et cas d'usage pour AlcaHEX-Studio.",
+        "chatbotTitle": "Implémentation de Chatbot",
+        "contentGenerationTitle": "Génération de Contenu"
+      },
+      "sdk": {
+        "title": "SDK et Outils de Développement",
+        "description": "Bibliothèques et outils pour l'intégration SyinAI.",
+        "officialSDKsTitle": "SDKs Officiels",
+        "developmentToolsTitle": "Outils de Développement",
+        "cliUsageTitle": "Utilisation CLI"
+      },
+      "models": {
+        "title": "Modèles IA Disponibles",
+        "description": "Informations sur nos modèles IA disponibles et leurs capacités.",
+        "syinaiTitle": "SyinAI 1.5",
+        "modelComparisonTitle": "Comparaison des Modèles",
+        "tableHeaders": {
+          "model": "Modèle",
+          "context": "Contexte",
+          "speed": "Vitesse",
+          "quality": "Qualité",
+          "useCase": "Cas d'Usage"
+        },
+        "modelInfo": {
+          "type": "Type :",
+          "contextLength": "Longueur de Contexte :",
+          "bestFor": "Idéal pour :",
+          "languages": "Langues :",
+          "llm": "Grand Modèle de Langage",
+          "tokens": "tokens",
+          "generalText": "Génération de texte général, conversation, codage",
+          "multiLanguage": "Indonésien, Anglais et plus de 50 langues"
+        },
+        "tableData": {
+          "fast": "Rapide",
+          "medium": "Moyen",
+          "high": "Élevé",
+          "veryHigh": "Très Élevé",
+          "generalPurpose": "Usage général",
+          "codeGeneration": "Génération de code"
+        }
+      },
+      "faq": {
+        "title": "Questions Fréquemment Posées",
+        "items": {
+          "apiKey": {
+            "question": "Comment obtenir une clé API ?",
+            "answer": "Vous pouvez obtenir votre clé API en vous inscrivant à notre programme bêta. Visitez notre page d'accueil et cliquez sur \"Mulai Beta\" pour rejoindre la liste d'attente."
+          },
+          "rateLimits": {
+            "question": "Quelles sont les limites de débit ?",
+            "answer": "Pendant la bêta, nous offrons des limites généreuses. Le niveau gratuit comprend 1000 requêtes par mois, avec des plans payants offrant des limites plus élevées."
+          },
+          "security": {
+            "question": "Mes données sont-elles sécurisées ?",
+            "answer": "Oui, nous prenons la sécurité au sérieux. Toutes les données sont chiffrées en transit et au repos. Nous ne stockons pas vos prompts ou réponses sauf configuration explicite."
+          },
+          "languages": {
+            "question": "Quels langages de programmation sont supportés ?",
+            "answer": "Nous fournissons des SDKs officiels pour JavaScript/TypeScript, Python, Go et Java. Vous pouvez aussi utiliser notre API REST avec n'importe quel langage."
+          },
+          "commercial": {
+            "question": "Puis-je utiliser ceci pour des projets commerciaux ?",
+            "answer": "Oui, notre API est conçue pour un usage personnel et commercial. Consultez notre page de tarification pour les détails de licence commerciale."
+          }
+        }
+      },
+      "installation": {
+        "title": "Installation et Configuration",
+        "description": "Comment installer et configurer SyinAI dans votre projet.",
+        "prerequisitesTitle": "Prérequis",
+        "prerequisites": [
+          "Node.js 16+ ou Python 3.8+",
+          "Clé API valide d'AlcaHEX-Studio",
+          "Connexion internet pour les appels API"
+        ],
+        "nodejsTitle": "Installation Node.js",
+        "pythonTitle": "Installation Python",
+        "envSetupTitle": "Configuration d'Environnement",
+        "envSetupDesc": "Créez un fichier `.env` à la racine de votre projet :"
+      },
+      "authentication": {
+        "title": "Guide d'Authentification",
+        "description": "Apprenez comment vous authentifier avec l'API AlcaHEX-Studio.",
+        "apiKeyTitle": "Authentification par Clé API",
+        "apiKeyDesc": "Toutes les requêtes doivent inclure votre clé API dans l'en-tête Authorization :",
+        "sdkAuthTitle": "Authentification SDK",
+        "bestPracticesTitle": "Meilleures Pratiques de Sécurité",
+        "bestPractices": [
+          "Ne jamais exposer votre clé API dans le code côté client",
+          "Utiliser des variables d'environnement pour les clés API",
+          "Faire tourner vos clés API régulièrement",
+          "Surveiller l'usage de votre API pour détecter une activité inhabituelle"
+        ]
+      },
+      "ratelimits": {
+        "title": "Limites de Débit et Usage",
+        "description": "Comprendre les limites de débit API et les meilleures pratiques.",
+        "currentLimitsTitle": "Limites Actuelles",
+        "tableHeaders": {
+          "plan": "Plan",
+          "requestsPerMinute": "Requêtes/minute",
+          "requestsPerMonth": "Requêtes/mois",
+          "tokensPerRequest": "Tokens/requête"
+        },
+        "plans": {
+          "free": "Gratuit",
+          "pro": "Pro",
+          "enterprise": "Entreprise",
+          "custom": "Personnalisé"
+        },
+        "handlingTitle": "Gestion des Limites de Débit"
+      },
+      "errorhandling": {
+        "title": "Gestion des Erreurs",
+        "description": "Comment gérer les erreurs et résoudre les problèmes courants.",
+        "commonErrorsTitle": "Codes d'Erreur Courants",
+        "errors": {
+          "400": "Mauvaise Requête : Paramètres invalides",
+          "401": "Non Autorisé : Clé API invalide",
+          "429": "Limite de Débit : Trop de requêtes",
+          "500": "Erreur Serveur : Problème serveur interne"
+        },
+        "exampleTitle": "Exemple de Gestion d'Erreurs",
+        "troubleshootingTitle": "Conseils de Dépannage",
+        "troubleshooting": [
+          "Vérifiez que votre clé API est valide et n'a pas expiré",
+          "Vérifiez que les paramètres de votre requête correspondent à la spécification API",
+          "Surveillez votre usage de limite de débit",
+          "Consultez notre page de statut pour les problèmes de service"
+        ]
+      }
+    }
+  }
+}

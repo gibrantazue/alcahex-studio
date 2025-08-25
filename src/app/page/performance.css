@@ -1,0 +1,58 @@
+/* Ultra-aggressive performance optimizations for 100fps */
+
+/* Disable all animations and transitions during scroll */
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Force compositing layers for critical elements */
+.hero-section,
+.spline-background,
+.fixed-nav,
+.header-nav-pill {
+  will-change: transform, opacity;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  contain: strict;
+  isolation: isolate;
+}
+
+/* Optimize iframe rendering */
+iframe {
+  contain: strict;
+  content-visibility: auto;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  image-rendering: optimizeSpeed;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated;
+}
+
+/* Reduce paint complexity */
+.hero-section::before,
+.hero-section::after {
+  will-change: opacity;
+  contain: paint;
+  transform: translate3d(0, 0, 0);
+}
+
+/* Optimize text rendering */
+* {
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+}
+
+/* Force GPU layers for navigation */
+.nav-item,
+.join-beta-button-nav,
+.logo-alcahex-nav {
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  contain: layout style paint;
+}

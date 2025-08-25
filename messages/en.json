@@ -1,0 +1,963 @@
+{
+  "Common": {
+    "cancel": "Cancel",
+    "update": "Update",
+    "continue": "Continue",
+    "success": "Success",
+    "delete": "Delete",
+    "save": "Save",
+    "back": "Back",
+    "next": "Next",
+    "create": "Create",
+    "showLess": "Show less",
+    "showMore": "Show more",
+    "generate": "Generate",
+    "edit": "Edit",
+    "editAgent": "Edit Agent",
+    "search": "Search...",
+    "approve": "Approve",
+    "reject": "Reject",
+    "saving": "Saving...",
+    "optional": "Optional",
+    "deleting": "Deleting...",
+    "run": "Run",
+    "description": "Description",
+    "defaultValue": "Default Value",
+    "empty": "Empty",
+    "required": "Required",
+    "options": "Options",
+    "status": "Status",
+    "result": "Result",
+    "startedAt": "Started At",
+    "duration": "Duration",
+    "addOption": "Add Option",
+    "tool": "Tool",
+    "selectTool": "Select Tool...",
+    "noResults": "No results.",
+    "generateWithAI": "Generate With AI",
+    "generateInputWithAI": "Generate Input With AI",
+    "generatingInputWithAI": "Generating input with AI...",
+    "inputGeneratedSuccessfully": "Input generated successfully",
+    "failedToGenerateInput": "Failed to generate input",
+    "createWithExample": "Create With Example",
+    "resultsFound": "{count} results found",
+    "youAreAnExpertIn": "You are an expert in {role}",
+    "joinBeta": "Join Beta"
+  },
+  "Error": {},
+  "Info": {
+    "mcpAddingDisabled": "MCP server addition has been disabled by the administrator.",
+    "vercelSyncDelay": "Running on Vercel\n\nMCP changes may take 10-15 seconds to sync. Please wait a moment after adding, editing, or deleting servers if changes don't appear immediately."
+  },
+  "Workflow": {
+    "title": "Workflow",
+    "createWorkflow": "Create Workflow",
+    "draft": "Draft",
+    "publish": "Publish",
+    "createWorkflowDescription": "Create workflows as powerful tools for your chatbot.",
+    "workflowDescription": "These can be triggered during conversations to automate complex tasks.",
+    "nameAndIcon": "Name And Icon",
+    "workflowNamePlaceholder": "Chatbot will recognize this as tool name",
+    "description": "Description",
+    "descriptionPlaceholder": "Chatbot will see this as tool description",
+    "inputNodeCannotBeDeleted": "Input node cannot be deleted",
+    "autoSaveDescription": "Auto saved every 10 seconds",
+    "draftDescription": "Currently in Draft.\n\nClick Publish to make it available to chatbot\n(but no longer editable).",
+    "publishedDescription": "Currently Published and available to chatbot.\n\nClick Draft to make it editable\n(but unavailable to chatbot).",
+    "private": "Private",
+    "readonly": "Read Only",
+    "public": "Public",
+    "privateDescription": "Only you can view, edit, and use this workflow as a tool.",
+    "readonlyDescription": "Others can view and use as a tool, but only you can edit.",
+    "publicDescription": "Anyone can view, edit, and use this workflow as a tool.",
+    "visibilityDescription": "Control who can access and modify this workflow",
+    "nodeDescriptionPlaceholder": "node description...",
+    "nextNode": "Next Node",
+    "nextNodeDescription": "Add a next node to this workflow.",
+    "addNextNode": "Add Next Node",
+    "inputFields": "Input Fields",
+    "addInputField": "Add Input Field",
+    "inputFieldsDescription": "Define the parameter schema for this workflow.\n\nWhen the chatbot uses this as a tool,\nit will provide values according to this schema.",
+    "fieldEditor": "Field Editor",
+    "variableName": "Variable Name",
+    "variableNamePlaceholder": "Enter variable name...",
+    "fieldDescriptionPlaceholder": "Enter field description...",
+    "defaultValuePlaceholder": "Enter default {type} value...",
+    "selectOptionPlaceholder": "Select option...",
+    "unlink": "Unlink Node",
+    "elseIfDescription": "If the condition is not met, the logic to be executed is defined.",
+    "elseDescription": "If the condition is not met, the logic to be executed is defined.",
+    "addCondition": "Add Condition",
+    "noVariablesFound": "No variables found",
+    "outputVariables": "Output Variables",
+    "outputVariablesDescription": "Output variables are the variables that are output from the workflow.",
+    "addOutputVariable": "Add Output Variable",
+    "outputSchema": "Output Schema",
+    "addMessage": "Add Message",
+    "messagesDescription": "Generate data through LLM processing.\n\nUse '/' to mention and reference data from previous nodes as input.\n\nWith Structured Output enabled, perfect for data transformation, formatting, and validation.",
+    "descriptionAndSchema": "Description & Schema",
+    "noDescriptionAndSchema": "No description and schema",
+    "toolDescription": "Provide information needed for LLM to generate tool parameters.\n\nUse '/' to mention data from previous nodes.",
+    "generateInputWithAIDescription": "Write a prompt to generate input for the workflow",
+    "selectVariable": "Select Variable",
+    "structuredOutput": "Structured Output",
+    "structuredOutputDescription": "Generate response as JSON object with defined schema",
+    "outputSchemaEditor": "Output Schema Editor",
+    "addField": "Add Field",
+    "saveSchema": "Save Schema",
+    "generateSchemaWithAI": "Generate Schema with AI",
+    "describeOutputDataRequest": "Provide example JSON data that represents what this node should output\n\nExample: {eg}",
+    "generatingJsonSchemaWithAI": "Generating JSON Schema with AI...",
+    "jsonSchemaGeneratedSuccessfully": "JSON Schema generated successfully!",
+    "failedToGenerateSchema": "Failed to generate schema",
+    "jsonSchemaEditorDescription": "Direct JSON Schema editing with AI assistance. Supports complex nested structures and arrays.",
+    "template": "Template",
+    "templateDescription": "Generate template documents.\n\nUse '/' to reference and use output values from other nodes.",
+    "greeting": {
+      "buildAutomationTitle": "Build Automation by Connecting Nodes",
+      "buildAutomationDescription": "Connect various nodes to automate complex tasks. Each node handles specific functions, and data flows sequentially for processing.",
+      "chatbotToolTitle": "Use as Chatbot Tools",
+      "chatbotToolDescription": "The main purpose of workflows is to use them as tools in chatbot conversations. Turn repetitive tasks into workflows for easy execution during chats.",
+      "parameterBasedTitle": "Parameter-Based Start",
+      "parameterBasedDescription": "Input nodes define parameter structures, not triggers. They specify the data format needed when chatbot calls this workflow as a tool.",
+      "exampleTitle": "Usage Example",
+      "exampleDescription": "Create an \"Email Writing → Translation → Send\" workflow, then easily execute it in chatbot conversations with \"@email_workflow\".",
+      "availableNodesTitle": "Available Nodes",
+      "upcomingNodesTitle": "Upcoming Nodes",
+      "ctaMessage": "Start creating workflows now to expand your chatbot's capabilities!",
+      "soonMessage": "Coming soon."
+    },
+    "example": {
+      "babyResearch": "Baby Research",
+      "getWeather": "Get Weather"
+    },
+    "kindsDescription": {
+      "input": "Define input parameters that the chatbot will provide when using this workflow as a tool.\n\nSpecify the data structure and validation rules for tool execution.",
+      "output": "Collect and return the final results from your workflow execution.\n\nCombine data from multiple nodes into the final tool response.",
+      "llm": "Generate text or structured data using AI models.\n\nReference previous node outputs with '/' mentions to create context-aware responses.\n\nUse Structured Output to transform, format, and validate data - not just for text generation.",
+      "tool": "Execute MCP tools or external services.\n\nWrite instructions in messages, and LLM will generate the required tool parameters from your context.",
+      "note": "Add documentation and comments to organize your workflow logic.\n\nHelp team members understand complex workflow processes.",
+      "code": "Execute custom code scripts with access to previous node data.\n\nRun JavaScript, Python, or other languages within your workflow (coming soon).",
+      "http": "Fetch data from external APIs and web services via HTTP requests.\n\nIntegrate with REST APIs, webhooks, and third-party services.",
+      "template": "Create dynamic documents by combining text with data from previous nodes.\n\nGenerate emails, reports, or formatted content using variable substitution.",
+      "condition": "Add conditional logic to branch your workflow based on data evaluation.\n\nCreate if-else logic to handle different scenarios and data conditions."
+    },
+    "structuredOutputSwitchConfirm": "You currently have structured output enabled.\n What would you like to do?",
+    "structuredOutputSwitchConfirmOk": "Edit Structured Output",
+    "structuredOutputSwitchConfirmCancel": "Change to Text Output",
+    "noTools": "No published workflows available.\nCreate workflows to build custom tools.",
+    "arrangeNodes": "Auto Layout",
+    "nodesArranged": "Layout applied successfully"
+  },
+  "Auth": {
+    "SignIn": {
+      "title": "Welcome Back",
+      "description": "Sign in to continue to your account",
+      "oauthClientIdNotSet": "{provider} client ID is not set",
+      "noAccount": "Don't have an account? ",
+      "signUp": "Sign up",
+      "signIn": "Sign in",
+      "orContinueWith": "OR CONTINUE WITH"
+    },
+    "SignUp": {
+      "title": "Create an account",
+      "signIn": "Sign in",
+      "description": "Sign up to your account",
+      "step1": "Start your journey with us by entering your email address",
+      "step2": "I'll use this name when we chat",
+      "step3": "Create a strong password to secure your account",
+      "signUp": "Sign Up",
+      "invalidEmail": "Invalid email address",
+      "emailAlreadyExists": "Email already exists",
+      "nameRequired": "Name is required",
+      "passwordRequired": "Password is required",
+      "createAccount": "Create account"
+    },
+    "Intro": {
+      "description": "Welcome to AlcaHEX-Studio. Sign in to experience our AI-powered conversational tools."
+    }
+  },
+  "Chat": {
+    "Error": "Chat Error",
+    "thisMessageWasNotSavedPleaseTryTheChatAgain": "This message was not saved. Please try the chat again.",
+    "Greeting": {
+      "goodMorning": "Good morning, {name}",
+      "goodAfternoon": "Good afternoon, {name}",
+      "goodEvening": "Good evening, {name}",
+      "niceToSeeYouAgain": "Nice to see you again, {name}",
+      "whatAreYouWorkingOnToday": "What are you working on today? {name}",
+      "letMeKnowWhenYoureReadyToBegin": "Let me know when you're ready to begin.",
+      "whatAreYourThoughtsToday": "What are your thoughts today?",
+      "whereWouldYouLikeToStart": "Where would you like to start?",
+      "whatAreYouThinking": "What are you thinking? {name}"
+    },
+    "TemporaryChat": {
+      "toggleTemporaryChat": "Toggle Temporary Chat",
+      "temporaryChat": "Temporary Chat",
+      "resetChat": "Reset Chat",
+      "thisChatWontBeSaved": "This chat won't be saved.",
+      "feelFreeToAskAnythingTemporarily": "Feel free to ask anything temporarily",
+      "temporaryChatInstructions": "Temporary Chat Instructions",
+      "temporaryChatInstructionsPlaceholder": "Enter your instructions here",
+      "temporaryChatInstructionsDescription": "You can set instructions for the temporary chat. This will be used as a system prompt for the temporary chat."
+    },
+    "placeholder": "Ask anything or @mention",
+    "Tool": {
+      "webSearching": "Searching the Web...",
+      "searchedTheWeb": "Searched the Web",
+      "toolsSetupDescription": "Select tools that the chatbot can use.\nThe chatbot will use selected tools based on its own judgment.\n\nYou can also force the use of specific tools through @mention.",
+      "selectToolMode": "Select a tool mode",
+      "autoToolModeDescription": "Decides when to use tools without asking you",
+      "manualToolModeDescription": "Asks your permission before using any tools",
+      "noneToolModeDescription": "Do not use tools. @mention is still available.",
+      "toolsSetup": "Tools Setup",
+      "preset": "Preset",
+      "toolPresets": "Tool Presets",
+      "saveAsPreset": "Save As Preset",
+      "saveAsPresetDescription": "Save the current tool configuration as a preset.",
+      "noPresetsAvailableYet": "No presets available yet",
+      "presetNameCannotBeEmpty": "Preset name cannot be empty",
+      "presetNameAlreadyExists": "Preset name already exists",
+      "presetSaved": "Preset saved",
+      "clickSaveAsPresetToGetStarted": "Click Save As Preset to get started.",
+      "searchOptions": "Search Options",
+      "searchOptionsDescription": "You can pass search options to the chatbot, such as the maximum number of search results, the search date, etc.",
+      "defaultToolKit": {
+        "visualization": "Data Visualization",
+        "webSearch": "Search the Web",
+        "http": "HTTP Request"
+      }
+    },
+    "VoiceChat": {
+      "title": "Voice Chat Mode",
+      "compactDisplayMode": "Compact display mode",
+      "conversationDisplayMode": "Conversation display mode",
+      "pleaseCloseTheVoiceChatAndTryAgain": "Please close the voice chat and try again.",
+      "startConversation": "Start conversation",
+      "closeMic": "Close Mic",
+      "openMic": "Open Mic",
+      "endConversation": "End conversation",
+      "toggleVoiceChat": "Toggle Voice Chat",
+      "readyWhenYouAreJustStartTalking": "Ready when you are—just start talking.",
+      "yourMicIsOff": "Your mic is off.",
+      "preparing": "Preparing...",
+      "startVoiceChat": "Start voice chat?"
+    },
+    "Thread": {
+      "chat": "Chat",
+
+      "renameChat": "Re Name",
+      "deleteChat": "Delete Chat",
+      "deleteUnarchivedChats": "Delete All Unarchived Chats",
+      "confirmDeleteUnarchivedChats": "Are you sure you want to delete all unarchived chats?",
+      "thisActionCannotBeUndone": "This action cannot be undone.",
+      "unarchivedChatsDeleted": "Unarchived chats have been deleted",
+      "failedToDeleteUnarchivedChats": "Failed to delete unarchived chats",
+      "failedToDeleteThread": "Failed to delete thread",
+      "threadDeleted": "Thread deleted",
+      "failedToUpdateThread": "Failed to update thread",
+      "titleRequired": "Title is required",
+      "threadUpdated": "Thread updated",
+      "areYouSureYouWantToDeleteThisChatThread": "Are you sure you want to delete this Chat thread?"
+    },
+
+    "ChatPreferences": {
+      "title": "Chat Preferences",
+      "whatShouldWeCallYou": "What should we call you?",
+      "botName": "Assistant Name",
+      "whatBestDescribesYourWork": "What best describes your work?",
+      "whatPersonalPreferencesShouldBeTakenIntoAccountInResponses": "What personal preferences should be taken into account in responses?",
+      "responseStyleExample1": "e.g. keep explanations brief and to the point",
+      "responseStyleExample2": "e.g. when learning new concepts, I find analogies particularly helpful",
+      "responseStyleExample3": "e.g. ask clarifying questions before giving detailed answers",
+      "responseStyleExample4": "e.g. remember I primarily code in Python (not a coding beginner)",
+      "professionExample1": "e.g. software engineer",
+      "professionExample2": "e.g. product manager",
+      "professionExample3": "e.g. marketing manager",
+      "professionExample4": "e.g. sales manager",
+      "professionExample5": "e.g. business analyst",
+      "preferencesSaved": "Preferences saved",
+      "failedToSavePreferences": "Failed to save preferences",
+      "userInstructions": "User Instructions",
+      "userInstructionsDescription": "Introduce yourself and get a more personalized response.",
+      "mcpInstructions": "MCP Instructions",
+      "mcpInstructionsDescription": "Customize the MCP server instructions."
+    }
+  },
+  "Layout": {
+    "workflow": "Workflow",
+    "toggleSidebar": "Toggle Sidebar",
+    "newChat": "New Chat",
+    "mcpConfiguration": "MCP Configuration",
+    "agents": "Agents",
+    "newAgent": "New Agent",
+    "createAgent": "Create an agent",
+    "createYourOwnAgent": "Create your own specialized AI agent with unique features and personality",
+    "whatIsAgent": "What is Agent?",
+    "agentDescription": "Agents are specialized AI assistants that can be customized with specific roles, instructions, and tools to help you with various tasks.",
+    "specializedAIAssistant": "Specialized AI Assistant",
+    "specializedAIAssistantDescription": "Each agent can be customized with specific roles, personalities, and expertise areas to provide focused assistance for your unique needs.",
+    "customInstructions": "Custom Instructions",
+    "customInstructionsDescription": "Define detailed system prompts and behavioral guidelines to shape how your agent responds and interacts with you.",
+    "toolIntegration": "Tool Integration",
+    "toolIntegrationDescription": "Connect your agents to MCP servers, workflows, and other tools to extend their capabilities beyond conversation.",
+    "agentExamples": "Agent Examples",
+    "businessAssistant": "Business Assistant",
+    "businessAssistantDescription": "Specialized in business analysis, report generation, and professional communication.",
+    "creativeWriter": "Creative Writer",
+    "creativeWriterDescription": "Focused on storytelling, content creation, and creative brainstorming.",
+    "technicalExpert": "Technical Expert",
+    "technicalExpertDescription": "Equipped with development tools and coding expertise for technical tasks.",
+    "createFirstAgentToStart": "Create your first agent to get started!",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "lastWeek": "Last 7 days",
+    "older": "Older",
+    "recentChats": "Recent Chats",
+    "deleteAllChats": "Delete All Chats",
+    "deleteUnarchivedChats": "Delete Unarchived Chats",
+    "noConversationsYet": "No conversations yet",
+    "deletingAllChats": "Deleting all threads...",
+    "deletingUnarchivedChats": "Deleting unarchived threads...",
+    "allChatsDeleted": "All threads deleted",
+    "unarchivedChatsDeleted": "Unarchived threads deleted",
+    "failedToDeleteAllChats": "Failed to delete all threads",
+    "failedToDeleteUnarchivedChats": "Failed to delete unarchived threads",
+    "chatPreferences": "Chat Preferences",
+    "keyboardShortcuts": "Keyboard Shortcuts",
+    "theme": "Theme",
+    "signOut": "Sign out",
+    "language": "Language",
+
+    "showAllChats": "View All Chats",
+    "showLessChats": "Show less",
+    "reportAnIssue": "Report an issue",
+    "joinCommunity": "Join Community"
+  },
+  "Archive": {
+    "title": "Archive",
+    "addArchive": "Add Archive",
+    "archiveName": "Archive Name",
+    "archiveDescription": "Archive Description",
+    "archiveDescriptionPlaceholder": "Archives are spaces to store chat history.",
+    "noArchives": "No archives",
+    "createFirstArchive": "Create your first archive",
+    "archiveCreated": "Archive created",
+    "archiveUpdated": "Archive updated",
+    "archiveDeleted": "Archive deleted",
+    "failedToCreateArchive": "Failed to create archive",
+    "failedToUpdateArchive": "Failed to update archive",
+    "failedToDeleteArchive": "Failed to delete archive",
+    "editArchive": "Edit Archive",
+    "editArchiveDescription": "Edit archive information",
+    "deleteArchive": "Delete Archive",
+    "confirmDeleteArchive": "Are you sure you want to delete this archive?",
+    "deleteArchiveDescription": "This archive and all its items will be permanently deleted. This action cannot be undone.",
+    "addToArchive": "Add to Archive",
+    "removeFromArchive": "Remove from Archive",
+    "itemAddedToArchive": "Item added to archive",
+    "itemRemovedFromArchive": "Item removed from archive"
+  },
+  "Agent": {
+    "title": "Agent",
+    "generatingAgent": "Generating Agent...",
+    "agentNameAndIconLabel": "Give your agent a name and icon.",
+    "agentDescriptionLabel": "Add a brief description of what this agent does.",
+    "agentDescriptionPlaceholder": "This is just a description of the agent, it's not critical.",
+    "agentSettingsDescription": "From here, these are settings that can affect the agent.",
+    "thisAgentIs": "This agent is an expert in",
+    "expertIn": "",
+    "agentRolePlaceholder": "stock analysis",
+    "agentInstructionsLabel": "Feel free to write the agent's role, personality, guidelines, knowledge, etc.",
+    "agentInstructionsPlaceholder": "This agent helps with stock analysis. It uses web search tools to obtain stock information...",
+    "agentToolsLabel": "Add tools that this agent can use.",
+    "loadingTools": "Loading tools...",
+    "addTools": "Please add tools.",
+    "generateAgentGreeting": "Hello! I'll help you create your own agent. What would you like to create?",
+    "generateAgentDetailedGreeting": "Hello! I'll help you create your own agent. What would you like to create? You can write briefly or in detail.",
+    "inputPromptHere": "input prompt here...",
+    "agentNamePlaceholder": "better-agent"
+  },
+  "KeyboardShortcuts": {
+    "title": "Keyboard Shortcuts",
+    "newChat": "New Chat",
+    "toggleTemporaryChat": "Toggle Temporary Chat",
+    "toggleSidebar": "Toggle Sidebar",
+    "toolMode": "Tool Mode",
+    "lastMessageCopy": "Copy Last Message",
+    "openChatPreferences": "Open Chat Preferences",
+    "deleteThread": "Delete Chat",
+    "openShortcutsPopup": "Open Shortcuts Popup",
+    "toggleVoiceChat": "Toggle Voice Chat"
+  },
+  "MCP": {
+    "marketplace": "Marketplace",
+    "addMcpServer": "Add Server",
+    "configureYourMcpServerConnectionSettings": "Configure your MCP server connection settings",
+    "mcpConfiguration": "MCP Configuration",
+    "nameMustContainOnlyAlphanumericCharactersAndHyphens": "Name must contain only alphanumeric characters (A-Z, a-z, 0-9) and hyphens (-)",
+    "nameIsRequired": "Name is required",
+    "configurationSavedSuccessfully": "Configuration saved successfully",
+    "enterMcpServerName": "Enter MCP server name",
+    "saveConfiguration": "Save Configuration",
+    "toolsTest": "Tools Test",
+    "refresh": "Refresh",
+    "delete": "Delete",
+    "edit": "Edit",
+    "configuration": "Configuration",
+    "availableTools": "Available Tools",
+    "noToolsAvailable": "No tools available",
+    "overviewTitle": "Connect Your First Server",
+    "overviewDescription": "Add MCP servers to unlock powerful AI integrations",
+    "searchTools": "Search tools",
+    "detail": "Detail",
+    "noSchemaPropertiesAvailable": "No schema properties available",
+    "createInputWithAI": "Create Input with AI",
+    "generateExampleInputJSON": "Generate Example Input JSON",
+    "enterPromptToGenerateExampleInputJSON": "Enter a prompt to generate example input JSON for the selected tool.",
+    "callTool": "Call Tool",
+    "customInstructions": "Custom instructions",
+    "serverCustomInstructionsPlaceholder": "These lines will be added to the AI system prompt whenever a tool from this server is available.",
+    "nameAlreadyExists": "Name already exists",
+    "additionalInstructions": "Tool Customization Instructions",
+    "inputSchema": "Input Schema",
+    "toolCustomizationInstructions": "Tool customization instructions will be added to the system prompt when the tool is available.\nexample) Always enter the email in the format example@example.com.",
+    "mcpServerCustomization": "MCP Customization",
+    "mcpServerCustomizationDescription": "MCP server customization instructions will be added to the system prompt when the MCP server is available.",
+    "toolCustomizationInstructionsPlaceholder": "Tool customization instructions are not available.",
+    "mcpServerCustomizationPlaceholder": "eg. If the input value is email, always enter the email in the format example@example.com."
+  },
+  "LandingPage": {
+    "navHome": "Home",
+    "navAbout": "About",
+    "navIntro": "SyinAI 1.5",
+    "navCapabilities": "Capabilities",
+    "navModels": "Models",
+    "navGetApi": "Get API",
+    "navJoinBeta": "Join Beta",
+    "newHome": "Home",
+    "newAbout": "About",
+    "newIntro": "SyinAI 1.5",
+    "newCapabilities": "Capabilities",
+    "newModels": "Models",
+    "newGetApi": "Get API",
+    "aboutHeadline": "The SyinAI ecosystem represents our <highlight>most capable AI.</highlight>",
+    "aboutDescription": "Our SyinAI models are built from the ground up for <highlight>multimodality</highlight> — reasoning seamlessly across text, images, audio, video, and code.",
+    "latestUpdates": "Latest updates",
+    "updateDate": "August 20, 2025",
+    "introTitle": "Introducing SyinAI 1.5",
+    "introSubtitle": "Our next-generation model.",
+    "introText": "Built to be natively multimodal and equipped with a breakthrough context window, SyinAI 1.5 is designed for a wide range of applications.",
+    "tryButton": "Try SyinAI 1.5",
+    "capabilitiesTitle": "Leading AI Capabilities",
+    "capabilitiesSubtitle": "Three advanced AI models designed for various modern computing and data analysis needs",
+    "reasoningTitle": "Reasoning & Problem Solving",
+    "reasoningDescription": "Advanced AI model with deep reasoning capabilities to solve complex problems, logical analysis, and accurate decision-making.",
+    "multimodalTitle": "Multimodal Intelligence",
+    "multimodalDescription": "Leading AI capability to understand and analyze various data types simultaneously - text, images, audio, video, and code with integrated context.",
+    "codingTitle": "Code Generation & Debugging",
+    "codingDescription": "Develop, explain, and debug complex algorithms and codebases with high accuracy.",
+    "modelsTitle": "SyinAI comes in three different models",
+    "ultraDescription": "The leading reasoning model with deep analysis and complex problem-solving capabilities.",
+    "proDescription": "An advanced multimodal model that understands text, images, audio, video, and code in an integrated manner.",
+    "nanoDescription": "A specialized programming model with the best coding, debugging, and software development capabilities.",
+    "mmluPerformance": "MMLU Performance",
+    "mmluDescription": "Syin o1 achieves the highest score in the MMLU benchmark",
+    "responseSpeed": "Response Speed",
+    "responseSpeedDescription": "Average response time for complex queries",
+    "codeAccuracy": "Code Accuracy",
+    "codeAccuracyDescription": "Accuracy rate in code generation and debugging",
+    "benchmarkComparison": "Performance Comparison with Other Models",
+    "startTitle": "Get started with SyinAI",
+    "startSubtitle": "Build with our most capable models.",
+    "getApiKey": "Get API key",
+    "readDocs": "Read documentation",
+    "sponsorsTitle": "In collaboration with",
+    "footerSlogan": "Modern AI solutions for a new generation of development.",
+    "footerProducts": "Products",
+    "footerResources": "Resources",
+    "footerContact": "Contact Us",
+    "footerRights": "All Rights Reserved.",
+    "footerPrivacy": "Privacy Policy",
+    "footerTerms": "Terms of Service"
+  },
+  "BlogPage": {
+    "title": "AlcaHEX Blog",
+    "subtitle": "Latest insights, tutorials, and updates from our AI development team",
+    "readMore": "Read More",
+    "newsletter": {
+      "title": "Stay Updated",
+      "description": "Subscribe to our newsletter to get the latest updates on AI development and product releases.",
+      "placeholder": "Enter your email address",
+      "subscribe": "Subscribe"
+    },
+    "categories": {
+      "all": "All",
+      "productUpdate": "Product Update",
+      "tutorial": "Tutorial", 
+      "research": "Research",
+      "caseStudy": "Case Study"
+    },
+    "posts": {
+      "1": {
+        "title": "Introducing SyinAI 1.5: Next Generation AI Revolution",
+        "excerpt": "Learn about the latest features and performance improvements in SyinAI 1.5 that change how we interact with AI.",
+        "date": "August 24, 2025",
+        "author": "AlcaHEX Team",
+        "readTime": "5 min read"
+      },
+      "2": {
+        "title": "Complete Guide: Optimizing AI Performance for Coding",
+        "excerpt": "Tips and tricks to maximize coding productivity using SyinAI Coder with various programming languages.",
+        "date": "August 20, 2025", 
+        "author": "Developer Team",
+        "readTime": "8 min read"
+      },
+      "3": {
+        "title": "The Future of Multimodal AI: Vision and Language in One Model",
+        "excerpt": "Exploring SyinAI 1.5 Pro's multimodal capabilities in processing text, images, and complex data.",
+        "date": "August 15, 2025",
+        "author": "Research Team", 
+        "readTime": "6 min read"
+      },
+      "4": {
+        "title": "Case Study: SyinAI Implementation in Tech Startups",
+        "excerpt": "How tech startups increased efficiency by 300% by integrating SyinAI into their workflow.",
+        "date": "August 10, 2025",
+        "author": "Business Team",
+        "readTime": "7 min read"
+      }
+    },
+    "navigation": {
+      "home": "Home",
+      "about": "About", 
+      "documentation": "Documentation",
+      "blog": "Blog",
+      "api": "API",
+      "joinBeta": "Join Beta"
+    },
+    "footer": {
+      "description": "Modern AI solutions for the new generation of development.",
+      "products": "Products",
+      "resources": "Resources", 
+      "contact": "Contact Us",
+      "copyright": "All rights reserved."
+    },
+    "articles": {
+      "1": {
+        "title": "Introducing SyinAI 1.5: Next Generation AI Revolution",
+        "description": "We proudly introduce SyinAI 1.5, our latest AI model that brings revolution in how we interact with artificial intelligence. With significant improvements in performance, accuracy, and contextual understanding capabilities.",
+        "featuresTitle": "🚀 Latest Features",
+        "features": [
+          "40% Performance Improvement - Faster and more accurate responses",
+          "8K Token Context Window - Capable of processing longer documents", 
+          "Multimodal Capabilities - Process text, images, and code simultaneously",
+          "Indonesian Language Optimization - Better Indonesian language understanding"
+        ],
+        "improvementsTitle": "💡 Key Improvements",
+        "improvementsDesc": "SyinAI 1.5 comes with architecture optimized specifically for:",
+        "improvements": [
+          "Programming and code debugging",
+          "Data analysis and visualization", 
+          "Creative and technical writing",
+          "Translation and localization"
+        ],
+        "codeExampleTitle": "API Usage Example:",
+        "availabilityTitle": "🎯 Availability",
+        "availabilityDesc": "SyinAI 1.5 is now available for all AlcaHEX-Studio beta users. Automatic upgrades will be performed for all registered accounts."
+      },
+      "2": {
+        "title": "Complete Guide: Optimizing AI Performance for Coding",
+        "description": "In this digital era, AI has become an inseparable partner for developers. This guide will help you maximize coding productivity using SyinAI.",
+        "setupTitle": "🛠️ Optimal Setup",
+        "setupDesc": "To get the best results, ensure the following configuration:",
+        "bestPracticesTitle": "💻 Best Practices",
+        "bestPractices": [
+          "Prompt Engineering - Provide clear and specific context",
+          "Code Review - Always review AI-generated code",
+          "Iterative Development - Use AI for gradual refactoring", 
+          "Documentation - Ask AI to add comments and documentation"
+        ],
+        "examplesTitle": "🎯 Usage Examples",
+        "example1Title": "1. Generate Function",
+        "example2Title": "2. Code Optimization",
+        "productivityTitle": "📊 Productivity Tips",
+        "productivityTips": [
+          "Use AI to generate unit tests",
+          "Ask AI to explain complex code",
+          "Automate API documentation",
+          "Debug with AI assistance for error analysis"
+        ]
+      },
+      "3": {
+        "title": "The Future of Multimodal AI: Vision and Language in One Model",
+        "description": "Multimodal AI capabilities have opened a new era in information processing. SyinAI 1.5 Pro integrates visual and textual understanding in one powerful model.",
+        "technologyTitle": "🔬 Multimodal Technology",
+        "technologyDesc": "Multimodal models combine several input modalities:",
+        "modalities": [
+          "Text Processing - Natural language understanding",
+          "Image Recognition - Visual analysis and object detection",
+          "Code Understanding - Code interpretation and generation",
+          "Document Analysis - Information extraction from documents"
+        ],
+        "useCasesTitle": "🎯 Use Cases",
+        "useCase1Title": "1. Image-to-Code Generation",
+        "useCase1Desc": "Upload mockup or wireframe, get HTML/CSS code:",
+        "useCase2Title": "2. Document Analysis", 
+        "useCase2Desc": "Analyze complex documents with automatic data extraction:",
+        "implementationTitle": "🚀 Implementation",
+        "futureTitle": "🔮 Future",
+        "futureDesc": "Multimodal AI development will bring:",
+        "futureItems": [
+          "Real-time video analysis",
+          "3D model understanding",
+          "Audio-visual synchronization",
+          "Cross-modal reasoning"
+        ]
+      },
+      "4": {
+        "title": "Case Study: SyinAI Implementation in Tech Startups",
+        "description": "Real case study of how TechFlow tech startup increased development efficiency by 300% by integrating SyinAI into their workflow.",
+        "profileTitle": "🏢 Company Profile",
+        "profile": [
+          "Name: TechFlow Indonesia",
+          "Industry: E-commerce Platform",
+          "Team Size: 15 developers",
+          "Tech Stack: React, Node.js, PostgreSQL"
+        ],
+        "challengesTitle": "⚡ Challenges Before SyinAI",
+        "challenges": [
+          "Slow development cycle (6-8 weeks per feature)",
+          "Time-consuming code reviews",
+          "Inconsistent documentation",
+          "Repetitive bug fixing"
+        ],
+        "implementationTitle": "🛠️ SyinAI Implementation",
+        "codeGenTitle": "1. Code Generation",
+        "codeGenDesc": "// Before: Manual CRUD operations\n// Time: 2-3 hours per endpoint\n\n// After: AI-generated with SyinAI\n// Time: 15 minutes per endpoint",
+        "testingTitle": "2. Automated Testing",
+        "resultsTitle": "📊 Implementation Results",
+        "results": [
+          "Development Speed: ⬆️ 300% faster feature development",
+          "Code Quality: ⬆️ 85% reduction in bugs",
+          "Documentation: ⬆️ 100% automatic coverage",
+          "Team Productivity: ⬆️ 250% increase in output"
+        ],
+        "roiTitle": "💰 ROI Analysis",
+        "roi": [
+          "Cost Savings: $50,000/year in development costs",
+          "Time to Market: 60% faster product launches",
+          "Team Satisfaction: 90% developer happiness increase",
+          "Customer Impact: 40% fewer reported bugs"
+        ],
+        "takeawaysTitle": "🎯 Key Takeaways",
+        "takeaways": [
+          "Start with simple automation tasks",
+          "Train team on AI-assisted development",
+          "Maintain code review standards",
+          "Measure and iterate on AI integration"
+        ],
+        "testimonial": "\"SyinAI has transformed the way we work. What used to take weeks can now be completed in days. The team focuses more on problem-solving rather than repetitive coding.\" - Budi Santoso, CTO TechFlow"
+      }
+    }
+  },
+  "DocsPage": {
+    "title": "Documentation",
+    "subtitle": "Complete guide to using AlcaHEX-Studio and SyinAI",
+    "quickStart": "Quick Start",
+    "quickStartDesc": "Start using SyinAI in minutes",
+    "apiReference": "API Reference",
+    "apiReferenceDesc": "Complete SyinAI API documentation for developers",
+    "examples": "Examples",
+    "examplesDesc": "Implementation examples and SyinAI use cases",
+    "sdkTools": "SDK & Tools",
+    "sdkToolsDesc": "Libraries and tools for SyinAI integration",
+    "models": "Models",
+    "modelsDesc": "Detailed information about available SyinAI models",
+    "faq": "FAQ",
+    "faqDesc": "Frequently asked questions about SyinAI",
+    "mainGuides": "Main Guides",
+    "installation": "Installation and Setup",
+    "installationDesc": "How to install and configure SyinAI in your project",
+    "authentication": "Authentication",
+    "authenticationDesc": "Authentication guide and API key management",
+    "rateLimits": "Rate Limits",
+    "rateLimitsDesc": "Information about API usage limits",
+    "errorHandling": "Error Handling",
+    "errorHandlingDesc": "How to handle errors and troubleshooting",
+    "learnMore": "Learn →",
+    "content": {
+      "quickstart": {
+        "title": "Quick Start Guide",
+        "gettingStarted": "Getting Started with AlcaHEX-Studio",
+        "welcome": "Welcome to AlcaHEX-Studio! This guide will help you get started quickly.",
+        "installationTitle": "1. Installation",
+        "basicSetupTitle": "2. Basic Setup",
+        "basicSetupDesc": "Initialize your project with AlcaHEX-Studio:",
+        "firstRequestTitle": "3. First Request",
+        "firstRequestDesc": "Make your first AI request:"
+      },
+      "api": {
+        "title": "API Reference",
+        "description": "Complete documentation for our AI API endpoints.",
+        "authenticationTitle": "Authentication",
+        "authenticationDesc": "All API requests require authentication using your API key:",
+        "generateTextTitle": "Generate Text",
+        "responseFormatTitle": "Response Format"
+      },
+      "examples": {
+        "title": "Implementation Examples",
+        "description": "Real-world examples and use cases for AlcaHEX-Studio.",
+        "chatbotTitle": "Chatbot Implementation",
+        "contentGenerationTitle": "Content Generation"
+      },
+      "sdk": {
+        "title": "SDK & Development Tools",
+        "description": "Libraries and tools for SyinAI integration.",
+        "officialSDKsTitle": "Official SDKs",
+        "developmentToolsTitle": "Development Tools",
+        "cliUsageTitle": "CLI Usage"
+      },
+      "models": {
+        "title": "Available AI Models",
+        "description": "Information about our available AI models and their capabilities.",
+        "syinaiTitle": "SyinAI 1.5",
+        "modelComparisonTitle": "Model Comparison",
+        "tableHeaders": {
+          "model": "Model",
+          "context": "Context",
+          "speed": "Speed",
+          "quality": "Quality",
+          "useCase": "Use Case"
+        },
+        "modelInfo": {
+          "type": "Type:",
+          "contextLength": "Context Length:",
+          "bestFor": "Best for:",
+          "languages": "Languages:",
+          "llm": "Large Language Model",
+          "tokens": "tokens",
+          "generalText": "General text generation, conversation, coding",
+          "multiLanguage": "Indonesian, English, and 50+ other languages"
+        },
+        "tableData": {
+          "fast": "Fast",
+          "medium": "Medium",
+          "high": "High",
+          "veryHigh": "Very High",
+          "generalPurpose": "General purpose",
+          "codeGeneration": "Code generation"
+        }
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "items": {
+          "apiKey": {
+            "question": "How do I get an API key?",
+            "answer": "You can get your API key by signing up for our beta program. Visit our homepage and click \"Mulai Beta\" to join the waitlist."
+          },
+          "rateLimits": {
+            "question": "What are the rate limits?",
+            "answer": "During beta, we offer generous rate limits. Free tier includes 1000 requests per month, with paid plans offering higher limits."
+          },
+          "security": {
+            "question": "Is my data secure?",
+            "answer": "Yes, we take security seriously. All data is encrypted in transit and at rest. We don't store your prompts or responses unless explicitly configured."
+          },
+          "languages": {
+            "question": "What programming languages are supported?",
+            "answer": "We provide official SDKs for JavaScript/TypeScript, Python, Go, and Java. You can also use our REST API with any language."
+          },
+          "commercial": {
+            "question": "Can I use this for commercial projects?",
+            "answer": "Yes, our API is designed for both personal and commercial use. Check our pricing page for commercial licensing details."
+          }
+        }
+      },
+      "installation": {
+        "title": "Installation and Setup",
+        "description": "How to install and configure SyinAI in your project.",
+        "prerequisitesTitle": "Prerequisites",
+        "prerequisites": [
+          "Node.js 16+ or Python 3.8+",
+          "Valid API key from AlcaHEX-Studio",
+          "Internet connection for API calls"
+        ],
+        "nodejsTitle": "Node.js Installation",
+        "pythonTitle": "Python Installation",
+        "envSetupTitle": "Environment Setup",
+        "envSetupDesc": "Create a `.env` file in your project root:"
+      },
+      "authentication": {
+        "title": "Authentication Guide",
+        "description": "Learn how to authenticate with the AlcaHEX-Studio API.",
+        "apiKeyTitle": "API Key Authentication",
+        "apiKeyDesc": "All requests must include your API key in the Authorization header:",
+        "sdkAuthTitle": "SDK Authentication",
+        "bestPracticesTitle": "Security Best Practices",
+        "bestPractices": [
+          "Never expose your API key in client-side code",
+          "Use environment variables for API keys",
+          "Rotate your API keys regularly",
+          "Monitor your API usage for unusual activity"
+        ]
+      },
+      "ratelimits": {
+        "title": "Rate Limits and Usage",
+        "description": "Understanding API rate limits and best practices.",
+        "currentLimitsTitle": "Current Limits",
+        "tableHeaders": {
+          "plan": "Plan",
+          "requestsPerMinute": "Requests/minute",
+          "requestsPerMonth": "Requests/month",
+          "tokensPerRequest": "Tokens/request"
+        },
+        "plans": {
+          "free": "Free",
+          "pro": "Pro",
+          "enterprise": "Enterprise",
+          "custom": "Custom"
+        },
+        "handlingTitle": "Handling Rate Limits"
+      },
+      "errorhandling": {
+        "title": "Error Handling",
+        "description": "How to handle errors and troubleshoot common issues.",
+        "commonErrorsTitle": "Common Error Codes",
+        "errors": {
+          "400": "Bad Request: Invalid parameters",
+          "401": "Unauthorized: Invalid API key",
+          "429": "Rate Limited: Too many requests",
+          "500": "Server Error: Internal server issue"
+        },
+        "exampleTitle": "Error Handling Example",
+        "troubleshootingTitle": "Troubleshooting Tips",
+        "troubleshooting": [
+          "Check your API key is valid and not expired",
+          "Verify your request parameters match the API specification",
+          "Monitor your rate limit usage",
+          "Check our status page for service issues"
+        ]
+      }
+    }
+  },
+  "ApiPage": {
+    "title": "SyinAI API",
+    "subtitle": "Access the power of next-generation AI through an easy-to-use API",
+    "developmentStatus": {
+      "title": "Under Development",
+      "description": "SyinAI API is currently in active development. We are preparing robust infrastructure and advanced features to provide the best experience."
+    },
+    "features": {
+      "title": "Available Features",
+      "syinaiO1": {
+        "title": "SyinAI o1",
+        "description": "Advanced reasoning model for complex problem solving"
+      },
+      "syinaiFlash": {
+        "title": "SyinAI 1.5 Flash",
+        "description": "Fast response for real-time applications"
+      },
+      "syinaiPro": {
+        "title": "SyinAI 1.5 Pro",
+        "description": "Multimodal AI for text, images, and complex data"
+      },
+      "codeGeneration": {
+        "title": "Code Generation",
+        "description": "AI specialized for coding and software development"
+      },
+      "comingSoon": "Coming Soon"
+    },
+    "pricing": {
+      "title": "Pricing Plans",
+      "freeTier": {
+        "title": "Free Tier",
+        "price": "$0",
+        "period": "/month",
+        "features": [
+          "1,000 requests/month",
+          "Access to basic models",
+          "Community support",
+          "Rate limit: 10 RPM"
+        ]
+      },
+      "pro": {
+        "title": "Pro",
+        "price": "$29",
+        "period": "/month",
+        "popular": "Popular",
+        "features": [
+          "100,000 requests/month",
+          "Access to all models",
+          "Priority support",
+          "Rate limit: 100 RPM",
+          "Advanced analytics"
+        ]
+      },
+      "enterprise": {
+        "title": "Enterprise",
+        "price": "Custom",
+        "features": [
+          "Unlimited requests",
+          "Custom models",
+          "24/7 dedicated support",
+          "Custom rate limits",
+          "On-premise deployment"
+        ]
+      }
+    },
+    "waitlist": {
+      "title": "Join the Waiting List",
+      "description": "Be the first to get access to SyinAI API when it becomes available. We will send exclusive invitations and free credits for early adopters.",
+      "placeholder": "Enter your email",
+      "button": "Join Waiting List",
+      "success": {
+        "title": "Thank you!",
+        "message": "You have successfully joined the waiting list. We will contact you as soon as the API is available."
+      }
+    },
+    "roadmap": {
+      "title": "Development Roadmap",
+      "q3_2025": "Q3 2025 - Early Research & Development phase",
+      "q4_2025": "Q4 2025 - Alpha testing with selected partners",
+      "q1_2026": "Q1 2026 - Beta release for waiting list",
+      "q2_2026": "Q2 2026 - Public API launch"
+    },
+    "navigation": {
+      "home": "Home",
+      "about": "About",
+      "documentation": "Documentation",
+      "blog": "Blog",
+      "api": "API",
+      "joinBeta": "Join Beta",
+      "joinBetaMobile": "Join Beta"
+    },
+    "footer": {
+      "tagline": "Modern AI solutions for the new generation of development.",
+      "products": "Products",
+      "resources": "Resources",
+      "contact": "Contact Us",
+      "copyright": "All rights reserved."
+    }
+  },
+  "StatusPage": {
+    "title": "System Status",
+    "subtitle": "Monitor real-time status of all AlcaHEX-Studio services",
+    "lastUpdated": "Last updated:",
+    "allSystemsOperational": "All Systems Operational",
+    "services": "Services",
+    "recentIncidents": "Recent Incidents",
+    "uptime": "Uptime",
+    "responseTime": "Response Time",
+    "operational": "Operational",
+    "degraded": "Degraded Performance",
+    "outage": "Major Outage",
+    "resolved": "Resolved",
+    "subscribe": {
+      "title": "Subscribe to Updates",
+      "description": "Get real-time notifications about system status and maintenance.",
+      "placeholder": "Enter your email",
+      "button": "Subscribe"
+    }
+  }
+}

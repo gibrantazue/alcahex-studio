@@ -1,0 +1,909 @@
+{
+  "Common": {
+    "cancel": "キャンセル",
+    "update": "更新",
+    "continue": "続行",
+    "success": "成功",
+    "delete": "削除",
+    "save": "保存",
+    "back": "戻る",
+    "next": "次へ",
+    "create": "作成",
+    "showLess": "少なく表示",
+    "showMore": "もっと表示",
+    "generate": "生成",
+    "edit": "編集",
+    "editAgent": "エージェントを編集",
+    "search": "検索...",
+    "approve": "承認",
+    "reject": "拒否",
+    "saving": "保存中...",
+    "optional": "オプション",
+    "deleting": "削除中...",
+    "run": "実行",
+    "description": "説明",
+    "defaultValue": "デフォルト値",
+    "empty": "空",
+    "required": "必須",
+    "options": "オプション",
+    "status": "ステータス",
+    "result": "結果",
+    "startedAt": "開始時刻",
+    "duration": "所要時間",
+    "addOption": "オプションを追加",
+    "tool": "ツール",
+    "selectTool": "ツールを選択...",
+    "noResults": "結果がありません。",
+    "generateInputWithAI": "AIで入力を生成",
+    "generatingInputWithAI": "AIで入力を生成中...",
+    "inputGeneratedSuccessfully": "入力が正常に生成されました",
+    "failedToGenerateInput": "入力の生成に失敗しました",
+    "createWithExample": "例で作成",
+    "resultsFound": "{count}件の結果が見つかりました",
+    "youAreAnExpertIn": "あなたは{role}の専門家です",
+    "joinBeta": "ベータに参加"
+  },
+  "Auth": {
+    "SignIn": {
+      "title": "おかえりなさい",
+      "description": "アカウントにサインインして続行",
+      "oauthClientIdNotSet": "{provider}のクライアントIDが設定されていません",
+      "noAccount": "アカウントをお持ちでない方は",
+      "signUp": "サインアップ",
+      "signIn": "サインイン",
+      "orContinueWith": "または次で続行"
+    },
+    "SignUp": {
+      "title": "アカウントを作成",
+      "signIn": "サインイン",
+      "description": "アカウントにサインアップ",
+      "step1": "メールアドレスを入力して、私たちとの旅を始めましょう",
+      "step2": "チャット時にこの名前を使用します",
+      "step3": "アカウントを保護するための強力なパスワードを作成してください",
+      "signUp": "サインアップ",
+      "invalidEmail": "無効なメールアドレス",
+      "emailAlreadyExists": "メールアドレスが既に存在します",
+      "nameRequired": "名前が必要です",
+      "passwordRequired": "パスワードが必要です",
+      "createAccount": "アカウントを作成"
+    },
+    "Intro": {
+      "description": "AlcaHEX-Studio へようこそ。AIを活用した会話ツールを体験するためにサインインしてください。"
+    }
+  },
+  "Chat": {
+    "Error": "チャットエラー",
+    "thisMessageWasNotSavedPleaseTryTheChatAgain": "このメッセージは保存されませんでした。もう一度チャットをお試しください。",
+    "Greeting": {
+      "goodMorning": "おはようございます、{name}さん",
+      "goodAfternoon": "こんにちは、{name}さん",
+      "goodEvening": "こんばんは、{name}さん",
+      "niceToSeeYouAgain": "またお会いできて嬉しいです、{name}さん",
+      "whatAreYouWorkingOnToday": "今日は何に取り組んでいますか、{name}さん？",
+      "letMeKnowWhenYoureReadyToBegin": "準備ができたら教えてください。",
+      "whatAreYourThoughtsToday": "今日はどんなことを考えていますか？",
+      "whereWouldYouLikeToStart": "どこから始めたいですか？",
+      "whatAreYouThinking": "何を考えていますか、{name}さん？"
+    },
+    "TemporaryChat": {
+      "toggleTemporaryChat": "一時チャットの切り替え",
+      "temporaryChat": "一時チャット",
+      "resetChat": "チャットをリセット",
+      "thisChatWontBeSaved": "このチャットは保存されません。",
+      "feelFreeToAskAnythingTemporarily": "何でもお気軽に一時的にお尋ねください",
+      "temporaryChatInstructions": "一時チャットの指示",
+      "temporaryChatInstructionsPlaceholder": "こちらに指示を入力してください",
+      "temporaryChatInstructionsDescription": "一時チャットの指示を設定できます。これは一時チャットのシステムプロンプトとして使用されます。"
+    },
+    "placeholder": "何でも聞くか @mention してください",
+    "Tool": {
+      "webSearching": "ウェブを検索中...",
+      "searchedTheWeb": "ウェブを検索しました",
+      "toolModeDescription": "ツールの使用方法を選択:\n• 自動: AIがツールの使用を自動で決定\n• 手動: ツール使用前に許可を求める\n• なし: すべてのツールを無効化",
+      "toolsSetupDescription": "チャットボットが使用できるツールを選択してください。\nチャットボットは選択されたツールを自分の判断で使用します。\n\n@mention を使って特定のツールの使用を強制することもできます。",
+      "selectToolMode": "ツールモードを選択",
+      "autoToolModeDescription": "あなたに尋ねることなく、ツールをいつ使用するかを決定します",
+      "manualToolModeDescription": "ツールを使用する前にあなたの許可を求めます",
+      "noneToolModeDescription": "ツールを使用しません。@mentionは引き続き利用可能です。",
+      "toolsSetup": "ツール設定",
+      "preset": "プリセット",
+      "toolPresets": "ツールプリセット",
+      "saveAsPreset": "プリセットとして保存",
+      "saveAsPresetDescription": "現在のツール設定をプリセットとして保存します。",
+      "noPresetsAvailableYet": "まだ利用可能なプリセットがありません",
+      "presetNameCannotBeEmpty": "プリセット名を空にすることはできません",
+      "presetNameAlreadyExists": "プリセット名が既に存在します",
+      "presetSaved": "プリセットが保存されました",
+      "clickSaveAsPresetToGetStarted": "開始するには「プリセットとして保存」をクリックしてください。",
+      "searchOptions": "検索オプション",
+      "searchOptionsDescription": "検索結果の最大数、検索日時など、チャットボットに検索オプションを渡すことができます。",
+      "defaultToolKit": {
+        "visualization": "データ可視化",
+        "webSearch": "ウェブを検索"
+      }
+    },
+    "VoiceChat": {
+      "title": "音声チャットモード",
+      "compactDisplayMode": "コンパクト表示モード",
+      "conversationDisplayMode": "会話表示モード",
+      "pleaseCloseTheVoiceChatAndTryAgain": "音声チャットを閉じて、もう一度お試しください。",
+      "startConversation": "会話を開始",
+      "closeMic": "マイクを閉じる",
+      "openMic": "マイクを開く",
+      "endConversation": "会話を終了",
+      "toggleVoiceChat": "音声チャットの切り替え",
+      "readyWhenYouAreJustStartTalking": "準備ができました。話しかけてください。",
+      "yourMicIsOff": "マイクがオフになっています。",
+      "preparing": "準備中...",
+      "startVoiceChat": "音声チャットを開始しますか？"
+    },
+    "Thread": {
+      "chat": "チャット",
+
+      "renameChat": "名前を変更",
+      "deleteChat": "チャットを削除",
+      "deleteUnarchivedChats": "アーカイブされていないチャットをすべて削除",
+      "confirmDeleteUnarchivedChats": "アーカイブされていないすべてのチャットを削除してもよろしいですか？",
+      "thisActionCannotBeUndone": "この操作は元に戻すことができません。",
+      "unarchivedChatsDeleted": "アーカイブされていないチャットが削除されました",
+      "failedToDeleteUnarchivedChats": "アーカイブされていないチャットの削除に失敗しました",
+      "failedToDeleteThread": "スレッドの削除に失敗しました",
+      "threadDeleted": "スレッドが削除されました",
+      "failedToUpdateThread": "スレッドの更新に失敗しました",
+      "titleRequired": "タイトルが必要です",
+      "threadUpdated": "スレッドが更新されました",
+      "areYouSureYouWantToDeleteThisChatThread": "このチャットスレッドを削除してもよろしいですか？"
+    },
+
+    "ChatPreferences": {
+      "title": "チャット設定",
+      "whatShouldWeCallYou": "何とお呼びすればよろしいですか？",
+      "botName": "アシスタント名",
+      "whatBestDescribesYourWork": "あなたの仕事を最もよく表すものは何ですか？",
+      "whatPersonalPreferencesShouldBeTakenIntoAccountInResponses": "回答時に考慮すべき個人的な好みは何ですか？",
+      "responseStyleExample1": "例：説明は簡潔で要点を押さえたものにしてください",
+      "responseStyleExample2": "例：新しい概念を学ぶとき、類推が特に役立ちます",
+      "responseStyleExample3": "例：詳細な回答をする前に明確化の質問をしてください",
+      "responseStyleExample4": "例：私は主にPythonでプログラミングしています（プログラミング初心者ではありません）",
+      "professionExample1": "例：ソフトウェアエンジニア",
+      "professionExample2": "例：プロダクトマネージャー",
+      "professionExample3": "例：マーケティングマネージャー",
+      "professionExample4": "例：セールスマネージャー",
+      "professionExample5": "例：ビジネスアナリスト",
+      "preferencesSaved": "設定が保存されました",
+      "failedToSavePreferences": "設定の保存に失敗しました",
+      "userInstructions": "ユーザー指示",
+      "userInstructionsDescription": "自己紹介をして、よりパーソナライズされた回答を受け取りましょう。",
+      "mcpInstructions": "MCP 指示",
+      "mcpInstructionsDescription": "MCP サーバーの指示をカスタマイズします。"
+    }
+  },
+  "Layout": {
+    "toggleSidebar": "サイドバーの切り替え",
+    "newChat": "新しいチャット",
+    "mcpConfiguration": "MCP設定",
+    "agents": "エージェント",
+    "newAgent": "新しいエージェント",
+    "createAgent": "エージェントを作成",
+    "createYourOwnAgent": "独自の機能と個性を持つ専門AIエージェントを作成してみましょう",
+    "whatIsAgent": "エージェントとは何ですか？",
+    "agentDescription": "エージェントは、特定の役割、指示、ツールでカスタマイズできる専門的なAIアシスタントで、様々なタスクをサポートします。",
+    "specializedAIAssistant": "専門AIアシスタント",
+    "specializedAIAssistantDescription": "各エージェントは特定の役割、個性、専門分野でカスタマイズでき、あなた固有のニーズに焦点を当てたサポートを提供します。",
+    "customInstructions": "カスタム指示",
+    "customInstructionsDescription": "詳細なシステムプロンプトと行動ガイドラインを定義して、エージェントの応答と相互作用の方法を形作ることができます。",
+    "toolIntegration": "ツール統合",
+    "toolIntegrationDescription": "エージェントをMCPサーバー、ワークフロー、その他のツールに接続して、会話を超えた機能を拡張できます。",
+    "agentExamples": "エージェントの例",
+    "businessAssistant": "ビジネスアシスタント",
+    "businessAssistantDescription": "ビジネス分析、レポート生成、プロフェッショナルなコミュニケーションに特化しています。",
+    "creativeWriter": "クリエイティブライター",
+    "creativeWriterDescription": "ストーリーテリング、コンテンツ制作、創造的なブレインストーミングに焦点を当てています。",
+    "technicalExpert": "技術専門家",
+    "technicalExpertDescription": "開発ツールとコーディングの専門知識を備えた技術的なタスクのためのエージェントです。",
+    "createFirstAgentToStart": "最初のエージェントを作成して始めましょう！",
+    "today": "今日",
+    "yesterday": "昨日",
+    "lastWeek": "過去7日間",
+    "older": "それ以前",
+    "recentChats": "最近のチャット",
+    "deleteAllChats": "すべてのチャットを削除",
+    "deleteUnarchivedChats": "アーカイブされていないチャットを削除",
+    "noConversationsYet": "まだ会話がありません",
+    "deletingAllChats": "すべてのスレッドを削除中...",
+    "deletingUnarchivedChats": "アーカイブされていないスレッドを削除中...",
+    "allChatsDeleted": "すべてのスレッドが削除されました",
+    "unarchivedChatsDeleted": "アーカイブされていないスレッドが削除されました",
+    "failedToDeleteAllChats": "すべてのスレッドの削除に失敗しました",
+    "failedToDeleteUnarchivedChats": "アーカイブされていないスレッドの削除に失敗しました",
+    "chatPreferences": "チャット設定",
+    "keyboardShortcuts": "キーボードショートカット",
+    "theme": "テーマ",
+    "signOut": "サインアウト",
+    "language": "言語",
+    "showAllChats": "すべてのチャットを表示",
+    "showLessChats": "少なく表示",
+    "reportAnIssue": "問題を報告",
+    "joinCommunity": "コミュニティに参加",
+    "workflow": "ワークフロー"
+  },
+  "Archive": {
+    "title": "アーカイブ",
+    "addArchive": "アーカイブを追加",
+    "archiveName": "アーカイブ名",
+    "archiveDescription": "アーカイブの説明",
+    "archiveDescriptionPlaceholder": "アーカイブはチャット履歴を保存するスペースです。",
+    "noArchives": "アーカイブがありません",
+    "createFirstArchive": "最初のアーカイブを作成してください",
+    "archiveCreated": "アーカイブが作成されました",
+    "archiveUpdated": "アーカイブが更新されました",
+    "archiveDeleted": "アーカイブが削除されました",
+    "failedToCreateArchive": "アーカイブの作成に失敗しました",
+    "failedToUpdateArchive": "アーカイブの更新に失敗しました",
+    "failedToDeleteArchive": "アーカイブの削除に失敗しました",
+    "editArchive": "アーカイブ編集",
+    "editArchiveDescription": "アーカイブ情報を編集します",
+    "deleteArchive": "アーカイブ削除",
+    "confirmDeleteArchive": "本当にこのアーカイブを削除しますか？",
+    "deleteArchiveDescription": "このアーカイブとすべてのアイテムが完全に削除されます。この操作は元に戻せません。",
+    "addToArchive": "アーカイブに追加",
+    "removeFromArchive": "アーカイブから削除",
+    "itemAddedToArchive": "アイテムがアーカイブに追加されました",
+    "itemRemovedFromArchive": "アイテムがアーカイブから削除されました"
+  },
+  "Agent": {
+    "title": "エージェント",
+    "generatingAgent": "エージェント生成中...",
+    "agentNameAndIconLabel": "エージェントに名前とアイコンを付けてください。",
+    "agentDescriptionLabel": "このエージェントの用途についての簡単な説明を追加してください。",
+    "agentDescriptionPlaceholder": "これはエージェントに関する説明であり、重要ではありません。",
+    "agentSettingsDescription": "ここからは、エージェントに影響を与える可能性のある設定です。",
+    "thisAgentIs": "このエージェントは",
+    "expertIn": "の専門家です。",
+    "agentRolePlaceholder": "株式分析",
+    "agentInstructionsLabel": "このエージェントの役割、性格、指針、知識などを自由に書いてください。",
+    "agentInstructionsPlaceholder": "このエージェントは株式分析をサポートします。ウェブ検索ツールを活用して株式情報を取得します...",
+    "agentToolsLabel": "このエージェントが使用できるツールを追加してください。",
+    "loadingTools": "ツールを読み込み中です...",
+    "addTools": "ツールを追加してください。",
+    "generateAgentGreeting": "こんにちは！あなた専用のエージェントを作成するお手伝いをします。何を作りたいですか？",
+    "generateAgentDetailedGreeting": "こんにちは！あなた専用のエージェントを作成するお手伝いをします。何を作りたいですか？簡潔に書いても詳しく書いても構いません。",
+    "inputPromptHere": "ここにプロンプトを入力してください...",
+    "agentNamePlaceholder": "better-agent"
+  },
+  "KeyboardShortcuts": {
+    "title": "キーボードショートカット",
+    "newChat": "新しいチャット",
+    "toggleTemporaryChat": "一時チャットの切り替え",
+    "toggleSidebar": "サイドバーの切り替え",
+    "toolMode": "ツールモード",
+    "lastMessageCopy": "最後のメッセージをコピー",
+    "openChatPreferences": "チャット設定を開く",
+    "deleteThread": "チャットを削除",
+    "openShortcutsPopup": "ショートカットポップアップを開く",
+    "toggleVoiceChat": "音声チャットの切り替え"
+  },
+  "MCP": {
+    "marketplace": "マーケットプレイス",
+    "addMcpServer": "サーバーを追加",
+    "configureYourMcpServerConnectionSettings": "MCPサーバー接続設定を構成してください",
+    "mcpConfiguration": "MCP設定",
+    "nameMustContainOnlyAlphanumericCharactersAndHyphens": "名前は英数字（A-Z、a-z、0-9）とハイフン（-）のみを含む必要があります",
+    "nameIsRequired": "名前が必要です",
+    "configurationSavedSuccessfully": "設定が正常に保存されました",
+    "enterMcpServerName": "MCPサーバー名を入力してください",
+    "saveConfiguration": "設定を保存",
+    "toolsTest": "ツールテスト",
+    "refresh": "リフレッシュ",
+    "delete": "削除",
+    "edit": "編集",
+    "configuration": "設定",
+    "availableTools": "利用可能なツール",
+    "noToolsAvailable": "利用可能なツールがありません",
+    "overviewTitle": "最初のサーバーに接続",
+    "overviewDescription": "強力なAI統合を解放するためにMCPサーバーを追加してください",
+    "searchTools": "ツールを検索",
+    "detail": "詳細",
+    "noSchemaPropertiesAvailable": "利用可能なスキーマプロパティがありません",
+    "createInputWithAI": "AIで入力を作成",
+    "generateExampleInputJSON": "例の入力JSONを生成",
+    "enterPromptToGenerateExampleInputJSON": "選択したツールの例の入力JSONを生成するためのプロンプトを入力してください。",
+    "callTool": "ツールを呼び出す",
+    "customInstructions": "カスタム指示",
+    "serverCustomInstructionsPlaceholder": "このサーバーのツールが利用可能な場合、これらの行がシステムプロンプトに追加されます。",
+    "nameAlreadyExists": "名前が既に存在します",
+    "additionalInstructions": "ツールカスタマイゼーション指示",
+    "inputSchema": "入力スキーマ",
+    "toolCustomizationInstructions": "ツールカスタマイゼーション指示は、ツールが利用可能な場合にシステムプロンプトに追加されます。\n例）メールは常にexample@example.comの形式で入力してください。",
+    "mcpServerCustomization": "MCPサーバーカスタマイゼーション",
+    "mcpServerCustomizationDescription": "MCPサーバーカスタマイゼーション指示は、MCPサーバーが利用可能な場合にシステムプロンプトに追加されます。",
+    "toolCustomizationInstructionsPlaceholder": "ツールカスタマイゼーション指示は利用できません。",
+    "mcpServerCustomizationPlaceholder": "例：入力値がメールの場合、常にexample@example.comの形式でメールを入力してください。"
+  },
+  "Error": {},
+  "Info": {
+    "mcpAddingDisabled": "管理者によりMCPサーバーの追加が無効化されています。",
+    "vercelSyncDelay": "Vercel上で動作中\n\nMCP変更の同期には10-15秒かかる場合があります。サーバーの追加、編集、または削除後に変更が即座に表示されない場合は、しばらくお待ちください。"
+  },
+  "Workflow": {
+    "title": "ワークフロー",
+    "createWorkflow": "ワークフローを作成",
+    "draft": "下書き",
+    "publish": "公開",
+    "createWorkflowDescription": "チャットボットの強力なツールとしてワークフローを作成します。",
+    "workflowDescription": "これらは会話中にトリガーして複雑なタスクを自動化できます。",
+    "nameAndIcon": "名前とアイコン",
+    "workflowNamePlaceholder": "チャットボットはこれをツール名として認識します",
+    "description": "説明",
+    "descriptionPlaceholder": "チャットボットはこれをツールの説明として見ます",
+    "inputNodeCannotBeDeleted": "入力ノードは削除できません",
+    "autoSaveDescription": "10秒ごとに自動保存されます",
+    "draftDescription": "現在は下書き状態です。\n\n公開をクリックしてチャットボットで利用可能にします\n（ただし編集できなくなります）。",
+    "publishedDescription": "現在公開されており、チャットボットで利用可能です。\n\n下書きをクリックして編集可能にします\n（ただしチャットボットで利用できなくなります）。",
+    "private": "プライベート",
+    "readonly": "読み取り専用",
+    "public": "公開",
+    "privateDescription": "このワークフローを表示、編集、ツールとして使用できるのはあなただけです。",
+    "readonlyDescription": "他の人は表示してツールとして使用できますが、編集できるのはあなただけです。",
+    "publicDescription": "誰でもこのワークフローを表示、編集、ツールとして使用できます。",
+    "visibilityDescription": "このワークフローにアクセスして変更できる人を制御します",
+    "nodeDescriptionPlaceholder": "ノードの説明...",
+    "nextNode": "次のノード",
+    "nextNodeDescription": "このワークフローに次のノードを追加します。",
+    "addNextNode": "次のノードを追加",
+    "inputFields": "入力フィールド",
+    "addInputField": "入力フィールドを追加",
+    "inputFieldsDescription": "このワークフローのパラメータスキーマを定義します。\n\nチャットボットがこれをツールとして使用する際、\nこのスキーマに従って値を提供します。",
+    "fieldEditor": "フィールドエディター",
+    "variableName": "変数名",
+    "variableNamePlaceholder": "変数名を入力...",
+    "fieldDescriptionPlaceholder": "フィールドの説明を入力...",
+    "defaultValuePlaceholder": "デフォルトの{type}値を入力...",
+    "selectOptionPlaceholder": "オプションを選択...",
+    "unlink": "ノードのリンクを解除",
+    "elseIfDescription": "条件が満たされない場合、実行するロジックを定義します。",
+    "elseDescription": "条件が満たされない場合、実行するロジックを定義します。",
+    "addCondition": "条件を追加",
+    "noVariablesFound": "変数が見つかりません",
+    "outputVariables": "出力変数",
+    "outputVariablesDescription": "ワークフローから出力される変数です。",
+    "addOutputVariable": "出力変数を追加",
+    "outputSchema": "出力スキーマ",
+    "addMessage": "メッセージを追加",
+    "messagesDescription": "LLM処理を通じてデータを生成します。\n\n'/'を使用して前のノードのデータを入力として言及・参照してください。\n\n構造化出力を有効にすると、データの変換、フォーマット、検証に最適です。",
+    "descriptionAndSchema": "説明とスキーマ",
+    "noDescriptionAndSchema": "説明とスキーマがありません",
+    "toolDescription": "LLMがツールパラメータを生成するために必要な情報を提供します。\n\n'/'を使用して前のノードのデータを言及してください。",
+    "generateInputWithAIDescription": "ワークフローの入力を生成するプロンプトを書いてください",
+    "example": {
+      "babyResearch": "ベビーリサーチ",
+      "getWeather": "天気取得"
+    },
+    "selectVariable": "変数を選択",
+    "structuredOutput": "構造化出力",
+    "structuredOutputDescription": "定義されたスキーマでJSONオブジェクトとしてレスポンスを生成",
+    "outputSchemaEditor": "出力スキーマエディター",
+    "addField": "フィールドを追加",
+    "saveSchema": "スキーマを保存",
+    "generateSchemaWithAI": "AIでスキーマを生成",
+    "describeOutputDataRequest": "このノードが出力すべき内容を表すサンプルJSONデータを提供してください\n\n例: {eg}",
+    "generatingJsonSchemaWithAI": "AIでJSONスキーマを生成中...",
+    "jsonSchemaGeneratedSuccessfully": "JSONスキーマが正常に生成されました！",
+    "failedToGenerateSchema": "スキーマの生成に失敗しました",
+    "jsonSchemaEditorDescription": "AI支援による直接的なJSONスキーマ編集。複雑なネストした構造と配列をサポートします。",
+    "template": "テンプレート",
+    "templateDescription": "テンプレート文書を生成します。\n\n'/'を使用して他のノードの出力値を参照・使用してください。",
+    "kindsDescription": {
+      "input": "チャットボットがこのワークフローをツールとして使用する際に提供する入力パラメータを定義します。\n\nツール実行のためのデータ構造と検証ルールを指定します。",
+      "output": "ワークフロー実行の最終結果を収集して返します。\n\n複数のノードからのデータを最終ツールレスポンスに結合します。",
+      "llm": "AIモデルを使用してテキストや構造化データを生成します。\n\n'/'メンションで前のノード出力を参照してコンテキスト認識レスポンスを作成します。\n\n構造化出力を使用してデータの変換、フォーマット、検証を行う - 単なるテキスト生成ではありません。",
+      "tool": "MCPツールや外部サービスを実行します。\n\nメッセージに指示を書けば、LLMがコンテキストから必要なツールパラメータを生成します。",
+      "note": "ワークフローロジックを整理するためのドキュメントとコメントを追加します。\n\nチームメンバーが複雑なワークフロープロセスを理解するのに役立ちます。",
+      "code": "前のノードデータにアクセスできるカスタムコードスクリプトを実行します。\n\nワークフロー内でJavaScript、Python、その他の言語を実行します（近日公開）。",
+      "http": "HTTPリクエストを通じて外部APIやWebサービスからデータを取得します。\n\nREST API、Webhook、サードパーティサービスと統合します。",
+      "template": "前のノードのデータとテキストを組み合わせて動的文書を作成します。\n\n変数置換を使用してメール、レポート、フォーマットされたコンテンツを生成します。",
+      "condition": "データ評価に基づいてワークフローを分岐する条件ロジックを追加します。\n\n異なるシナリオやデータ条件を処理するif-elseロジックを作成します。"
+    },
+    "greeting": {
+      "buildAutomationTitle": "ノード接続による自動化構築",
+      "buildAutomationDescription": "様々なノードを接続して複雑なタスクを自動化します。各ノードは特定の機能を担当し、データが順次流れて処理されます。",
+      "chatbotToolTitle": "チャットボットツールとして活用",
+      "chatbotToolDescription": "ワークフローの主な目的は、チャットボットの会話でツールとして使用することです。反復的なタスクをワークフローに変換して、チャット中に簡単に実行できます。",
+      "parameterBasedTitle": "️ パラメータベースの開始",
+      "parameterBasedDescription": "入力ノードはトリガーではなく、パラメータ構造を定義します。チャットボットがこのワークフローをツールとして呼び出すときに必要なデータ形式を指定します。",
+      "exampleTitle": "使用例",
+      "exampleDescription": "「メール作成 → 翻訳 → 送信」ワークフローを作成しておけば、チャットボットの会話で「@メール_ワークフロー」で簡単に実行できます。",
+      "availableNodesTitle": "利用可能なノード",
+      "upcomingNodesTitle": "近日公開予定のノード",
+      "ctaMessage": "今すぐワークフローを作成してチャットボットの機能を拡張しましょう！",
+      "soonMessage": "近日公開予定です。"
+    },
+    "arrangeNodes": "自動レイアウト",
+    "nodesArranged": "レイアウトが正常に適用されました"
+  },
+  "LandingPage": {
+    "navHome": "ホーム",
+    "navAbout": "概要",
+    "navIntro": "SyinAI 1.5",
+    "navCapabilities": "機能",
+    "navModels": "モデル",
+    "navStart": "開始",
+    "navJoinBeta": "ベータに参加",
+    "aboutHeadline": "SyinAIエコシステムは、<highlight>これまでで最も高性能なAI</highlight>を表しています。",
+    "aboutDescription": "私たちのSyinAIモデルは、テキスト、画像、音声、動画、コードをシームレスに推論できる<highlight>マルチモーダル</highlight>としてゼロから構築されました。",
+    "latestUpdates": "最新のアップデート",
+    "updateDate": "2025年8月20日",
+    "introTitle": "SyinAI 1.5の紹介",
+    "introSubtitle": "次世代モデル。",
+    "introText": "ネイティブでマルチモーダルに構築され、革新的なコンテキストウィンドウを備えたSyinAI 1.5は、幅広いアプリケーション向けに設計されています。",
+    "tryButton": "SyinAI 1.5を試す",
+    "capabilitiesTitle": "最先端のAI機能",
+    "capabilitiesSubtitle": "現代の多様なコンピューティングおよびデータ分析のニーズに合わせて設計された3つの強力なAIモデル。",
+    "reasoningTitle": "推論と問題解決",
+    "reasoningDescription": "複雑な問題解決、論理分析、正確な意思決定のための高度な推論能力を持つAIモデル。",
+    "multimodalTitle": "マルチモーダルインテリジェンス",
+    "multimodalDescription": "テキスト、画像、音声、動画、コードなど、複数のデータタイプを統合されたコンテキストで同時に理解・分析する最先端のAI能力。",
+    "codingTitle": "コード生成とデバッグ",
+    "codingDescription": "複雑なアルゴリズムとコードベースを高い精度で開発、説明、デバッグします。",
+    "modelsTitle": "SyinAIには3つの異なるモデルがあります",
+    "ultraDescription": "詳細な分析と複雑な問題解決能力を備えた最先端の推論モデル。",
+    "proDescription": "テキスト、画像、音声、動画、コードを統合的に理解する高度なマルチモーダルモデル。",
+    "nanoDescription": "最高のコーディング、デバッグ、ソフトウェア開発能力を備えた専門のプログラミングモデル。",
+    "mmluPerformance": "MMLUパフォーマンス",
+    "mmluDescription": "Syin o1はMMLUベンチマークで最高スコアを達成",
+    "responseSpeed": "応答速度",
+    "responseSpeedDescription": "複雑なクエリの平均応答時間",
+    "codeAccuracy": "コード精度",
+    "codeAccuracyDescription": "コード生成とデバッグの精度率",
+    "benchmarkComparison": "他のモデルとのパフォーマンス比較",
+    "startTitle": "SyinAIを始める",
+    "startSubtitle": "最も高性能なモデルで構築する。",
+    "getApiKey": "APIキーを取得",
+    "readDocs": "ドキュメントを読む",
+    "sponsorsTitle": "協力",
+    "footerSlogan": "新世代の開発のための最新AIソリューション。",
+    "footerProducts": "製品",
+    "footerResources": "リソース",
+    "footerContact": "お問い合わせ",
+    "footerRights": "All Rights Reserved.",
+    "footerPrivacy": "プライバシーポリシー",
+    "footerTerms": "利用規約"
+  },
+  "ApiPage": {
+    "title": "SyinAI API",
+    "subtitle": "使いやすいAPIを通じて次世代AIの力にアクセス",
+    "developmentStatus": {
+      "title": "開発中",
+      "description": "SyinAI APIは現在活発に開発中です。最高の体験を提供するため、堅牢なインフラストラクチャと高度な機能を準備しています。"
+    },
+    "features": {
+      "title": "今後の機能",
+      "syinaiO1": {
+        "title": "SyinAI o1",
+        "description": "複雑な問題解決のための高度な推論モデル"
+      },
+      "syinaiFlash": {
+        "title": "SyinAI 1.5 Flash",
+        "description": "リアルタイムアプリケーション向けの高速レスポンス"
+      },
+      "syinaiPro": {
+        "title": "SyinAI 1.5 Pro",
+        "description": "テキスト、画像、複雑なデータのためのマルチモーダルAI"
+      },
+      "codeGeneration": {
+        "title": "コード生成",
+        "description": "プログラミングとソフトウェア開発に特化したAI"
+      },
+      "comingSoon": "近日公開"
+    },
+    "pricing": {
+      "title": "料金プラン",
+      "freeTier": {
+        "title": "無料プラン",
+        "price": "¥0/月"
+      },
+      "proTier": {
+        "title": "プロ",
+        "price": "¥3,500/月"
+      },
+      "enterpriseTier": {
+        "title": "エンタープライズ",
+        "price": "カスタム"
+      },
+      "popular": "人気"
+    },
+    "waitlist": {
+      "title": "ウェイティングリストに参加",
+      "description": "SyinAI APIが利用可能になったら最初にアクセスできます。早期利用者には限定招待と無料クレジットを送信します。",
+      "emailPlaceholder": "メールアドレスを入力",
+      "joinButton": "ウェイティングリストに参加",
+      "success": {
+        "title": "ありがとうございます！",
+        "message": "ウェイティングリストへの参加が完了しました。APIが利用可能になり次第ご連絡いたします。"
+      }
+    },
+    "roadmap": {
+      "title": "開発ロードマップ",
+      "q3_2025": "2025年Q3 - 初期研究開発フェーズ",
+      "q4_2025": "2025年Q4 - 選定パートナーとのアルファテスト",
+      "q1_2026": "2026年Q1 - 待機リスト向けベータリリース",
+      "q2_2026": "2026年Q2 - パブリックAPIローンチ"
+    },
+    "navigation": {
+      "home": "ホーム",
+      "about": "について",
+      "documentation": "ドキュメント",
+      "blog": "ブログ",
+      "api": "API",
+      "joinBeta": "ベータに参加",
+      "joinBetaMobile": "ベータに参加"
+    },
+    "footer": {
+      "tagline": "新世代の開発のための現代的なAIソリューション。",
+      "products": "製品",
+      "resources": "リソース",
+      "contact": "お問い合わせ",
+      "copyright": "全権利保有。"
+    }
+  },
+  "BlogPage": {
+    "title": "AlcaHEX ブログ",
+    "subtitle": "AI開発チームからの最新の洞察、チュートリアル、アップデート",
+    "readMore": "続きを読む",
+    "newsletter": {
+      "title": "最新情報を受け取る",
+      "description": "AI開発と製品リリースの最新アップデートを受け取るために、ニュースレターに登録してください。",
+      "placeholder": "メールアドレスを入力",
+      "subscribe": "登録"
+    },
+    "categories": {
+      "all": "すべて",
+      "productUpdate": "製品アップデート",
+      "tutorial": "チュートリアル", 
+      "research": "研究",
+      "caseStudy": "ケーススタディ"
+    },
+    "posts": {
+      "1": {
+        "title": "SyinAI 1.5の紹介：次世代AI革命",
+        "excerpt": "AIとの相互作用を変えるSyinAI 1.5の最新機能とパフォーマンス向上について学びます。",
+        "date": "2025年8月24日",
+        "author": "AlcaHEXチーム",
+        "readTime": "5分で読める"
+      },
+      "2": {
+        "title": "完全ガイド：コーディング用AIパフォーマンスの最適化",
+        "excerpt": "様々なプログラミング言語でSyinAI Coderを使用してコーディング生産性を最大化するためのヒントとコツ。",
+        "date": "2025年8月20日", 
+        "author": "開発者チーム",
+        "readTime": "8分で読める"
+      },
+      "3": {
+        "title": "マルチモーダルAIの未来：1つのモデルでビジョンと言語",
+        "excerpt": "テキスト、画像、複雑なデータの処理におけるSyinAI 1.5 Proのマルチモーダル機能を探求。",
+        "date": "2025年8月15日",
+        "author": "研究チーム", 
+        "readTime": "6分で読める"
+      },
+      "4": {
+        "title": "ケーススタディ：テックスタートアップでのSyinAI実装",
+        "excerpt": "テックスタートアップがワークフローにSyinAIを統合することで効率を300%向上させた方法。",
+        "date": "2025年8月10日",
+        "author": "ビジネスチーム",
+        "readTime": "7分で読める"
+      }
+    },
+    "navigation": {
+      "home": "ホーム",
+      "about": "について", 
+      "documentation": "ドキュメント",
+      "blog": "ブログ",
+      "api": "API",
+      "joinBeta": "ベータに参加"
+    },
+    "footer": {
+      "description": "新世代開発のためのモダンAIソリューション。",
+      "products": "製品",
+      "resources": "リソース", 
+      "contact": "お問い合わせ",
+      "copyright": "全著作権所有。"
+    },
+    "articles": {
+      "1": {
+        "title": "SyinAI 1.5の紹介：次世代AI革命",
+        "description": "人工知能との相互作用に革命をもたらす最新のAIモデル、SyinAI 1.5を誇らしく紹介します。パフォーマンス、精度、文脈理解能力において大幅な改善を実現しました。",
+        "featuresTitle": "🚀 最新機能",
+        "features": [
+          "<strong>40%のパフォーマンス向上</strong> - より高速で正確な応答",
+          "<strong>8Kトークンのコンテキストウィンドウ</strong> - より長い文書の処理が可能",
+          "<strong>マルチモーダル機能</strong> - テキスト、画像、コードを同時処理",
+          "<strong>日本語最適化</strong> - 日本語理解の向上"
+        ],
+        "improvementsTitle": "💡 主要改善点",
+        "improvementsDesc": "SyinAI 1.5は以下に特化して最適化されたアーキテクチャを搭載：",
+        "improvements": [
+          "コードプログラミングとデバッグ",
+          "データ分析と可視化",
+          "創作・技術文書作成",
+          "翻訳とローカライゼーション"
+        ],
+        "codeExampleTitle": "API使用例：",
+        "availabilityTitle": "🎯 利用可能性",
+        "availabilityDesc": "SyinAI 1.5はAlcaHEX-Studioのすべてのベータユーザーに既に利用可能です。登録済みアカウントには自動更新が実行されます。"
+      },
+      "2": {
+        "title": "完全ガイド：プログラミング用AIパフォーマンス最適化",
+        "description": "このデジタル時代において、AIは開発者にとって不可欠な相棒となりました。このガイドはSyinAIを使用してプログラミング生産性を最大化する方法を説明します。",
+        "setupTitle": "🛠️ 最適設定",
+        "setupDesc": "最良の結果を得るために、以下の設定を確認してください：",
+        "bestPracticesTitle": "💻 ベストプラクティス",
+        "bestPractices": [
+          "<strong>プロンプトエンジニアリング</strong> - 明確で具体的なコンテキストを提供",
+          "<strong>コードレビュー</strong> - AI生成コードは常にレビューする",
+          "<strong>反復開発</strong> - 段階的リファクタリングにAIを使用",
+          "<strong>ドキュメント化</strong> - AIにコメントと文書の追加を依頼"
+        ],
+        "examplesTitle": "🎯 使用例",
+        "example1Title": "1. 関数生成",
+        "example2Title": "2. コード最適化",
+        "productivityTitle": "📊 生産性のヒント",
+        "productivityTips": [
+          "単体テスト生成にAIを使用",
+          "複雑なコードの説明をAIに依頼",
+          "API文書化の自動化",
+          "エラー解析のためのAIアシスト付きデバッグ"
+        ]
+      },
+      "3": {
+        "title": "マルチモーダルAIの未来：一つのモデルでビジョンと言語",
+        "description": "マルチモーダルAI機能は情報処理の新時代を開きました。SyinAI 1.5 Proは視覚と文章理解を一つの強力なモデルに統合しています。",
+        "technologyTitle": "🔬 マルチモーダル技術",
+        "technologyDesc": "マルチモーダルモデルは複数の入力モダリティを組み合わせます：",
+        "modalities": [
+          "<strong>テキスト処理</strong> - 自然言語理解",
+          "<strong>画像認識</strong> - 視覚分析とオブジェクト検出",
+          "<strong>コード理解</strong> - コードの解釈と生成",
+          "<strong>文書分析</strong> - 文書からの情報抽出"
+        ],
+        "useCasesTitle": "🎯 使用例",
+        "useCase1Title": "1. 画像からコード生成",
+        "useCase1Desc": "モックアップやワイヤーフレームをアップロードしてHTML/CSSコードを取得：",
+        "useCase2Title": "2. 文書分析",
+        "useCase2Desc": "自動データ抽出で複雑な文書を分析：",
+        "implementationTitle": "🚀 実装",
+        "futureTitle": "🔮 未来",
+        "futureDesc": "マルチモーダルAI開発により実現される機能：",
+        "futureItems": [
+          "リアルタイム動画分析",
+          "3Dモデル理解",
+          "音声・視覚同期",
+          "クロスモーダル推論"
+        ]
+      },
+      "4": {
+        "title": "ケーススタディ：テックスタートアップでのSyinAI実装",
+        "description": "テクノロジースタートアップTechFlowがワークフローにSyinAIを統合して開発効率を300%向上させた実際のケーススタディ。",
+        "profileTitle": "🏢 企業プロフィール",
+        "profile": [
+          "名前：TechFlow Indonesia",
+          "業界：Eコマースプラットフォーム",
+          "チームサイズ：15名の開発者",
+          "技術スタック：React、Node.js、PostgreSQL"
+        ],
+        "challengesTitle": "⚡ SyinAI導入前の課題",
+        "challenges": [
+          "遅い開発サイクル（機能あたり6-8週間）",
+          "時間のかかるコードレビュー",
+          "一貫性のないドキュメント",
+          "反復的なバグ修正"
+        ],
+        "implementationTitle": "🛠️ SyinAI実装",
+        "codeGenTitle": "1. コード生成",
+        "codeGenDesc": "// 以前：手動CRUD操作\n// 時間：エンドポイントあたり2-3時間\n\n// 以後：SyinAIでAI生成\n// 時間：エンドポイントあたり15分",
+        "testingTitle": "2. 自動テスト",
+        "resultsTitle": "📊 実装結果",
+        "results": [
+          "<strong>開発速度：</strong> ⬆️ 300%高速な機能開発",
+          "<strong>コード品質：</strong> ⬆️ 85%のバグ削減",
+          "<strong>ドキュメント：</strong> ⬆️ 100%自動カバレッジ",
+          "<strong>チーム生産性：</strong> ⬆️ 250%の出力増加"
+        ],
+        "roiTitle": "💰 ROI分析",
+        "roi": [
+          "<strong>コスト削減：</strong> 年間50,000ドルの開発コスト削減",
+          "<strong>市場投入時間：</strong> 60%高速な製品ローンチ",
+          "<strong>チーム満足度：</strong> 90%の開発者幸福度向上",
+          "<strong>顧客への影響：</strong> 40%のバグ報告減少"
+        ],
+        "takeawaysTitle": "🎯 重要なポイント",
+        "takeaways": [
+          "シンプルな自動化タスクから開始",
+          "AIアシスト開発でチームをトレーニング",
+          "コードレビュー基準を維持",
+          "AI統合の測定と反復"
+        ],
+        "testimonial": "「SyinAIは私たちの働き方を変革しました。以前は数週間かかっていたことが、今では数日で完了できます。チームは反復的なコーディングよりも問題解決により集中できるようになりました。」 - Budi Santoso、TechFlow CTO"
+      }
+    }
+  },
+  "DocsPage": {
+    "title": "ドキュメント",
+    "subtitle": "AlcaHEX-StudioとSyinAIの完全ガイド",
+    "quickStart": "クイックスタート",
+    "quickStartDesc": "数分でSyinAIを使い始める",
+    "apiReference": "APIリファレンス",
+    "apiReferenceDesc": "開発者向けSyinAI API完全ドキュメント",
+    "examples": "サンプル",
+    "examplesDesc": "SyinAIの実装例とユースケース",
+    "sdkTools": "SDK & ツール",
+    "sdkToolsDesc": "SyinAI統合のためのライブラリとツール",
+    "models": "モデル",
+    "modelsDesc": "利用可能なSyinAIモデルの詳細情報",
+    "faq": "よくある質問",
+    "faqDesc": "SyinAIについてよく寄せられる質問",
+    "mainGuides": "メインガイド",
+    "installation": "インストールとセットアップ",
+    "installationDesc": "プロジェクトでSyinAIをインストールして設定する方法",
+    "authentication": "認証",
+    "authenticationDesc": "認証ガイドとAPIキー管理",
+    "rateLimits": "レート制限",
+    "rateLimitsDesc": "API使用制限に関する情報",
+    "errorHandling": "エラーハンドリング",
+    "errorHandlingDesc": "エラーの処理とトラブルシューティング方法",
+    "learnMore": "詳細を見る →",
+    "content": {
+      "quickstart": {
+        "title": "クイックスタートガイド",
+        "gettingStarted": "AlcaHEX-Studioを始める",
+        "welcome": "AlcaHEX-Studioへようこそ！このガイドで素早く始められます。",
+        "installationTitle": "1. インストール",
+        "basicSetupTitle": "2. 基本セットアップ",
+        "basicSetupDesc": "AlcaHEX-Studioでプロジェクトを初期化：",
+        "firstRequestTitle": "3. 最初のリクエスト",
+        "firstRequestDesc": "最初のAIリクエストを作成："
+      },
+      "api": {
+        "title": "APIリファレンス",
+        "description": "AI APIエンドポイントの完全ドキュメント。",
+        "authenticationTitle": "認証",
+        "authenticationDesc": "すべてのAPIリクエストにはAPIキーによる認証が必要です：",
+        "generateTextTitle": "テキスト生成",
+        "responseFormatTitle": "レスポンス形式"
+      },
+      "examples": {
+        "title": "実装例",
+        "description": "AlcaHEX-Studioの実世界での例とユースケース。",
+        "chatbotTitle": "チャットボット実装",
+        "contentGenerationTitle": "コンテンツ生成"
+      },
+      "sdk": {
+        "title": "SDK & 開発ツール",
+        "description": "SyinAI統合のためのライブラリとツール。",
+        "officialSDKsTitle": "公式SDK",
+        "developmentToolsTitle": "開発ツール",
+        "cliUsageTitle": "CLI使用法"
+      },
+      "models": {
+        "title": "利用可能なAIモデル",
+        "description": "利用可能なAIモデルとその機能に関する情報。",
+        "syinaiTitle": "SyinAI 1.5",
+        "modelComparisonTitle": "モデル比較",
+        "tableHeaders": {
+          "model": "モデル",
+          "context": "コンテキスト",
+          "speed": "速度",
+          "quality": "品質",
+          "useCase": "ユースケース"
+        },
+        "modelInfo": {
+          "type": "タイプ：",
+          "contextLength": "コンテキスト長：",
+          "bestFor": "最適用途：",
+          "languages": "言語：",
+          "llm": "大規模言語モデル",
+          "tokens": "トークン",
+          "generalText": "一般的なテキスト生成、会話、コーディング",
+          "multiLanguage": "インドネシア語、英語、その他50以上の言語"
+        },
+        "tableData": {
+          "fast": "高速",
+          "medium": "中程度",
+          "high": "高",
+          "veryHigh": "非常に高",
+          "generalPurpose": "汎用",
+          "codeGeneration": "コード生成"
+        }
+      },
+      "faq": {
+        "title": "よくある質問",
+        "items": {
+          "apiKey": {
+            "question": "APIキーを取得するには？",
+            "answer": "ベータプログラムに登録してAPIキーを取得できます。ホームページにアクセスして「Mulai Beta」をクリックしてウェイティングリストに参加してください。"
+          },
+          "rateLimits": {
+            "question": "レート制限は何ですか？",
+            "answer": "ベータ期間中は寛大な制限を提供しています。無料プランには月1000リクエストが含まれ、有料プランではより高い制限を提供しています。"
+          },
+          "security": {
+            "question": "データは安全ですか？",
+            "answer": "はい、セキュリティを真剣に考えています。すべてのデータは転送中および保存時に暗号化されます。明示的に設定しない限り、プロンプトやレスポンスは保存しません。"
+          },
+          "languages": {
+            "question": "サポートされているプログラミング言語は？",
+            "answer": "JavaScript/TypeScript、Python、Go、Javaの公式SDKを提供しています。任意の言語でREST APIも使用できます。"
+          },
+          "commercial": {
+            "question": "商用プロジェクトで使用できますか？",
+            "answer": "はい、APIは個人および商用利用向けに設計されています。商用ライセンスの詳細については価格ページをご確認ください。"
+          }
+        }
+      },
+      "installation": {
+        "title": "インストールとセットアップ",
+        "description": "プロジェクトでSyinAIをインストールして設定する方法。",
+        "prerequisitesTitle": "前提条件",
+        "prerequisites": [
+          "Node.js 16+またはPython 3.8+",
+          "AlcaHEX-Studioの有効なAPIキー",
+          "API呼び出し用のインターネット接続"
+        ],
+        "nodejsTitle": "Node.jsインストール",
+        "pythonTitle": "Pythonインストール",
+        "envSetupTitle": "環境設定",
+        "envSetupDesc": "プロジェクトルートに`.env`ファイルを作成："
+      },
+      "authentication": {
+        "title": "認証ガイド",
+        "description": "AlcaHEX-Studio APIでの認証方法を学ぶ。",
+        "apiKeyTitle": "APIキー認証",
+        "apiKeyDesc": "すべてのリクエストにAuthorizationヘッダーにAPIキーを含める必要があります：",
+        "sdkAuthTitle": "SDK認証",
+        "bestPracticesTitle": "セキュリティベストプラクティス",
+        "bestPractices": [
+          "クライアントサイドコードでAPIキーを公開しない",
+          "APIキーには環境変数を使用する",
+          "APIキーを定期的にローテーションする",
+          "異常なアクティビティがないかAPI使用量を監視する"
+        ]
+      },
+      "ratelimits": {
+        "title": "レート制限と使用量",
+        "description": "APIレート制限とベストプラクティスの理解。",
+        "currentLimitsTitle": "現在の制限",
+        "tableHeaders": {
+          "plan": "プラン",
+          "requestsPerMinute": "リクエスト/分",
+          "requestsPerMonth": "リクエスト/月",
+          "tokensPerRequest": "トークン/リクエスト"
+        },
+        "plans": {
+          "free": "無料",
+          "pro": "プロ",
+          "enterprise": "エンタープライズ",
+          "custom": "カスタム"
+        },
+        "handlingTitle": "レート制限の処理"
+      },
+      "errorhandling": {
+        "title": "エラーハンドリング",
+        "description": "エラーの処理と一般的な問題のトラブルシューティング方法。",
+        "commonErrorsTitle": "一般的なエラーコード",
+        "errors": {
+          "400": "不正なリクエスト：無効なパラメータ",
+          "401": "認証されていません：無効なAPIキー",
+          "429": "レート制限：リクエストが多すぎます",
+          "500": "サーバーエラー：内部サーバーの問題"
+        },
+        "exampleTitle": "エラーハンドリングの例",
+        "troubleshootingTitle": "トラブルシューティングのヒント",
+        "troubleshooting": [
+          "APIキーが有効で期限切れでないことを確認する",
+          "リクエストパラメータがAPI仕様と一致することを確認する",
+          "レート制限の使用量を監視する",
+          "サービスの問題についてはステータスページを確認する"
+        ]
+      }
+    }
+  }
+}
