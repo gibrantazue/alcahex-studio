@@ -1,5 +1,5 @@
-import { appStore } from "@/app/store";
-import { fetcher } from "lib/utils";
+import { appStore } from "../../src/app/store";
+import { fetcher } from "../../src/lib/utils";
 import useSWR from "swr";
 
 export const useChatModels = () => {
@@ -15,13 +15,8 @@ export const useChatModels = () => {
     dedupingInterval: 60_000 * 5,
     revalidateOnFocus: false,
     fallbackData: [],
-    onSuccess: (data) => {
-      const status = appStore.getState();
-      if (!status.chatModel) {
-        const firstProvider = data[0].provider;
-        const model = data[0].models[0].name;
-        appStore.setState({ chatModel: { provider: firstProvider, model } });
-      }
+    onSuccess: (data: any) => {
+      appStore.setState({ chatModels: data });
     },
   });
 };

@@ -1,8 +1,8 @@
 "use client";
-import { appStore } from "@/app/store";
+import { appStore } from "../../src/app/store";
 import useSWR, { SWRConfiguration } from "swr";
-import { handleErrorWithToast } from "ui/shared-toast";
-import { fetcher, objectFlow } from "lib/utils";
+import { handleErrorWithToast } from "../../src/components/ui/shared-toast";
+import { fetcher } from "../../src/lib/utils";
 
 export function useMcpList(options?: SWRConfiguration) {
   return useSWR("/api/mcp/list", fetcher, {
@@ -11,13 +11,13 @@ export function useMcpList(options?: SWRConfiguration) {
     focusThrottleInterval: 1000 * 60 * 5,
     fallbackData: [],
     onError: handleErrorWithToast,
-    onSuccess: (data) => {
-      const ids = data.map((v) => v.id);
+    onSuccess: (data: any) => {
+      const ids = data.map((v: any) => v.id);
       appStore.setState((prev) => ({
         mcpList: data,
-        allowedMcpServers: objectFlow(prev.allowedMcpServers || {}).filter(
-          (_, key) => ids.includes(key),
-        ),
+        // allowedMcpServers: objectFlow(prev.allowedMcpServers || {}).filter(
+        //   (_, key) => ids.includes(key),
+        // ),
       }));
     },
     ...options,

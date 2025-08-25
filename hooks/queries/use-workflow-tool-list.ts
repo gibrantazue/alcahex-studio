@@ -1,7 +1,7 @@
 "use client";
 import useSWR, { SWRConfiguration } from "swr";
-import { appStore } from "@/app/store";
-import { fetcher } from "lib/utils";
+import { appStore } from "../../src/app/store";
+import { fetcher } from "../../src/lib/utils";
 
 export function useWorkflowToolList(options?: SWRConfiguration) {
   return useSWR("/api/workflow/tools", fetcher, {
@@ -9,7 +9,7 @@ export function useWorkflowToolList(options?: SWRConfiguration) {
     revalidateOnFocus: false,
     focusThrottleInterval: 1000 * 60 * 30,
     fallbackData: [],
-    onSuccess: (data) => {
+    onSuccess: (data: any) => {
       appStore.setState({ workflowToolList: data });
     },
     ...options,

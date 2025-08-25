@@ -1,4 +1,4 @@
-import { isFunction, nextTick } from "lib/utils";
+import { isFunction, nextTick } from "../src/lib/utils";
 import { useCallback, useState } from "react";
 
 export function useUpdate() {

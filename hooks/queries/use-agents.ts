@@ -1,9 +1,9 @@
 "use client";
-import { appStore } from "@/app/store";
+import { appStore } from "../../src/app/store";
 import useSWR, { SWRConfiguration } from "swr";
-import { handleErrorWithToast } from "ui/shared-toast";
-import { fetcher } from "lib/utils";
-import { Agent } from "app-types/agent";
+import { handleErrorWithToast } from "../../src/components/ui/shared-toast";
+import { fetcher } from "../../src/lib/utils";
+import { Agent } from "../../types/agent";
 
 export function useAgents(options?: SWRConfiguration) {
   return useSWR<Omit<Agent, "instructions">[]>("/api/agent", fetcher, {
@@ -11,7 +11,7 @@ export function useAgents(options?: SWRConfiguration) {
     revalidateOnFocus: false,
     fallbackData: [],
     onError: handleErrorWithToast,
-    onSuccess: (data) => {
+    onSuccess: (data: Omit<Agent, "instructions">[]) => {
       appStore.setState({ agentList: data });
     },
     ...options,

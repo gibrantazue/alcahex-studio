@@ -1,6 +1,6 @@
-import { appStore } from "@/app/store";
-import { ArchiveWithItemCount } from "app-types/archive";
-import { fetcher } from "lib/utils";
+import { appStore } from "../../src/app/store";
+import { ArchiveWithItemCount } from "../../types/archive";
+import { fetcher } from "../../src/lib/utils";
 import useSWR from "swr";
 
 export const useArchives = () => {
@@ -8,7 +8,7 @@ export const useArchives = () => {
     fallbackData: [],
     revalidateOnFocus: false,
     revalidateOnReconnect: false,
-    onSuccess: (data) => {
+    onSuccess: (data: ArchiveWithItemCount[]) => {
       appStore.setState({
         archiveList: data,
       });

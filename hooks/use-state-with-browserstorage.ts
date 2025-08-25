@@ -1,7 +1,7 @@
 "use client";
 
-import { getStorageManager } from "lib/browser-stroage";
-import { isFunction } from "lib/utils";
+import { getStorageManager } from "../src/lib/browser-storage";
+import { isFunction } from "../src/lib/utils";
 import {
   Dispatch,
   SetStateAction,

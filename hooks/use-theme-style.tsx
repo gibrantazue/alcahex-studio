@@ -1,6 +1,6 @@
 "use client";
-import { getStorageManager } from "lib/browser-stroage";
-import { createEmitter } from "lib/utils";
+import { getStorageManager } from "../src/lib/browser-storage";
+import { createEmitter } from "../src/lib/utils";
 import { useCallback, useEffect, useState } from "react";
 
 const storage = getStorageManager<string>("theme-style");
