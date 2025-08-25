@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { setLocaleAction } from '../../i18n/set-locale';
-import { SUPPORTED_LOCALES } from '@/lib/const';
+import { SUPPORTED_LOCALES } from '../lib/const';
 
 const languages = [
   { code: 'en', name: 'English', flag: '🇺🇸', gradient: 'from-blue-500 to-purple-600' },

@@ -4,8 +4,8 @@ import React, { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import "./syinai-style.css";
-import Sidebar, { NavItem } from "@/components/Sidebar";
-import DesktopLanguageSwitcher from "@/components/DesktopLanguageSwitcher";
+import Sidebar, { NavItem } from "../../components/Sidebar";
+import DesktopLanguageSwitcher from "../../components/DesktopLanguageSwitcher";
 
 export default function SyinAIPage() {
   const t = useTranslations("LandingPage");

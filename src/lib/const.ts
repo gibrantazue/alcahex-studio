@@ -11,3 +11,5 @@ export const SUPPORTED_LOCALES = [
 ];
 
 export const DEFAULT_LOCALE = "en";
+
+export const IS_VERCEL_ENV = process.env.VERCEL === "1";

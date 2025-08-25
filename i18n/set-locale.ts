@@ -1,6 +1,6 @@
 "use server";
 
-import { COOKIE_KEY_LOCALE, SUPPORTED_LOCALES } from "@/lib/const";
+import { COOKIE_KEY_LOCALE, SUPPORTED_LOCALES } from "../src/lib/const";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 

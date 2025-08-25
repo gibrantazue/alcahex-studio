@@ -4,8 +4,8 @@ import "./globals.css";
 import {
   ThemeProvider,
   ThemeStyleProvider,
-} from "@/components/layouts/theme-provider";
-import { Toaster } from "@/components/ui/sonner";
+} from "../components/layouts/theme-provider";
+import { Toaster } from "../components/ui/sonner";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 const inter = Inter({

@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import { useTranslations } from "next-intl";
 import "../page/syinai-style.css";
 import "../page/docs-styles.css";
-import Sidebar, { NavItem } from "@/components/Sidebar";
-import DesktopLanguageSwitcher from "@/components/DesktopLanguageSwitcher";
+import Sidebar, { NavItem } from "../../components/Sidebar";
+import DesktopLanguageSwitcher from "../../components/DesktopLanguageSwitcher";
 
 export default function BlogPage() {
   const t = useTranslations("BlogPage");
