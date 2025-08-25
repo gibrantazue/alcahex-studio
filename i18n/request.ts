@@ -1,6 +1,10 @@
 import { getRequestConfig } from "next-intl/server";
 import { getLocaleAction } from "./get-locale";
-import deepmerge from "deepmerge";
+
+// Simple merge function to replace deepmerge dependency
+function mergeMessages(defaultMessages: any, messages: any) {
+  return { ...defaultMessages, ...messages };
+}
 
 let defaultMessages: any = undefined;
 
@@ -22,7 +26,7 @@ export default getRequestConfig(async () => {
   return {
     locale,
     messages:
-      locale === "en" ? defaultMessages : deepmerge(defaultMessages, messages),
+      locale === "en" ? defaultMessages : mergeMessages(defaultMessages, messages),
     getMessageFallback({ key, namespace }) {
       return `${namespace}.${key}`;
     },
